@@ -1,0 +1,25 @@
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.PreviewDeviceTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.luverse.fetchy.PreviewDeviceTest:
+INSTRUMENTATION_STATUS: test=livePreviewAndExactDownload
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: speedResult={"platform":"Instagram","previewMs":819,"analysisMs":488,"warmPreviewMs":10,"downloadFirstByteMs":65,"downloadMs":2632,"resolvedInfo":false,"nativeHttp":true,"provider":"instagram_embed","formats":4,"bytes":6379840,"ext":"mp4"}
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.PreviewDeviceTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=livePreviewAndExactDownload
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 4.171
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1

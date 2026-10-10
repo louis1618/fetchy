@@ -1,0 +1,191 @@
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.FeatureUpgradeDeviceTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=10
+INSTRUMENTATION_STATUS: stream=
+com.luverse.fetchy.FeatureUpgradeDeviceTest:
+INSTRUMENTATION_STATUS: test=subtitlesConvertAndRejectHtmlResponses
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.FeatureUpgradeDeviceTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=10
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=subtitlesConvertAndRejectHtmlResponses
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.FeatureUpgradeDeviceTest
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=10
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=storageMigrationPreservesFilesMappingsCollisionsAndResumes
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: migrationFixture=preserved, collision renamed, interrupted/restarted, mapping retained, missing record retained
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.FeatureUpgradeDeviceTest
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=10
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=storageMigrationPreservesFilesMappingsCollisionsAndResumes
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.FeatureUpgradeDeviceTest
+INSTRUMENTATION_STATUS: current=3
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=10
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=diagnosticExportExcludesCookiesUrlsTitlesAndHeaders
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.FeatureUpgradeDeviceTest
+INSTRUMENTATION_STATUS: current=3
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=10
+INSTRUMENTATION_STATUS: stack=java.lang.IllegalStateException: UiAutomationService android.accessibilityservice.IAccessibilityServiceClient$Stub$Proxy@3ba0406already registered!
+	at android.os.Parcel.createExceptionOrNull(Parcel.java:2464)
+	at android.os.Parcel.createException(Parcel.java:2440)
+	at android.os.Parcel.readException(Parcel.java:2423)
+	at android.os.Parcel.readException(Parcel.java:2365)
+	at android.app.IUiAutomationConnection$Stub$Proxy.connect(IUiAutomationConnection.java:514)
+	at android.app.UiAutomation.connectWithTimeout(UiAutomation.java:324)
+	at android.app.Instrumentation.getUiAutomation(Instrumentation.java:2215)
+	at android.app.Instrumentation.getUiAutomation(Instrumentation.java:2160)
+	at com.luverse.fetchy.FeatureUpgradeDeviceTest.diagnosticExportExcludesCookiesUrlsTitlesAndHeaders(FeatureUpgradeDeviceTest.kt:89)
+
+INSTRUMENTATION_STATUS: stream=
+Error in diagnosticExportExcludesCookiesUrlsTitlesAndHeaders(com.luverse.fetchy.FeatureUpgradeDeviceTest):
+java.lang.IllegalStateException: UiAutomationService android.accessibilityservice.IAccessibilityServiceClient$Stub$Proxy@3ba0406already registered!
+	at android.os.Parcel.createExceptionOrNull(Parcel.java:2464)
+	at android.os.Parcel.createException(Parcel.java:2440)
+	at android.os.Parcel.readException(Parcel.java:2423)
+	at android.os.Parcel.readException(Parcel.java:2365)
+	at android.app.IUiAutomationConnection$Stub$Proxy.connect(IUiAutomationConnection.java:514)
+	at android.app.UiAutomation.connectWithTimeout(UiAutomation.java:324)
+	at android.app.Instrumentation.getUiAutomation(Instrumentation.java:2215)
+	at android.app.Instrumentation.getUiAutomation(Instrumentation.java:2160)
+	at com.luverse.fetchy.FeatureUpgradeDeviceTest.diagnosticExportExcludesCookiesUrlsTitlesAndHeaders(FeatureUpgradeDeviceTest.kt:89)
+
+INSTRUMENTATION_STATUS: test=diagnosticExportExcludesCookiesUrlsTitlesAndHeaders
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.FeatureUpgradeDeviceTest
+INSTRUMENTATION_STATUS: current=4
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=10
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=captionMetadataStaysPrivateAndSelectedSidecarSaves
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.FeatureUpgradeDeviceTest
+INSTRUMENTATION_STATUS: current=4
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=10
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=captionMetadataStaysPrivateAndSelectedSidecarSaves
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.FeatureUpgradeDeviceTest
+INSTRUMENTATION_STATUS: current=5
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=10
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=loginEvidenceNeverTreatsPublicSuccessAsAuthentication
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.FeatureUpgradeDeviceTest
+INSTRUMENTATION_STATUS: current=5
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=10
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=loginEvidenceNeverTreatsPublicSuccessAsAuthentication
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.FeatureUpgradeDeviceTest
+INSTRUMENTATION_STATUS: current=6
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=10
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=verifiedFolderCopyResumesPartialSourceDeletion
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.FeatureUpgradeDeviceTest
+INSTRUMENTATION_STATUS: current=6
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=10
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=verifiedFolderCopyResumesPartialSourceDeletion
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.FeatureUpgradeDeviceTest
+INSTRUMENTATION_STATUS: current=7
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=10
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=pendingSidecarSurvivesCleanupAndRecoversMetadata
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.FeatureUpgradeDeviceTest
+INSTRUMENTATION_STATUS: current=7
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=10
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=pendingSidecarSurvivesCleanupAndRecoversMetadata
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.FeatureUpgradeDeviceTest
+INSTRUMENTATION_STATUS: current=8
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=10
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=ffmpegWritesTagsAndCoverForAllThreeAudioFormats
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.FeatureUpgradeDeviceTest
+INSTRUMENTATION_STATUS: current=8
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=10
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=ffmpegWritesTagsAndCoverForAllThreeAudioFormats
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.FeatureUpgradeDeviceTest
+INSTRUMENTATION_STATUS: current=9
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=10
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=instagramAutomaticQualityDownloadsWithoutSecondPreviewAnalysis
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: automaticQuality={"quality":1080,"previewMs":677,"analysisMs":493,"downloadMs":11971,"height":1920,"warnings":[]}
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: automaticQuality={"quality":0,"previewMs":677,"analysisMs":493,"downloadMs":12562,"height":1920,"warnings":[]}
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.FeatureUpgradeDeviceTest
+INSTRUMENTATION_STATUS: current=9
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=10
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=instagramAutomaticQualityDownloadsWithoutSecondPreviewAnalysis
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.FeatureUpgradeDeviceTest
+INSTRUMENTATION_STATUS: current=10
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=10
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=localAudioAndVideoPlayPauseSeekAndRelease
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.FeatureUpgradeDeviceTest
+INSTRUMENTATION_STATUS: current=10
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=10
+INSTRUMENTATION_STATUS: stack=java.lang.IllegalStateException: Not connected!
+	at android.os.Parcel.createExceptionOrNull(Parcel.java:2464)
+	at android.os.Parcel.createException(Parcel.java:2440)
+	at android.os.Parcel.readException(Parcel.java:2423)
+	at android.os.Parcel.readException(Parcel.java:2365)
+	at android.app.IUiAutomationConnection$Stub$Proxy.executeShellCommand(IUiAutomationConnection.java:810)
+	at android.app.UiAutomation.executeShellCommand(UiAutomation.java:1346)
+	at com.luverse.fetchy.FeatureUpgradeDeviceTest.localAudioAndVideoPlayPauseSeekAndRelease(FeatureUpgradeDeviceTest.kt:150)
+
+INSTRUMENTATION_STATUS: stream=
+Error in localAudioAndVideoPlayPauseSeekAndRelease(com.luverse.fetchy.FeatureUpgradeDeviceTest):
+java.lang.IllegalStateException: Not connected!
+	at android.os.Parcel.createExceptionOrNull(Parcel.java:2464)
+	at android.os.Parcel.createException(Parcel.java:2440)
+	at android.os.Parcel.readException(Parcel.java:2423)
+	at android.os.Parcel.readException(Parcel.java:2365)
+	at android.app.IUiAutomationConnection$Stub$Proxy.executeShellCommand(IUiAutomationConnection.java:810)
+	at android.app.UiAutomation.executeShellCommand(UiAutomation.java:1346)
+	at com.luverse.fetchy.FeatureUpgradeDeviceTest.localAudioAndVideoPlayPauseSeekAndRelease(FeatureUpgradeDeviceTest.kt:150)
+
+INSTRUMENTATION_STATUS: test=localAudioAndVideoPlayPauseSeekAndRelease
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_RESULT: shortMsg=Process crashed.
+INSTRUMENTATION_CODE: 0

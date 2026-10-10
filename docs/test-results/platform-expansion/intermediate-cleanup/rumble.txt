@@ -1,0 +1,47 @@
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.PlatformDeviceTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.luverse.fetchy.PlatformDeviceTest:
+INSTRUMENTATION_STATUS: test=individualLinkDownloadsAndSaves
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.PlatformDeviceTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stack=java.io.IOException: 미디어 분석에 실패했습니다. 플랫폼 응답이나 분석 엔진 문제일 수 있습니다. 잠시 후 다시 시도해주세요.
+	at com.luverse.fetchy.Engine.safeError(Engine.kt:1077)
+	at com.luverse.fetchy.Engine.analyzeInternal(Engine.kt:309)
+	at com.luverse.fetchy.Engine.analyze(Engine.kt:232)
+	at com.luverse.fetchy.Engine.analyze$default(Engine.kt:218)
+	at com.luverse.fetchy.PlatformDeviceTest.individualLinkDownloadsAndSaves(PlatformDeviceTest.kt:112)
+
+INSTRUMENTATION_STATUS: stream=
+Error in individualLinkDownloadsAndSaves(com.luverse.fetchy.PlatformDeviceTest):
+java.io.IOException: 미디어 분석에 실패했습니다. 플랫폼 응답이나 분석 엔진 문제일 수 있습니다. 잠시 후 다시 시도해주세요.
+	at com.luverse.fetchy.Engine.safeError(Engine.kt:1077)
+	at com.luverse.fetchy.Engine.analyzeInternal(Engine.kt:309)
+	at com.luverse.fetchy.Engine.analyze(Engine.kt:232)
+	at com.luverse.fetchy.Engine.analyze$default(Engine.kt:218)
+	at com.luverse.fetchy.PlatformDeviceTest.individualLinkDownloadsAndSaves(PlatformDeviceTest.kt:112)
+
+INSTRUMENTATION_STATUS: test=individualLinkDownloadsAndSaves
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_RESULT: stream=
+
+Time: 6.023
+There was 1 failure:
+1) individualLinkDownloadsAndSaves(com.luverse.fetchy.PlatformDeviceTest)
+java.io.IOException: 미디어 분석에 실패했습니다. 플랫폼 응답이나 분석 엔진 문제일 수 있습니다. 잠시 후 다시 시도해주세요.
+	at com.luverse.fetchy.Engine.safeError(Engine.kt:1077)
+	at com.luverse.fetchy.Engine.analyzeInternal(Engine.kt:309)
+	at com.luverse.fetchy.Engine.analyze(Engine.kt:232)
+	at com.luverse.fetchy.Engine.analyze$default(Engine.kt:218)
+	at com.luverse.fetchy.PlatformDeviceTest.individualLinkDownloadsAndSaves(PlatformDeviceTest.kt:112)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+
+INSTRUMENTATION_CODE: -1

@@ -1,0 +1,14 @@
+{
+  "tool": "Android SDK 36 aapt list / native ZIP reader",
+  "before": {
+    "exitCode": 1,
+    "stderr": "ERROR: failed opening 'android/app/src/main/assets/yt-dlp' as Zip file\n"
+  },
+  "after": {
+    "exitCode": 0,
+    "stderr": "",
+    "entries": 1053,
+    "containsYtDlpModule": true
+  },
+  "note": "Host native Android ZIP-reader check; not an Android 16 app run. The AAPT parser reports its first directory-offset failure; the user-reported Java header error is separately matched to the APK bytes and AOSP implementation."
+}

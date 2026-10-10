@@ -1,0 +1,39 @@
+{
+  "version": "1.0.5+6",
+  "flutter_tests": 33,
+  "jvm_tests": 19,
+  "native_tests": 7,
+  "native_logs": [
+    "native-story-final.txt",
+    "reel-regression-final.txt",
+    "youtube-regression.txt"
+  ],
+  "device": "Silver Max Pro 2 / Android 12",
+  "authenticated_story_download": "not verified: no authorized account session on test device",
+  "emulator": "not used",
+  "source_bundle_unchanged": true,
+  "apks": [
+    {
+      "apk": "Fetchy-arm64.apk",
+      "sha256": "0136c2a70b4b15e28c7d99cb6cb97de2d36848404ba987c8015e25f5c79ccad6",
+      "bytes": 70019573,
+      "manifest": [
+        "package: name='com.luverse.fetchy' versionCode='2006' versionName='1.0.5' platformBuildVersionName='16' platformBuildVersionCode='36' compileSdkVersion='36' compileSdkVersionCodename='16'",
+        "sdkVersion:'24'",
+        "targetSdkVersion:'36'",
+        "native-code: 'arm64-v8a'"
+      ]
+    },
+    {
+      "apk": "Fetchy-x86_64.apk",
+      "sha256": "31e84c8af7cd0c90501b4cff40ea43f326a40bbc0ba1c3742e184c13617aa4e6",
+      "bytes": 73370218,
+      "manifest": [
+        "package: name='com.luverse.fetchy' versionCode='4006' versionName='1.0.5' platformBuildVersionName='16' platformBuildVersionCode='36' compileSdkVersion='36' compileSdkVersionCodename='16'",
+        "sdkVersion:'24'",
+        "targetSdkVersion:'36'",
+        "native-code: 'x86_64'"
+      ]
+    }
+  ]
+}

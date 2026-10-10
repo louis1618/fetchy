@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.luverse.fetchy.PreviewUrlTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-05T22:46:44.795Z" hostname="Luverse" time="0.019">
+  <properties/>
+  <testcase name="unsafeAliasesCannotReachAPublicPostCacheEntry" classname="com.luverse.fetchy.PreviewUrlTest" time="0.006"/>
+  <testcase name="arbitrarySignedMediaQueryIsNeverDiscarded" classname="com.luverse.fetchy.PreviewUrlTest" time="0.01"/>
+  <testcase name="knownAliasesShareCacheWithoutTurningPlaylistsIntoVideos" classname="com.luverse.fetchy.PreviewUrlTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

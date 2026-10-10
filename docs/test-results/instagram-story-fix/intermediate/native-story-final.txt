@@ -1,0 +1,57 @@
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.PreviewDeviceTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=2
+INSTRUMENTATION_STATUS: stream=
+com.luverse.fetchy.PreviewDeviceTest:
+INSTRUMENTATION_STATUS: test=instagramStoriesReachTheExtractorAndSavedCookies
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.PreviewDeviceTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=2
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: Photo story override must load in the actual CLI
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.luverse.fetchy.PreviewDeviceTest.instagramStoriesReachTheExtractorAndSavedCookies(PreviewDeviceTest.kt:93)
+
+INSTRUMENTATION_STATUS: stream=
+Error in instagramStoriesReachTheExtractorAndSavedCookies(com.luverse.fetchy.PreviewDeviceTest):
+java.lang.AssertionError: Photo story override must load in the actual CLI
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.luverse.fetchy.PreviewDeviceTest.instagramStoriesReachTheExtractorAndSavedCookies(PreviewDeviceTest.kt:93)
+
+INSTRUMENTATION_STATUS: test=instagramStoriesReachTheExtractorAndSavedCookies
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.PreviewDeviceTest
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=2
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=liveStoryWithoutLoginReportsAccessInsteadOfUnsupportedUrl
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: storyResult=공개 경로에서도 접근이 제한된 미디어입니다. 이 항목에는 로그인 쿠키가 필요할 수 있습니다.
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.PreviewDeviceTest
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=2
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=liveStoryWithoutLoginReportsAccessInsteadOfUnsupportedUrl
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 12.398
+There was 1 failure:
+1) instagramStoriesReachTheExtractorAndSavedCookies(com.luverse.fetchy.PreviewDeviceTest)
+java.lang.AssertionError: Photo story override must load in the actual CLI
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.luverse.fetchy.PreviewDeviceTest.instagramStoriesReachTheExtractorAndSavedCookies(PreviewDeviceTest.kt:93)
+
+FAILURES!!!
+Tests run: 2,  Failures: 1
+
+
+INSTRUMENTATION_CODE: -1

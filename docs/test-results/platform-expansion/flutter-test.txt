@@ -1,0 +1,66 @@
+Resolving dependencies...
+Downloading packages...
+  material_color_utilities 0.13.0 (0.13.1 available)
+  meta 1.18.3 (1.19.0 available)
+  test_api 0.7.12 (0.7.14 available)
+  vector_math 2.4.0 (2.4.3 available)
+Got dependencies!
+4 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+00:00 +0: loading /home/louis/Documents/.dev/Fetchy/test/widget_test.dart
+00:00 +0: native map conversion and byte labels
+00:00 +1: shared metadata appears before formats and cannot enqueue
+FetchyPreview frame elapsedMs=140
+FetchySelection frame elapsedMs=244
+00:00 +2: ten second delay stops spinner and keeps retry visible
+FetchyPreview frame elapsedMs=37
+FetchySelection frame elapsedMs=103
+00:01 +3: late preview cannot replace a completed format selection
+FetchySelection frame elapsedMs=38
+00:01 +4: leaving analysis ignores delayed responses
+00:01 +5: same quality defaults to resolved HTTP and manual quality still wins
+FetchySelection frame elapsedMs=42
+FetchySelection frame elapsedMs=30
+00:02 +6: Instagram original keeps the full format lookup available
+FetchySelection frame elapsedMs=34
+FetchySelection frame elapsedMs=24
+00:02 +7: Korean tabs and settings render
+00:03 +8: URL validation and native error are clear
+00:03 +9: audio tab sends only audio in the enqueue contract
+FetchySelection frame elapsedMs=41
+00:04 +10: switching back to video keeps its quality and excludes audio
+FetchySelection frame elapsedMs=24
+00:04 +11: first save requests a folder grant before enqueue
+FetchySelection frame elapsedMs=35
+00:04 +12: canceling first folder grant preserves media selection
+FetchySelection frame elapsedMs=25
+00:05 +13: event snapshot updates job list
+00:05 +14: share entry is transparent and closes through native
+FetchySelection frame elapsedMs=26
+00:05 +15: native percent progress and string quality normalize
+00:05 +16: folder creation and default file move match native contract
+00:06 +17: folder picker keeps reference order, trailing radios and a visible create action
+00:06 +18: share analyzes before snapshot but keeps saved quality
+FetchySelection frame elapsedMs=31
+00:07 +19: X extractor label uses the existing X platform folder
+FetchySelection frame elapsedMs=25
+00:07 +20: shared audio selection never enqueues the hidden video format
+FetchySelection frame elapsedMs=19
+00:07 +21: multiple images remain selectable within the current media tab
+FetchySelection frame elapsedMs=16
+00:07 +22: queued jobs show their network reason and provide restart
+00:07 +23: cookie login import and deletion call native methods
+00:08 +24: new platform shortcuts and native cookie registry are reachable
+00:08 +25: photo post music downloads only from the selected audio tab
+FetchySelection frame elapsedMs=20
+00:08 +26: welcome is persisted only after starting
+00:08 +27: plus inside a folder creates a real child with selected color
+00:09 +28: favorite filtering and folder menu use stable IDs
+00:09 +29: recent link reanalysis keeps original source URL
+FetchySelection frame elapsedMs=26
+00:09 +30: small screen and enlarged Korean type do not overflow
+00:09 +31: list titles have explicit light and dark contrast colors
+00:09 +32: dark folder captions follow the active surface color
+00:09 +33: dark home shortcut background uses the current shell theme on first render
+00:10 +34: a removed current folder returns browsing and plus to the real root
+00:10 +35: All tests passed!

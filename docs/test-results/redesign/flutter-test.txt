@@ -1,0 +1,23 @@
+00:00 +0: loading /home/louis/Documents/.dev/Fetchy/test/widget_test.dart
+00:00 +0: native map conversion and byte labels
+00:00 +1: Korean tabs and settings render
+00:01 +2: URL validation and native error are clear
+00:02 +3: video and audio multiselection sends complete enqueue contract
+00:02 +4: first save requests a folder grant before enqueue
+00:03 +5: canceling first folder grant preserves media selection
+00:03 +6: event snapshot updates job list
+00:04 +7: share entry is transparent and closes through native
+00:04 +8: native percent progress and string quality normalize
+00:04 +9: folder creation and default file move match native contract
+00:05 +10: folder picker keeps reference order, trailing radios and a visible create action
+00:05 +11: cookie login import and deletion call native methods
+00:06 +12: welcome is persisted only after starting
+00:06 +13: plus inside a folder creates a real child with selected color
+00:07 +14: favorite filtering and folder menu use stable IDs
+00:07 +15: recent link reanalysis keeps original source URL
+00:07 +16: small screen and enlarged Korean type do not overflow
+00:07 +17: list titles have explicit light and dark contrast colors
+00:07 +18: dark folder captions follow the active surface color
+00:08 +19: dark home shortcut background uses the current shell theme on first render
+00:08 +20: a removed current folder returns browsing and plus to the real root
+00:08 +21: All tests passed!

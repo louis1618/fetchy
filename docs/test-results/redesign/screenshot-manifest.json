@@ -1,0 +1,44 @@
+{
+  "physical": {
+    "apk": "Fetchy-arm64.apk",
+    "apkSha256": "8aac8d6542db3985aadef6711ca83a5a24cc1905d787c5efdd28d640f59b5155",
+    "screenshots": {
+      "analysis.png": "a6c19edec867a03caa351d6d0ab4c743ba012c9c52005708c78ae62e9ac451b9",
+      "create-subfolder.png": "2d3086ddac32535110fa282e380d656cd3e61686087720efe14619735ccb1a06",
+      "dark-home.png": "ff8c7bc003164275ed0c010bdaba2f3bb22cae62f7571981188c90a4cfb73de0",
+      "file-actions.png": "be741e1142a05a2bdf6855204c156ac026bad6ecd677f1558b33a58c98f9420b",
+      "file-detail.png": "52848058677dacf1141fb166e0eabd9391880a222eedfa08741fb5aeabaffaff",
+      "files.png": "76f98d895cf7fe7ef884ecbcd2ef75d3ae0c5225af62c30d608ba72e0c42d540",
+      "folder-actions.png": "4b4cd3ec0c805b37e6e4221ebe0116fce8f7f163b7d482fd6119612faac6a4df",
+      "folder-picker.png": "408ab3f273302a65200a1fedd694e2aedb2571791ef5f8a259e53105e6130a43",
+      "folder.png": "da9b71def24d426791845b7adaf5348f766ba744c45203795b1d60ce9f6c3725",
+      "font-scale-1.3.png": "1d5bda5a9a6887ef66fda26ac4d69c0c5f8fc44afa9ce42407abe6a93e2331de",
+      "home.png": "589b3ed89d38da34bcba51a23adb0bf9ef8bf7af54c17288cab1ee9ead7a0c32",
+      "settings.png": "254d3bb852d56a2d0bd7119dfbf2db351366ca354a28cc3bda7231af5443cc82",
+      "share-save.png": "80721f9ac7ec97005e4bd9130ba2eb51e9aea396ade77055ca6ed39e5a76dd69",
+      "welcome.png": "45c3f99871bf2ef948a06e9b861fc4403966bb77a27a8e9e8ad34661ea55f560"
+    },
+    "renderMode": "Default Flutter renderer"
+  },
+  "emulator": {
+    "apk": "Fetchy-x86_64.apk",
+    "apkSha256": "e7c36ca997437567441d62cd878a2586803b069825efb10bf502c9c13d7d09b0",
+    "screenshots": {
+      "analysis.png": "a83b2030148cdba78d3983608799728822dca7e8cf26b5bc50bcbde41aaeedc0",
+      "create-subfolder.png": "48cf784fd47c251c324c39dec1b60c079564084358e4f3b2e08989c066c455f9",
+      "dark-home.png": "28bd8e6e1d7ade58cf06e6e3d21a6545ecdd019d403458b6c8ca688e5aa602f6",
+      "file-actions.png": "5f5d66703898f267692b9322c365a4d4147d5a580fa0e9176dd3e35fc9907ba4",
+      "file-detail.png": "57b3ca6ad8699de9c217453bcc8b6f39df4ac7c10bbf6d1067ef9c41c5185036",
+      "files.png": "e49de0695471ba4baa7bb842dee72ae068f28ef75b2541e7301c7f84c024c7ee",
+      "folder-actions.png": "36881d05adb9e3d11768f5bf0f37e5fedd8f0a510f37f4d25e2ee2358b00daff",
+      "folder-picker.png": "9858a2512f91312bb57dc6cd234f5dbf47ebf00db1cf10ac53e6850c4e9f22a6",
+      "folder.png": "40e00b835a2d0a88b90b75e036b1342d1c2b259d423beba0b06cbe583e6f7942",
+      "font-scale-1.3.png": "c2ef4b78564af81af4f17ae9fe1f41a715297ae62964fdbf6248fb48db71a4c5",
+      "home.png": "c4be670e4a5dcfcb22888a8d1d878abe0882478bcf46005fe1c01ba6e9879112",
+      "settings.png": "e8e941e6bacfbb2b98175b0ec7537a4e7eb609145f6227ce4df003023e51bc2a",
+      "share-save.png": "4a3a80f2479ef0e56086c78d2de4b8580d3b944e67ac9e1ce217b74efd5577b3",
+      "welcome.png": "bbbac71779efc0473a780e6946becef8e441538fe76c4b6158fa100ec81c380b"
+    },
+    "renderMode": "Flutter CPU rendering requested via Intent"
+  }
+}

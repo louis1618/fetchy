@@ -1,0 +1,8 @@
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.DispatchDeviceTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.luverse.fetchy.DispatchDeviceTest:
+INSTRUMENTATION_STATUS: test=suppliedSocialLinkFinishesThroughTheBackgroundQueue
+INSTRUMENTATION_STATUS_CODE: 1

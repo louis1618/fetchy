@@ -1,0 +1,15 @@
+{
+  "userReportedDevice": "Samsung S22+ / Android 16",
+  "userReportedError": "Entry at offset zero has invalid LFH signature 752f2123",
+  "upstreamSHA256": "1fa6733c37ea6fb51c99ad8fe785e7b7e5f3246c9b980230329d4fb72ed8d4d6",
+  "upstreamFirstFourBytes": "#!/u",
+  "upstreamHeaderSignature": "0x752f2123",
+  "prefixRemoved": 23,
+  "zipPayloadSignature": "0x4034b50",
+  "centralDirectoryDeclaredOffset": 2969344,
+  "centralDirectoryActualOffset": 2969344,
+  "firstEntryDeclaredOffset": 0,
+  "normalizedPayloadSHA256": "d51d8b8a46add70eb4307a691ce8e8574831d913246f1309a21896507a6da907",
+  "reference": "https://android.googlesource.com/platform/libcore/+/744c095ffc6c0b4bb2ca3853c5eb841146011619%5E2..744c095ffc6c0b4bb2ca3853c5eb841146011619/",
+  "scope": "APK asset structure and Android source boundary rule; not an Android 16 hardware run"
+}

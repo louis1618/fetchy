@@ -1,0 +1,10 @@
+{
+  "artifacts/Fetchy-arm64.apk": {
+    "classes.dex": "2de68ba5c838359c5de6ee886972dad33e04c4a851ea819137aa3d68d39745ad",
+    "classes2.dex": "10a113a8631eab120eab36b658f32bdd9a80c5e30d0fee7f7cdfb2761fd7ab3a"
+  },
+  "build/app/outputs/apk/release/app-arm64-v8a-release.apk": {
+    "classes.dex": "2de68ba5c838359c5de6ee886972dad33e04c4a851ea819137aa3d68d39745ad",
+    "classes2.dex": "10a113a8631eab120eab36b658f32bdd9a80c5e30d0fee7f7cdfb2761fd7ab3a"
+  }
+}

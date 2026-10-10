@@ -1,0 +1,25 @@
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.AnalysisDeviceTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.luverse.fetchy.AnalysisDeviceTest:
+INSTRUMENTATION_STATUS: test=publicXDownloadAndPersistentCacheWithoutCookies
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: analysisResult={"coldMs":832,"warmMs":10,"assets":1,"kind":"video","expiredUrl":true,"bytes":629101,"ext":"mp4"}
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.AnalysisDeviceTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=publicXDownloadAndPersistentCacheWithoutCookies
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 3.821
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1

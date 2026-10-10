@@ -1,0 +1,50 @@
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.DispatchDeviceTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.luverse.fetchy.DispatchDeviceTest:
+INSTRUMENTATION_STATUS: test=unavailableUidtStillStartsVisibleDownload
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.DispatchDeviceTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at com.luverse.fetchy.DispatchDeviceTest.exercise(DispatchDeviceTest.kt:37)
+	at com.luverse.fetchy.DispatchDeviceTest.exercise$default(DispatchDeviceTest.kt:23)
+	at com.luverse.fetchy.DispatchDeviceTest.unavailableUidtStillStartsVisibleDownload(DispatchDeviceTest.kt:72)
+
+INSTRUMENTATION_STATUS: stream=
+Error in unavailableUidtStillStartsVisibleDownload(com.luverse.fetchy.DispatchDeviceTest):
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at com.luverse.fetchy.DispatchDeviceTest.exercise(DispatchDeviceTest.kt:37)
+	at com.luverse.fetchy.DispatchDeviceTest.exercise$default(DispatchDeviceTest.kt:23)
+	at com.luverse.fetchy.DispatchDeviceTest.unavailableUidtStillStartsVisibleDownload(DispatchDeviceTest.kt:72)
+
+INSTRUMENTATION_STATUS: test=unavailableUidtStillStartsVisibleDownload
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_RESULT: stream=
+
+Time: 2.774
+There was 1 failure:
+1) unavailableUidtStillStartsVisibleDownload(com.luverse.fetchy.DispatchDeviceTest)
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at com.luverse.fetchy.DispatchDeviceTest.exercise(DispatchDeviceTest.kt:37)
+	at com.luverse.fetchy.DispatchDeviceTest.exercise$default(DispatchDeviceTest.kt:23)
+	at com.luverse.fetchy.DispatchDeviceTest.unavailableUidtStillStartsVisibleDownload(DispatchDeviceTest.kt:72)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+
+INSTRUMENTATION_CODE: -1

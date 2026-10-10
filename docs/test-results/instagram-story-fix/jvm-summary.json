@@ -1,0 +1,32 @@
+[
+  {
+    "suite": "com.luverse.fetchy.BundledPythonTest",
+    "tests": 4,
+    "failures": 0,
+    "errors": 0
+  },
+  {
+    "suite": "com.luverse.fetchy.StorageNamesTest",
+    "tests": 3,
+    "failures": 0,
+    "errors": 0
+  },
+  {
+    "suite": "com.luverse.fetchy.NetworkPolicyTest",
+    "tests": 5,
+    "failures": 0,
+    "errors": 0
+  },
+  {
+    "suite": "com.luverse.fetchy.PreviewUrlTest",
+    "tests": 4,
+    "failures": 0,
+    "errors": 0
+  },
+  {
+    "suite": "com.luverse.fetchy.MediaUrlTest",
+    "tests": 3,
+    "failures": 0,
+    "errors": 0
+  }
+]

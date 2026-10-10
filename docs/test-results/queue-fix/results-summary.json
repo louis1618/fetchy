@@ -1,0 +1,42 @@
+{
+  "physical": {
+    "nativeTests": 4,
+    "ui": {
+      "audio": {
+        "jobCount": 1,
+        "kind": "audio",
+        "state": "completed",
+        "bytes": 164281
+      },
+      "video": {
+        "jobCount": 1,
+        "kind": "video",
+        "state": "completed",
+        "bytes": 788493
+      }
+    }
+  },
+  "emulator": {
+    "nativeTests": 4,
+    "ui": {
+      "audio": {
+        "jobCount": 1,
+        "kind": "audio",
+        "state": "completed",
+        "bytes": 164279
+      },
+      "video": {
+        "jobCount": 1,
+        "kind": "video",
+        "state": "completed",
+        "bytes": 788493
+      }
+    }
+  },
+  "flutterTests": 25,
+  "jvmTests": 8,
+  "apkSha256": {
+    "Fetchy-arm64.apk": "751dafbd6a333c617ed82f481bfbf44a513c341c57e55dca61073389fe5602f7",
+    "Fetchy-x86_64.apk": "d20b985851eabe51245b440822ed24e86f444614d1152ef6aa9a03a00b6a0033"
+  }
+}

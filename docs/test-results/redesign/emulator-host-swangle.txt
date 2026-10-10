@@ -1,0 +1,4 @@
+INFO         | Graphics backend: gfxstream
+INFO         | Feature 'Vulkan' (21) is overridden to 'disabled'
+INFO         | Boot completed in 17070 ms
+ERROR        | Failed to find ColorBuffer: 51

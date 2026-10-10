@@ -1,0 +1,18 @@
+{
+  "Fetchy-arm64.apk": {
+    "nativeDexUnchanged": true,
+    "dexFiles": 2,
+    "dexSha256": {
+      "classes.dex": "0c4c1d519a05b41df5bc01391945cfe676b22a3cac66a24ef3c634bf6d8cab4c",
+      "classes2.dex": "10a113a8631eab120eab36b658f32bdd9a80c5e30d0fee7f7cdfb2761fd7ab3a"
+    }
+  },
+  "Fetchy-x86_64.apk": {
+    "nativeDexUnchanged": true,
+    "dexFiles": 2,
+    "dexSha256": {
+      "classes.dex": "0c4c1d519a05b41df5bc01391945cfe676b22a3cac66a24ef3c634bf6d8cab4c",
+      "classes2.dex": "10a113a8631eab120eab36b658f32bdd9a80c5e30d0fee7f7cdfb2761fd7ab3a"
+    }
+  }
+}

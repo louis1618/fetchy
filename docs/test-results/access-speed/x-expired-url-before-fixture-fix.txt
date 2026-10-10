@@ -1,0 +1,41 @@
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.AnalysisDeviceTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.luverse.fetchy.AnalysisDeviceTest:
+INSTRUMENTATION_STATUS: test=publicXDownloadAndPersistentCacheWithoutCookies
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.AnalysisDeviceTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stack=java.io.IOException: Media HTTP request failed (400)
+	at com.luverse.fetchy.Engine.safeError(Engine.kt:746)
+	at com.luverse.fetchy.Engine.download(Engine.kt:420)
+	at com.luverse.fetchy.AnalysisDeviceTest.publicXDownloadAndPersistentCacheWithoutCookies(AnalysisDeviceTest.kt:97)
+
+INSTRUMENTATION_STATUS: stream=
+Error in publicXDownloadAndPersistentCacheWithoutCookies(com.luverse.fetchy.AnalysisDeviceTest):
+java.io.IOException: Media HTTP request failed (400)
+	at com.luverse.fetchy.Engine.safeError(Engine.kt:746)
+	at com.luverse.fetchy.Engine.download(Engine.kt:420)
+	at com.luverse.fetchy.AnalysisDeviceTest.publicXDownloadAndPersistentCacheWithoutCookies(AnalysisDeviceTest.kt:97)
+
+INSTRUMENTATION_STATUS: test=publicXDownloadAndPersistentCacheWithoutCookies
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_RESULT: stream=
+
+Time: 1.034
+There was 1 failure:
+1) publicXDownloadAndPersistentCacheWithoutCookies(com.luverse.fetchy.AnalysisDeviceTest)
+java.io.IOException: Media HTTP request failed (400)
+	at com.luverse.fetchy.Engine.safeError(Engine.kt:746)
+	at com.luverse.fetchy.Engine.download(Engine.kt:420)
+	at com.luverse.fetchy.AnalysisDeviceTest.publicXDownloadAndPersistentCacheWithoutCookies(AnalysisDeviceTest.kt:97)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+
+INSTRUMENTATION_CODE: -1

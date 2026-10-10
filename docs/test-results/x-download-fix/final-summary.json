@@ -1,0 +1,62 @@
+{
+  "version": "1.0.4+5",
+  "nativeTests": {
+    "bundle-install": 2,
+    "engine-ready": 1,
+    "engine-bytecode": 1,
+    "x-folder-alias": 1,
+    "parser-cancel": 2,
+    "x-video": 1,
+    "x-audio": 1,
+    "x-photo": 1,
+    "x-gif": 1,
+    "x-current-codec": 1,
+    "x-expiry": 1,
+    "queue-regression": 2,
+    "queue-x-retry": 1,
+    "queue-x-photo": 1,
+    "queue-x-multi": 1,
+    "queue-youtube": 1,
+    "queue-reel": 1
+  },
+  "nativeTotal": 20,
+  "jvmTests": {
+    "TEST-com.luverse.fetchy.BundledPythonTest.xml": 4,
+    "TEST-com.luverse.fetchy.StorageNamesTest.xml": 3,
+    "TEST-com.luverse.fetchy.NetworkPolicyTest.xml": 5,
+    "TEST-com.luverse.fetchy.PreviewUrlTest.xml": 3,
+    "TEST-com.luverse.fetchy.MediaUrlTest.xml": 2
+  },
+  "jvmTotal": 17,
+  "flutterTests": 33,
+  "physicalDevice": "Silver Max Pro 2 / Android 12 API31",
+  "samsungAndroid16DirectlyTested": false,
+  "apks": {
+    "Fetchy-arm64.apk": {
+      "sha256": "699c3933eefffbd177066948bf34d4da3c185f023164f14c8d1b7acf9838008a",
+      "bytes": 70017679
+    },
+    "Fetchy-x86_64.apk": {
+      "sha256": "84c7d00b96c6cf1cc185efc76bd9a342571ba82fb64e06fd565f4bd8d715f4f2",
+      "bytes": 73368324
+    }
+  },
+  "actualFlutterSaves": {
+    "audio": {
+      "jobCount": 1,
+      "kind": "audio",
+      "state": "completed",
+      "ext": "m4a",
+      "mime": "audio/mp4",
+      "bytes": 210013
+    },
+    "video": {
+      "jobCount": 1,
+      "kind": "video",
+      "state": "completed",
+      "ext": "mp4",
+      "mime": "video/mp4",
+      "bytes": 1664010
+    }
+  }
+}

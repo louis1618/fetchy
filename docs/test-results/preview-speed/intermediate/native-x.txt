@@ -1,0 +1,25 @@
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.PreviewDeviceTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.luverse.fetchy.PreviewDeviceTest:
+INSTRUMENTATION_STATUS: test=livePreviewAndExactDownload
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: speedResult={"platform":"X (Twitter)","previewMs":1171,"analysisMs":491,"warmPreviewMs":11,"downloadFirstByteMs":295,"downloadMs":1899,"resolvedInfo":false,"nativeHttp":true,"provider":"fxtwitter","formats":5,"bytes":629101,"ext":"mp4"}
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.PreviewDeviceTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=livePreviewAndExactDownload
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 3.713
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1

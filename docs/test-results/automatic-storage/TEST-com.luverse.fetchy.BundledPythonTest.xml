@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.luverse.fetchy.BundledPythonTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-08T10:40:41.778Z" hostname="Luverse" time="0.116">
+  <properties/>
+  <testcase name="ordinaryZipIsUnchanged" classname="com.luverse.fetchy.BundledPythonTest" time="0.01"/>
+  <testcase name="actualUpstreamBundleCanBeReadFromByteZero" classname="com.luverse.fetchy.BundledPythonTest" time="0.093"/>
+  <testcase name="malformedOrUnboundedPrefixesAreRejected" classname="com.luverse.fetchy.BundledPythonTest" time="0.013"/>
+  <testcase name="zipappPrefixIsRemovedWithoutChangingDirectoryOffsets" classname="com.luverse.fetchy.BundledPythonTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

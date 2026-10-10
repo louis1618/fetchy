@@ -1,0 +1,22 @@
+[
+  {
+    "case": "storage-device",
+    "passed": true,
+    "tests": 10
+  },
+  {
+    "case": "hierarchy-regression",
+    "passed": true,
+    "tests": 4
+  },
+  {
+    "case": "queue-regression",
+    "passed": true,
+    "tests": 2
+  },
+  {
+    "case": "final-diagnostic",
+    "passed": true,
+    "tests": 2
+  }
+]

@@ -1,0 +1,429 @@
+Oct 05 19:13:07 Luverse systemd[1574]: Started fetchy-emulator-safe.service - /usr/bin/flock --nonblock --conflict-exit-code 75 /run/user/1000/build-safe.lock /home/louis/Android/Sdk/emulator/emulator -avd Fetchy_API_36 -no-window -no-audio -no-boot-anim -no-snapshot -gpu swiftshader -feature -Vulkan -memory 1536 -cores 2.
+Oct 05 19:13:07 Luverse flock[967940]: INFO         | Android emulator version 37.1.11.0 (build_id 15917651) (CL:N/A)
+Oct 05 19:13:07 Luverse flock[967940]: INFO         | Graphics backend: gfxstream
+Oct 05 19:13:07 Luverse flock[967940]: INFO         | Found systemPath /home/louis/Android/Sdk/system-images/android-36/google_apis/x86_64/
+Oct 05 19:13:07 Luverse flock[967940]: INFO         | Guest usage of host flag 'VulkanVirtualQueue' will be ignored.
+Oct 05 19:13:07 Luverse flock[967940]: INFO         | Feature 'Vulkan' (21) is overridden to 'disabled'
+Oct 05 19:13:07 Luverse flock[967940]: INFO         | Increasing RAM size to 2560MB
+Oct 05 19:13:07 Luverse flock[967940]: INFO         | Guest GLES Driver: Auto (ext controls)
+Oct 05 19:13:07 Luverse flock[967940]: INFO         | emuglConfig_init: vulkan_mode_selected:swiftshader gles_mode_selected:swiftshader
+Oct 05 19:13:07 Luverse flock[967940]: INFO         | Checking system compatibility:
+Oct 05 19:13:07 Luverse flock[967940]: INFO         |   Checking: hasSufficientDiskSpace
+Oct 05 19:13:07 Luverse flock[967940]: INFO         |      Ok: Disk space requirements to run avd: `Fetchy_API_36` are met
+Oct 05 19:13:07 Luverse flock[967940]: INFO         |   Checking: hasSufficientHwGpu
+Oct 05 19:13:07 Luverse flock[967940]: INFO         |      Ok: Hardware GPU compatibility checks are not required
+Oct 05 19:13:07 Luverse flock[967940]: INFO         |   Checking: hasSufficientSystem
+Oct 05 19:13:07 Luverse flock[967940]: INFO         |      Ok: System requirements to run avd: `Fetchy_API_36` are met
+Oct 05 19:13:07 Luverse flock[967940]: WARNING      | Feature QuickbootFileBacked is disabled due to stability issues, if you really want that, the environment variable ANDROID_EMU_FORCE_QUICKBOOT_FILE_BACKED need to set to 1
+Oct 05 19:13:07 Luverse flock[967940]: INFO         | Storing crashdata in: /tmp/android-louis/emu-crash-37.1.11.db, detection is enabled for process: 967940
+Oct 05 19:13:07 Luverse flock[967940]: INFO         | Initializing gfxstream backend
+Oct 05 19:13:07 Luverse flock[967940]: INFO         | startOpenglesRendererImpl: gpu info
+Oct 05 19:13:07 Luverse flock[967940]: INFO         |
+Oct 05 19:13:07 Luverse flock[967940]: INFO         | SharedLibrary::open for [libX11]
+Oct 05 19:13:07 Luverse flock[967940]: INFO         | SharedLibrary::open for [libX11-xcb]
+Oct 05 19:13:07 Luverse flock[967940]: WARNING      | Could not open libX11-xcb.so, try libX11-xcb.so.1
+Oct 05 19:13:07 Luverse flock[967940]: INFO         | SharedLibrary::open for [libX11-xcb.so.1]
+Oct 05 19:13:07 Luverse flock[967940]: INFO         | Graphics Adapter Vendor Google (Google Inc.)
+Oct 05 19:13:07 Luverse flock[967940]: INFO         | Graphics Adapter Android Emulator OpenGL ES Translator (Google SwiftShader)
+Oct 05 19:13:07 Luverse flock[967940]: INFO         | Graphics API Version OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1)
+Oct 05 19:13:07 Luverse flock[967940]: INFO         | Graphics API Extensions GL_OES_EGL_sync GL_OES_EGL_image GL_OES_EGL_image_external GL_OES_depth24 GL_OES_depth32 GL_OES_element_index_uint GL_OES_texture_float GL_OES_texture_float_linear GL_OES_compressed_paletted_texture GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth_texture GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_OES_packed_depth_stencil GL_OES_vertex_half_float GL_OES_standard_derivatives GL_OES_texture_npot GL_OES_rgb8_rgba8 GL_EXT_color_buffer_float GL_EXT_color_buffer_half_float GL_EXT_texture_format_BGRA8888 GL_APPLE_texture_format_BGRA8888
+Oct 05 19:13:07 Luverse flock[967940]: INFO         | Graphics Device Extensions N/A
+Oct 05 19:13:07 Luverse flock[967940]: INFO         | Sending adb public key [QAAAAPVFQ4WjgQJk0NxLm1Ilj1mMQ435Obw7LWoJh6JPgJwGIUGm4oRxZ7zIBCpLLc4ku5ULsOPWx/tYIbD9xQ4nI3BycfRnj6iRvXkUliN80NE9lOmrmN7ObrPGzuMtvfII6PPcgJAmuHrmyutwBga0f+zwy98RbGGZTZBU8QdELTlGCLr+kX1xh5jWwIllE94iOdudDrVmC9wH5jLt+0BojwLVPLVyAwS/v9EDS9u9+2R0i4aySwW/E1FYDoAPZbJ7goikhwshHIjJMbiUQ6VVP+lfuAULv9sBh7JxtsLYhT+e6OY3fx8/29pvRGByp68QAjLIRmx2MyZ6S7aWnObmhZiSKny15PbKzKhZY52FkClwLhQdfFr/Wk6u2NcqSxibUwpGpCcc4urPkIPhZnFUIWgoeqT7iJXLHZMHCPp7N/ynlkCE+U9aGFYIok5CWBH9GsThSnVI+fjxABr7NZW/J6OxuSwtf2duzr83tC7z8LDcy+AFsPmIAvsBMt3GyTJ3dTrUQIqP3HV4YfUbXDEbLChAUSrt0wDZib8xyPlL0wx4uZUFJ0k1qFLotJE/bPeceFBwo/x92AWE7hbSwrldMcKvMrPP2tC0WJ5C3z63C88oOZc+t2vP6sCjh3ABtCgkqWTFu+ym8iutS1JkS/MSj8CUsBfJycFpecaYr00K6sZafSWUmgEAAQA= louis@unknown]
+Oct 05 19:13:07 Luverse flock[967940]: INFO         | Userspace boot properties:
+Oct 05 19:13:07 Luverse flock[967940]: INFO         |   androidboot.boot_devices=pci0000:00/0000:00:03.0 pci0000:00/0000:00:06.0
+Oct 05 19:13:07 Luverse flock[967940]: INFO         |   androidboot.dalvik.vm.heapsize=576m
+Oct 05 19:13:07 Luverse flock[967940]: INFO         |   androidboot.debug.hwui.renderer=skiagl
+Oct 05 19:13:07 Luverse flock[967940]: INFO         |   androidboot.debug.sf.nobootanimation=1
+Oct 05 19:13:07 Luverse flock[967940]: INFO         |   androidboot.hardware=ranchu
+Oct 05 19:13:07 Luverse flock[967940]: INFO         |   androidboot.hardware.gltransport=pipe
+Oct 05 19:13:07 Luverse flock[967940]: INFO         |   androidboot.logcat=*:V
+Oct 05 19:13:07 Luverse flock[967940]: INFO         |   androidboot.opengles.version=196608
+Oct 05 19:13:07 Luverse flock[967940]: INFO         |   androidboot.qemu=1
+Oct 05 19:13:07 Luverse flock[967940]: INFO         |   androidboot.qemu.adb.pubkey=QAAAAPVFQ4WjgQJk0NxLm1Ilj1mMQ435Obw7LWoJh6JPgJwGIUGm4oRxZ7zIBCpLLc4ku5ULsOPWx/tYIbD9xQ4nI3BycfRnj6iRvXkUliN80NE9lOmrmN7ObrPGzuMtvfII6PPcgJAmuHrmyutwBga0f+zwy98RbGGZTZBU8QdELTlGCLr+kX1xh5jWwIllE94iOdudDrVmC9wH5jLt+0BojwLVPLVyAwS/v9EDS9u9+2R0i4aySwW/E1FYDoAPZbJ7goikhwshHIjJMbiUQ6VVP+lfuAULv9sBh7JxtsLYhT+e6OY3fx8/29pvRGByp68QAjLIRmx2MyZ6S7aWnObmhZiSKny15PbKzKhZY52FkClwLhQdfFr/Wk6u2NcqSxibUwpGpCcc4urPkIPhZnFUIWgoeqT7iJXLHZMHCPp7N/ynlkCE+U9aGFYIok5CWBH9GsThSnVI+fjxABr7NZW/J6OxuSwtf2duzr83tC7z8LDcy+AFsPmIAvsBMt3GyTJ3dTrUQIqP3HV4YfUbXDEbLChAUSrt0wDZib8xyPlL0wx4uZUFJ0k1qFLotJE/bPeceFBwo/x92AWE7hbSwrldMcKvMrPP2tC0WJ5C3z63C88oOZc+t2vP6sCjh3ABtCgkqWTFu+ym8iutS1JkS/MSj8CUsBfJycFpecaYr00K6sZafSWUmgEAAQA= louis@unknown
+Oct 05 19:13:07 Luverse flock[967940]: INFO         |   androidboot.qemu.avd_name=Fetchy_API_36
+Oct 05 19:13:07 Luverse flock[967940]: INFO         |   androidboot.qemu.camera_hq_edge_processing=0
+Oct 05 19:13:07 Luverse flock[967940]: INFO         |   androidboot.qemu.camera_protocol_ver=1
+Oct 05 19:13:07 Luverse flock[967940]: INFO         |   androidboot.qemu.cpuvulkan.version=4206592
+Oct 05 19:13:07 Luverse flock[967940]: INFO         |   androidboot.qemu.gltransport.drawFlushInterval=800
+Oct 05 19:13:07 Luverse flock[967940]: INFO         |   androidboot.qemu.gltransport.name=pipe
+Oct 05 19:13:07 Luverse flock[967940]: INFO         |   androidboot.qemu.hwcodec.avcdec=2
+Oct 05 19:13:07 Luverse flock[967940]: INFO         |   androidboot.qemu.hwcodec.hevcdec=2
+Oct 05 19:13:07 Luverse flock[967940]: INFO         |   androidboot.qemu.hwcodec.vpxdec=2
+Oct 05 19:13:07 Luverse flock[967940]: INFO         |   androidboot.qemu.settings.system.screen_off_timeout=2147483647
+Oct 05 19:13:07 Luverse flock[967940]: INFO         |   androidboot.qemu.skin=720x1280
+Oct 05 19:13:07 Luverse flock[967940]: INFO         |   androidboot.qemu.virtiowifi=1
+Oct 05 19:13:07 Luverse flock[967940]: INFO         |   androidboot.qemu.vsync=60
+Oct 05 19:13:07 Luverse flock[967940]: INFO         |   androidboot.serialno=EMULATOR37X1X11X0
+Oct 05 19:13:07 Luverse flock[967940]: INFO         |   androidboot.vbmeta.digest=7466b5c28e6a3e1427b22ed2c317c6c7066294bde838d4d5243cce5d37992bd5
+Oct 05 19:13:07 Luverse flock[967940]: INFO         |   androidboot.vbmeta.hash_alg=sha256
+Oct 05 19:13:07 Luverse flock[967940]: INFO         |   androidboot.vbmeta.size=6848
+Oct 05 19:13:07 Luverse flock[967940]: INFO         |   androidboot.veritymode=enforcing
+Oct 05 19:13:07 Luverse flock[967940]: WARNING: cannnot unmap ptr 0x7529efc01000 as it is in the protected range from 0x75294fc00000 to 0x7529efe00000
+Oct 05 19:13:07 Luverse flock[967940]: INFO         | Monitoring duration of emulator setup.
+Oct 05 19:13:07 Luverse flock[967940]: WARNING      | The emulator now requires a signed jwt token for gRPC access! Use the -grpc flag if you really want an open unprotected grpc port
+Oct 05 19:13:07 Luverse flock[967940]: INFO         | Using security allow list from: /home/louis/Android/Sdk/emulator/lib/emulator_access.json
+Oct 05 19:13:07 Luverse flock[967940]: INFO         | The active JSON Web Key Sets can be found here: /run/user/1000/avd/running/967940/jwks/a1ef5ecc-7809-48e0-868c-c20153d7edd4/active.jwk
+Oct 05 19:13:07 Luverse flock[967940]: INFO         | Scanning /run/user/1000/avd/running/967940/jwks/a1ef5ecc-7809-48e0-868c-c20153d7edd4 for jwk keys.
+Oct 05 19:13:07 Luverse flock[967940]: INFO         | Started GRPC server at 127.0.0.1:8554, security: Local, auth: +token
+Oct 05 19:13:07 Luverse flock[967940]: INFO         | Advertising in: /run/user/1000/avd/running/pid_967940.ini
+Oct 05 19:13:10 Luverse flock[967940]: INFO         | Activated packet streamer for bluetooth emulation
+Oct 05 19:13:10 Luverse flock[967940]: INFO         | Successfully initialized netsim WiFi
+Oct 05 19:13:10 Luverse flock[967940]: INFO         | Activated packet streamer for uwb emulation
+Oct 05 19:13:10 Luverse flock[967940]: INFO         | Setting display: 0 configuration to: 720x1280, dpi: 320x320
+Oct 05 19:13:10 Luverse flock[967940]: INFO         | setDisplayActiveConfig: id:0, 720x1280
+Oct 05 19:13:10 Luverse flock[967940]: INFO         | emulatorSetupEnvironment: Environment scene is not required
+Oct 05 19:13:10 Luverse flock[967940]: USER_INFO    | Emulator is performing a full startup. This may take upto two minutes, or more.
+Oct 05 19:16:55 Luverse systemd[1574]: Stopping fetchy-emulator-safe.service - /usr/bin/flock --nonblock --conflict-exit-code 75 /run/user/1000/build-safe.lock /home/louis/Android/Sdk/emulator/emulator -avd Fetchy_API_36 -no-window -no-audio -no-boot-anim -no-snapshot -gpu swiftshader -feature -Vulkan -memory 1536 -cores 2...
+Oct 05 19:16:55 Luverse flock[967940]: INFO         | Wait for emulator (pid 967940) 20 seconds to shutdown gracefully before kill;you can set environment variable ANDROID_EMULATOR_WAIT_TIME_BEFORE_KILL(in seconds) to change the default value (20 seconds)
+Oct 05 19:16:57 Luverse flock[981383]: [981383:981383:20261005,191657.667204:WARNING crashpad_client_linux.cc:431] prctl: Invalid argument (22)
+Oct 05 19:16:57 Luverse flock[967940]: USER_INFO    | Snapshots have been disabled by the user, save request is ignored.
+Oct 05 19:16:57 Luverse flock[967940]: INFO         | Saving snapshot 'default_boot' using 0 ms
+Oct 05 19:16:59 Luverse flock[967940]: ERROR        | stop: Not implemented
+Oct 05 19:17:03 Luverse flock[967940]: INFO         | removeAll
+Oct 05 19:17:03 Luverse flock[967940]: WARNING      | Netsim Wifi dns:///localhost:42695 is gone due to CANCELLED
+Oct 05 19:17:04 Luverse systemd[1574]: Stopped fetchy-emulator-safe.service - /usr/bin/flock --nonblock --conflict-exit-code 75 /run/user/1000/build-safe.lock /home/louis/Android/Sdk/emulator/emulator -avd Fetchy_API_36 -no-window -no-audio -no-boot-anim -no-snapshot -gpu swiftshader -feature -Vulkan -memory 1536 -cores 2.
+Oct 05 19:17:04 Luverse systemd[1574]: fetchy-emulator-safe.service: Consumed 4min 51.694s CPU time, 2.0G memory peak, 2.1M memory swap peak.
+Oct 05 19:18:07 Luverse systemd[1574]: Started fetchy-emulator-safe.service - /usr/bin/flock --nonblock --conflict-exit-code 75 /run/user/1000/build-safe.lock /home/louis/Documents/.dev/Fetchy/scripts/emulator_safe.sh run.
+Oct 05 19:18:07 Luverse flock[987583]: INFO         | Android emulator version 37.1.11.0 (build_id 15917651) (CL:N/A)
+Oct 05 19:18:07 Luverse flock[987583]: INFO         | Graphics backend: gfxstream
+Oct 05 19:18:07 Luverse flock[987583]: INFO         | Found systemPath /home/louis/Android/Sdk/system-images/android-36/google_apis/x86_64/
+Oct 05 19:18:07 Luverse flock[987583]: INFO         | Guest usage of host flag 'VulkanVirtualQueue' will be ignored.
+Oct 05 19:18:07 Luverse flock[987583]: INFO         | Feature 'Vulkan' (21) is overridden to 'disabled'
+Oct 05 19:18:07 Luverse flock[987583]: INFO         | Increasing RAM size to 2560MB
+Oct 05 19:18:07 Luverse flock[987583]: INFO         | Guest GLES Driver: Auto (ext controls)
+Oct 05 19:18:07 Luverse flock[987583]: INFO         | emuglConfig_init: vulkan_mode_selected:swiftshader gles_mode_selected:swiftshader
+Oct 05 19:18:07 Luverse flock[987583]: INFO         | Checking system compatibility:
+Oct 05 19:18:07 Luverse flock[987583]: INFO         |   Checking: hasSufficientDiskSpace
+Oct 05 19:18:07 Luverse flock[987583]: INFO         |      Ok: Disk space requirements to run avd: `Fetchy_API_36` are met
+Oct 05 19:18:07 Luverse flock[987583]: INFO         |   Checking: hasSufficientHwGpu
+Oct 05 19:18:07 Luverse flock[987583]: INFO         |      Ok: Hardware GPU compatibility checks are not required
+Oct 05 19:18:07 Luverse flock[987583]: INFO         |   Checking: hasSufficientSystem
+Oct 05 19:18:07 Luverse flock[987583]: INFO         |      Ok: System requirements to run avd: `Fetchy_API_36` are met
+Oct 05 19:18:07 Luverse flock[987583]: WARNING      | Feature QuickbootFileBacked is disabled due to stability issues, if you really want that, the environment variable ANDROID_EMU_FORCE_QUICKBOOT_FILE_BACKED need to set to 1
+Oct 05 19:18:07 Luverse flock[987583]: INFO         | Storing crashdata in: /tmp/android-louis/emu-crash-37.1.11.db, detection is enabled for process: 987583
+Oct 05 19:18:07 Luverse flock[987583]: INFO         | Initializing gfxstream backend
+Oct 05 19:18:07 Luverse flock[987583]: INFO         | startOpenglesRendererImpl: gpu info
+Oct 05 19:18:07 Luverse flock[987583]: INFO         |
+Oct 05 19:18:07 Luverse flock[987583]: INFO         | SharedLibrary::open for [libX11]
+Oct 05 19:18:07 Luverse flock[987583]: INFO         | SharedLibrary::open for [libX11-xcb]
+Oct 05 19:18:07 Luverse flock[987583]: WARNING      | Could not open libX11-xcb.so, try libX11-xcb.so.1
+Oct 05 19:18:07 Luverse flock[987583]: INFO         | SharedLibrary::open for [libX11-xcb.so.1]
+Oct 05 19:18:07 Luverse flock[987583]: INFO         | Graphics Adapter Vendor Google (Google Inc.)
+Oct 05 19:18:07 Luverse flock[987583]: INFO         | Graphics Adapter Android Emulator OpenGL ES Translator (Google SwiftShader)
+Oct 05 19:18:07 Luverse flock[987583]: INFO         | Graphics API Version OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1)
+Oct 05 19:18:07 Luverse flock[987583]: INFO         | Graphics API Extensions GL_OES_EGL_sync GL_OES_EGL_image GL_OES_EGL_image_external GL_OES_depth24 GL_OES_depth32 GL_OES_element_index_uint GL_OES_texture_float GL_OES_texture_float_linear GL_OES_compressed_paletted_texture GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth_texture GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_OES_packed_depth_stencil GL_OES_vertex_half_float GL_OES_standard_derivatives GL_OES_texture_npot GL_OES_rgb8_rgba8 GL_EXT_color_buffer_float GL_EXT_color_buffer_half_float GL_EXT_texture_format_BGRA8888 GL_APPLE_texture_format_BGRA8888
+Oct 05 19:18:07 Luverse flock[987583]: INFO         | Graphics Device Extensions N/A
+Oct 05 19:18:07 Luverse flock[987583]: INFO         | Sending adb public key [QAAAAPVFQ4WjgQJk0NxLm1Ilj1mMQ435Obw7LWoJh6JPgJwGIUGm4oRxZ7zIBCpLLc4ku5ULsOPWx/tYIbD9xQ4nI3BycfRnj6iRvXkUliN80NE9lOmrmN7ObrPGzuMtvfII6PPcgJAmuHrmyutwBga0f+zwy98RbGGZTZBU8QdELTlGCLr+kX1xh5jWwIllE94iOdudDrVmC9wH5jLt+0BojwLVPLVyAwS/v9EDS9u9+2R0i4aySwW/E1FYDoAPZbJ7goikhwshHIjJMbiUQ6VVP+lfuAULv9sBh7JxtsLYhT+e6OY3fx8/29pvRGByp68QAjLIRmx2MyZ6S7aWnObmhZiSKny15PbKzKhZY52FkClwLhQdfFr/Wk6u2NcqSxibUwpGpCcc4urPkIPhZnFUIWgoeqT7iJXLHZMHCPp7N/ynlkCE+U9aGFYIok5CWBH9GsThSnVI+fjxABr7NZW/J6OxuSwtf2duzr83tC7z8LDcy+AFsPmIAvsBMt3GyTJ3dTrUQIqP3HV4YfUbXDEbLChAUSrt0wDZib8xyPlL0wx4uZUFJ0k1qFLotJE/bPeceFBwo/x92AWE7hbSwrldMcKvMrPP2tC0WJ5C3z63C88oOZc+t2vP6sCjh3ABtCgkqWTFu+ym8iutS1JkS/MSj8CUsBfJycFpecaYr00K6sZafSWUmgEAAQA= louis@unknown]
+Oct 05 19:18:07 Luverse flock[987583]: INFO         | Userspace boot properties:
+Oct 05 19:18:07 Luverse flock[987583]: INFO         |   androidboot.boot_devices=pci0000:00/0000:00:03.0 pci0000:00/0000:00:06.0
+Oct 05 19:18:07 Luverse flock[987583]: INFO         |   androidboot.dalvik.vm.heapsize=576m
+Oct 05 19:18:07 Luverse flock[987583]: INFO         |   androidboot.debug.hwui.renderer=skiagl
+Oct 05 19:18:07 Luverse flock[987583]: INFO         |   androidboot.debug.sf.nobootanimation=1
+Oct 05 19:18:07 Luverse flock[987583]: INFO         |   androidboot.hardware=ranchu
+Oct 05 19:18:07 Luverse flock[987583]: INFO         |   androidboot.hardware.gltransport=pipe
+Oct 05 19:18:07 Luverse flock[987583]: INFO         |   androidboot.logcat=*:V
+Oct 05 19:18:07 Luverse flock[987583]: INFO         |   androidboot.opengles.version=196608
+Oct 05 19:18:07 Luverse flock[987583]: INFO         |   androidboot.qemu=1
+Oct 05 19:18:07 Luverse flock[987583]: INFO         |   androidboot.qemu.adb.pubkey=QAAAAPVFQ4WjgQJk0NxLm1Ilj1mMQ435Obw7LWoJh6JPgJwGIUGm4oRxZ7zIBCpLLc4ku5ULsOPWx/tYIbD9xQ4nI3BycfRnj6iRvXkUliN80NE9lOmrmN7ObrPGzuMtvfII6PPcgJAmuHrmyutwBga0f+zwy98RbGGZTZBU8QdELTlGCLr+kX1xh5jWwIllE94iOdudDrVmC9wH5jLt+0BojwLVPLVyAwS/v9EDS9u9+2R0i4aySwW/E1FYDoAPZbJ7goikhwshHIjJMbiUQ6VVP+lfuAULv9sBh7JxtsLYhT+e6OY3fx8/29pvRGByp68QAjLIRmx2MyZ6S7aWnObmhZiSKny15PbKzKhZY52FkClwLhQdfFr/Wk6u2NcqSxibUwpGpCcc4urPkIPhZnFUIWgoeqT7iJXLHZMHCPp7N/ynlkCE+U9aGFYIok5CWBH9GsThSnVI+fjxABr7NZW/J6OxuSwtf2duzr83tC7z8LDcy+AFsPmIAvsBMt3GyTJ3dTrUQIqP3HV4YfUbXDEbLChAUSrt0wDZib8xyPlL0wx4uZUFJ0k1qFLotJE/bPeceFBwo/x92AWE7hbSwrldMcKvMrPP2tC0WJ5C3z63C88oOZc+t2vP6sCjh3ABtCgkqWTFu+ym8iutS1JkS/MSj8CUsBfJycFpecaYr00K6sZafSWUmgEAAQA= louis@unknown
+Oct 05 19:18:07 Luverse flock[987583]: INFO         |   androidboot.qemu.avd_name=Fetchy_API_36
+Oct 05 19:18:07 Luverse flock[987583]: INFO         |   androidboot.qemu.camera_hq_edge_processing=0
+Oct 05 19:18:07 Luverse flock[987583]: INFO         |   androidboot.qemu.camera_protocol_ver=1
+Oct 05 19:18:07 Luverse flock[987583]: INFO         |   androidboot.qemu.cpuvulkan.version=4206592
+Oct 05 19:18:07 Luverse flock[987583]: INFO         |   androidboot.qemu.gltransport.drawFlushInterval=800
+Oct 05 19:18:07 Luverse flock[987583]: INFO         |   androidboot.qemu.gltransport.name=pipe
+Oct 05 19:18:07 Luverse flock[987583]: INFO         |   androidboot.qemu.hwcodec.avcdec=2
+Oct 05 19:18:07 Luverse flock[987583]: INFO         |   androidboot.qemu.hwcodec.hevcdec=2
+Oct 05 19:18:07 Luverse flock[987583]: INFO         |   androidboot.qemu.hwcodec.vpxdec=2
+Oct 05 19:18:07 Luverse flock[987583]: INFO         |   androidboot.qemu.settings.system.screen_off_timeout=2147483647
+Oct 05 19:18:07 Luverse flock[987583]: INFO         |   androidboot.qemu.skin=720x1280
+Oct 05 19:18:07 Luverse flock[987583]: INFO         |   androidboot.qemu.virtiowifi=1
+Oct 05 19:18:07 Luverse flock[987583]: INFO         |   androidboot.qemu.vsync=60
+Oct 05 19:18:07 Luverse flock[987583]: INFO         |   androidboot.serialno=EMULATOR37X1X11X0
+Oct 05 19:18:07 Luverse flock[987583]: INFO         |   androidboot.vbmeta.digest=7466b5c28e6a3e1427b22ed2c317c6c7066294bde838d4d5243cce5d37992bd5
+Oct 05 19:18:07 Luverse flock[987583]: INFO         |   androidboot.vbmeta.hash_alg=sha256
+Oct 05 19:18:07 Luverse flock[987583]: INFO         |   androidboot.vbmeta.size=6848
+Oct 05 19:18:07 Luverse flock[987583]: INFO         |   androidboot.veritymode=enforcing
+Oct 05 19:18:07 Luverse flock[987583]: WARNING: cannnot unmap ptr 0x70c348c01000 as it is in the protected range from 0x70c2a8c00000 to 0x70c348e00000
+Oct 05 19:18:07 Luverse flock[987583]: INFO         | Monitoring duration of emulator setup.
+Oct 05 19:18:07 Luverse flock[987583]: WARNING      | The emulator now requires a signed jwt token for gRPC access! Use the -grpc flag if you really want an open unprotected grpc port
+Oct 05 19:18:07 Luverse flock[987583]: INFO         | Using security allow list from: /home/louis/Android/Sdk/emulator/lib/emulator_access.json
+Oct 05 19:18:07 Luverse flock[987583]: INFO         | The active JSON Web Key Sets can be found here: /run/user/1000/avd/running/987583/jwks/88a657b3-1353-45c9-89b4-14c189916d78/active.jwk
+Oct 05 19:18:07 Luverse flock[987583]: INFO         | Scanning /run/user/1000/avd/running/987583/jwks/88a657b3-1353-45c9-89b4-14c189916d78 for jwk keys.
+Oct 05 19:18:07 Luverse flock[987583]: INFO         | Started GRPC server at 127.0.0.1:8554, security: Local, auth: +token
+Oct 05 19:18:07 Luverse flock[987583]: INFO         | Advertising in: /run/user/1000/avd/running/pid_987583.ini
+Oct 05 19:18:10 Luverse flock[987583]: INFO         | Activated packet streamer for bluetooth emulation
+Oct 05 19:18:10 Luverse flock[987583]: INFO         | Activated packet streamer for uwb emulation
+Oct 05 19:18:10 Luverse flock[987583]: INFO         | Successfully initialized netsim WiFi
+Oct 05 19:18:10 Luverse flock[987583]: INFO         | Setting display: 0 configuration to: 720x1280, dpi: 320x320
+Oct 05 19:18:10 Luverse flock[987583]: INFO         | setDisplayActiveConfig: id:0, 720x1280
+Oct 05 19:18:10 Luverse flock[987583]: INFO         | emulatorSetupEnvironment: Environment scene is not required
+Oct 05 19:18:10 Luverse flock[987583]: USER_INFO    | Emulator is performing a full startup. This may take upto two minutes, or more.
+Oct 05 19:18:47 Luverse flock[987583]: INFO         | Boot completed in 40277 ms
+Oct 05 19:18:47 Luverse flock[987583]: INFO         | Increasing screen off timeout, logcat buffer size to 2M.
+Oct 05 19:19:23 Luverse flock[987581]: Stopping Fetchy emulator: available=4523532KB memory_pressure=19%
+Oct 05 19:19:24 Luverse flock[987583]: INFO         | Wait for emulator (pid 987583) 20 seconds to shutdown gracefully before kill;you can set environment variable ANDROID_EMULATOR_WAIT_TIME_BEFORE_KILL(in seconds) to change the default value (20 seconds)
+Oct 05 19:19:24 Luverse flock[987583]: USER_INFO    | Snapshots have been disabled by the user, save request is ignored.
+Oct 05 19:19:24 Luverse flock[987583]: INFO         | Saving snapshot 'default_boot' using 0 ms
+Oct 05 19:19:25 Luverse flock[987583]: ERROR        | stop: Not implemented
+Oct 05 19:19:25 Luverse flock[987583]: INFO         | removeAll
+Oct 05 19:19:25 Luverse flock[987583]: WARNING      | Netsim Wifi dns:///localhost:41325 is gone due to Stream removed (CANCELLED)
+Oct 05 19:19:25 Luverse systemd[1574]: fetchy-emulator-safe.service: Main process exited, code=exited, status=75/TEMPFAIL
+Oct 05 19:19:26 Luverse systemd[1574]: fetchy-emulator-safe.service: Failed with result 'exit-code'.
+Oct 05 19:19:26 Luverse systemd[1574]: fetchy-emulator-safe.service: Consumed 1min 44.178s CPU time, 2.8G memory peak, 1.1M memory swap peak.
+Oct 05 19:19:57 Luverse systemd[1574]: Started fetchy-emulator-safe.service - /usr/bin/flock --nonblock --conflict-exit-code 75 /run/user/1000/build-safe.lock /home/louis/Documents/.dev/Fetchy/scripts/emulator_safe.sh run.
+Oct 05 19:19:57 Luverse flock[994168]: INFO         | Android emulator version 37.1.11.0 (build_id 15917651) (CL:N/A)
+Oct 05 19:19:57 Luverse flock[994168]: INFO         | Graphics backend: gfxstream
+Oct 05 19:19:57 Luverse flock[994168]: INFO         | Found systemPath /home/louis/Android/Sdk/system-images/android-36/google_apis/x86_64/
+Oct 05 19:19:57 Luverse flock[994168]: INFO         | Guest usage of host flag 'VulkanVirtualQueue' will be ignored.
+Oct 05 19:19:57 Luverse flock[994168]: INFO         | Feature 'Vulkan' (21) is overridden to 'disabled'
+Oct 05 19:19:57 Luverse flock[994168]: INFO         | Increasing RAM size to 2560MB
+Oct 05 19:19:57 Luverse flock[994168]: INFO         | Guest GLES Driver: Auto (ext controls)
+Oct 05 19:19:57 Luverse flock[994168]: INFO         | emuglConfig_init: vulkan_mode_selected:swiftshader gles_mode_selected:swiftshader
+Oct 05 19:19:57 Luverse flock[994168]: INFO         | Checking system compatibility:
+Oct 05 19:19:57 Luverse flock[994168]: INFO         |   Checking: hasSufficientDiskSpace
+Oct 05 19:19:57 Luverse flock[994168]: INFO         |      Ok: Disk space requirements to run avd: `Fetchy_API_36` are met
+Oct 05 19:19:57 Luverse flock[994168]: INFO         |   Checking: hasSufficientHwGpu
+Oct 05 19:19:57 Luverse flock[994168]: INFO         |      Ok: Hardware GPU compatibility checks are not required
+Oct 05 19:19:57 Luverse flock[994168]: INFO         |   Checking: hasSufficientSystem
+Oct 05 19:19:57 Luverse flock[994168]: INFO         |      Ok: System requirements to run avd: `Fetchy_API_36` are met
+Oct 05 19:19:57 Luverse flock[994168]: WARNING      | Feature QuickbootFileBacked is disabled due to stability issues, if you really want that, the environment variable ANDROID_EMU_FORCE_QUICKBOOT_FILE_BACKED need to set to 1
+Oct 05 19:19:57 Luverse flock[994168]: INFO         | Storing crashdata in: /tmp/android-louis/emu-crash-37.1.11.db, detection is enabled for process: 994168
+Oct 05 19:19:57 Luverse flock[994168]: INFO         | Initializing gfxstream backend
+Oct 05 19:19:57 Luverse flock[994168]: INFO         | startOpenglesRendererImpl: gpu info
+Oct 05 19:19:57 Luverse flock[994168]: INFO         |
+Oct 05 19:19:57 Luverse flock[994168]: INFO         | SharedLibrary::open for [libX11]
+Oct 05 19:19:57 Luverse flock[994168]: INFO         | SharedLibrary::open for [libX11-xcb]
+Oct 05 19:19:57 Luverse flock[994168]: WARNING      | Could not open libX11-xcb.so, try libX11-xcb.so.1
+Oct 05 19:19:57 Luverse flock[994168]: INFO         | SharedLibrary::open for [libX11-xcb.so.1]
+Oct 05 19:19:57 Luverse flock[994168]: INFO         | Graphics Adapter Vendor Google (Google Inc.)
+Oct 05 19:19:57 Luverse flock[994168]: INFO         | Graphics Adapter Android Emulator OpenGL ES Translator (Google SwiftShader)
+Oct 05 19:19:57 Luverse flock[994168]: INFO         | Graphics API Version OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1)
+Oct 05 19:19:57 Luverse flock[994168]: INFO         | Graphics API Extensions GL_OES_EGL_sync GL_OES_EGL_image GL_OES_EGL_image_external GL_OES_depth24 GL_OES_depth32 GL_OES_element_index_uint GL_OES_texture_float GL_OES_texture_float_linear GL_OES_compressed_paletted_texture GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth_texture GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_OES_packed_depth_stencil GL_OES_vertex_half_float GL_OES_standard_derivatives GL_OES_texture_npot GL_OES_rgb8_rgba8 GL_EXT_color_buffer_float GL_EXT_color_buffer_half_float GL_EXT_texture_format_BGRA8888 GL_APPLE_texture_format_BGRA8888
+Oct 05 19:19:57 Luverse flock[994168]: INFO         | Graphics Device Extensions N/A
+Oct 05 19:19:57 Luverse flock[994168]: INFO         | Sending adb public key [QAAAAPVFQ4WjgQJk0NxLm1Ilj1mMQ435Obw7LWoJh6JPgJwGIUGm4oRxZ7zIBCpLLc4ku5ULsOPWx/tYIbD9xQ4nI3BycfRnj6iRvXkUliN80NE9lOmrmN7ObrPGzuMtvfII6PPcgJAmuHrmyutwBga0f+zwy98RbGGZTZBU8QdELTlGCLr+kX1xh5jWwIllE94iOdudDrVmC9wH5jLt+0BojwLVPLVyAwS/v9EDS9u9+2R0i4aySwW/E1FYDoAPZbJ7goikhwshHIjJMbiUQ6VVP+lfuAULv9sBh7JxtsLYhT+e6OY3fx8/29pvRGByp68QAjLIRmx2MyZ6S7aWnObmhZiSKny15PbKzKhZY52FkClwLhQdfFr/Wk6u2NcqSxibUwpGpCcc4urPkIPhZnFUIWgoeqT7iJXLHZMHCPp7N/ynlkCE+U9aGFYIok5CWBH9GsThSnVI+fjxABr7NZW/J6OxuSwtf2duzr83tC7z8LDcy+AFsPmIAvsBMt3GyTJ3dTrUQIqP3HV4YfUbXDEbLChAUSrt0wDZib8xyPlL0wx4uZUFJ0k1qFLotJE/bPeceFBwo/x92AWE7hbSwrldMcKvMrPP2tC0WJ5C3z63C88oOZc+t2vP6sCjh3ABtCgkqWTFu+ym8iutS1JkS/MSj8CUsBfJycFpecaYr00K6sZafSWUmgEAAQA= louis@unknown]
+Oct 05 19:19:57 Luverse flock[994168]: INFO         | Userspace boot properties:
+Oct 05 19:19:57 Luverse flock[994168]: INFO         |   androidboot.boot_devices=pci0000:00/0000:00:03.0 pci0000:00/0000:00:06.0
+Oct 05 19:19:57 Luverse flock[994168]: INFO         |   androidboot.dalvik.vm.heapsize=576m
+Oct 05 19:19:57 Luverse flock[994168]: INFO         |   androidboot.debug.hwui.renderer=skiagl
+Oct 05 19:19:57 Luverse flock[994168]: INFO         |   androidboot.debug.sf.nobootanimation=1
+Oct 05 19:19:57 Luverse flock[994168]: INFO         |   androidboot.hardware=ranchu
+Oct 05 19:19:57 Luverse flock[994168]: INFO         |   androidboot.hardware.gltransport=pipe
+Oct 05 19:19:57 Luverse flock[994168]: INFO         |   androidboot.logcat=*:V
+Oct 05 19:19:57 Luverse flock[994168]: INFO         |   androidboot.opengles.version=196608
+Oct 05 19:19:57 Luverse flock[994168]: INFO         |   androidboot.qemu=1
+Oct 05 19:19:57 Luverse flock[994168]: INFO         |   androidboot.qemu.adb.pubkey=QAAAAPVFQ4WjgQJk0NxLm1Ilj1mMQ435Obw7LWoJh6JPgJwGIUGm4oRxZ7zIBCpLLc4ku5ULsOPWx/tYIbD9xQ4nI3BycfRnj6iRvXkUliN80NE9lOmrmN7ObrPGzuMtvfII6PPcgJAmuHrmyutwBga0f+zwy98RbGGZTZBU8QdELTlGCLr+kX1xh5jWwIllE94iOdudDrVmC9wH5jLt+0BojwLVPLVyAwS/v9EDS9u9+2R0i4aySwW/E1FYDoAPZbJ7goikhwshHIjJMbiUQ6VVP+lfuAULv9sBh7JxtsLYhT+e6OY3fx8/29pvRGByp68QAjLIRmx2MyZ6S7aWnObmhZiSKny15PbKzKhZY52FkClwLhQdfFr/Wk6u2NcqSxibUwpGpCcc4urPkIPhZnFUIWgoeqT7iJXLHZMHCPp7N/ynlkCE+U9aGFYIok5CWBH9GsThSnVI+fjxABr7NZW/J6OxuSwtf2duzr83tC7z8LDcy+AFsPmIAvsBMt3GyTJ3dTrUQIqP3HV4YfUbXDEbLChAUSrt0wDZib8xyPlL0wx4uZUFJ0k1qFLotJE/bPeceFBwo/x92AWE7hbSwrldMcKvMrPP2tC0WJ5C3z63C88oOZc+t2vP6sCjh3ABtCgkqWTFu+ym8iutS1JkS/MSj8CUsBfJycFpecaYr00K6sZafSWUmgEAAQA= louis@unknown
+Oct 05 19:19:57 Luverse flock[994168]: INFO         |   androidboot.qemu.avd_name=Fetchy_API_36
+Oct 05 19:19:57 Luverse flock[994168]: INFO         |   androidboot.qemu.camera_hq_edge_processing=0
+Oct 05 19:19:57 Luverse flock[994168]: INFO         |   androidboot.qemu.camera_protocol_ver=1
+Oct 05 19:19:57 Luverse flock[994168]: INFO         |   androidboot.qemu.cpuvulkan.version=4206592
+Oct 05 19:19:57 Luverse flock[994168]: INFO         |   androidboot.qemu.gltransport.drawFlushInterval=800
+Oct 05 19:19:57 Luverse flock[994168]: INFO         |   androidboot.qemu.gltransport.name=pipe
+Oct 05 19:19:57 Luverse flock[994168]: INFO         |   androidboot.qemu.hwcodec.avcdec=2
+Oct 05 19:19:57 Luverse flock[994168]: INFO         |   androidboot.qemu.hwcodec.hevcdec=2
+Oct 05 19:19:57 Luverse flock[994168]: INFO         |   androidboot.qemu.hwcodec.vpxdec=2
+Oct 05 19:19:57 Luverse flock[994168]: INFO         |   androidboot.qemu.settings.system.screen_off_timeout=2147483647
+Oct 05 19:19:57 Luverse flock[994168]: INFO         |   androidboot.qemu.skin=540x960
+Oct 05 19:19:57 Luverse flock[994168]: INFO         |   androidboot.qemu.virtiowifi=1
+Oct 05 19:19:57 Luverse flock[994168]: INFO         |   androidboot.qemu.vsync=60
+Oct 05 19:19:57 Luverse flock[994168]: INFO         |   androidboot.serialno=EMULATOR37X1X11X0
+Oct 05 19:19:57 Luverse flock[994168]: INFO         |   androidboot.vbmeta.digest=7466b5c28e6a3e1427b22ed2c317c6c7066294bde838d4d5243cce5d37992bd5
+Oct 05 19:19:57 Luverse flock[994168]: INFO         |   androidboot.vbmeta.hash_alg=sha256
+Oct 05 19:19:57 Luverse flock[994168]: INFO         |   androidboot.vbmeta.size=6848
+Oct 05 19:19:57 Luverse flock[994168]: INFO         |   androidboot.veritymode=enforcing
+Oct 05 19:19:57 Luverse flock[994168]: WARNING: cannnot unmap ptr 0x7ab2b1601000 as it is in the protected range from 0x7ab211600000 to 0x7ab2b1800000
+Oct 05 19:19:57 Luverse flock[994168]: INFO         | Monitoring duration of emulator setup.
+Oct 05 19:19:57 Luverse flock[994168]: WARNING      | The emulator now requires a signed jwt token for gRPC access! Use the -grpc flag if you really want an open unprotected grpc port
+Oct 05 19:19:57 Luverse flock[994168]: INFO         | Using security allow list from: /home/louis/Android/Sdk/emulator/lib/emulator_access.json
+Oct 05 19:19:57 Luverse flock[994168]: INFO         | The active JSON Web Key Sets can be found here: /run/user/1000/avd/running/994168/jwks/3e6d7076-1569-4500-85fc-41345c4c8a01/active.jwk
+Oct 05 19:19:57 Luverse flock[994168]: INFO         | Scanning /run/user/1000/avd/running/994168/jwks/3e6d7076-1569-4500-85fc-41345c4c8a01 for jwk keys.
+Oct 05 19:19:57 Luverse flock[994168]: INFO         | Started GRPC server at 127.0.0.1:8554, security: Local, auth: +token
+Oct 05 19:19:57 Luverse flock[994168]: INFO         | Advertising in: /run/user/1000/avd/running/pid_994168.ini
+Oct 05 19:20:00 Luverse flock[994168]: INFO         | Successfully initialized netsim WiFi
+Oct 05 19:20:00 Luverse flock[994168]: INFO         | Activated packet streamer for uwb emulation
+Oct 05 19:20:00 Luverse flock[994168]: INFO         | Activated packet streamer for bluetooth emulation
+Oct 05 19:20:00 Luverse flock[994168]: INFO         | Setting display: 0 configuration to: 540x960, dpi: 240x240
+Oct 05 19:20:00 Luverse flock[994168]: INFO         | setDisplayActiveConfig: id:0, 540x960
+Oct 05 19:20:00 Luverse flock[994168]: INFO         | emulatorSetupEnvironment: Environment scene is not required
+Oct 05 19:20:00 Luverse flock[994168]: USER_INFO    | Emulator is performing a full startup. This may take upto two minutes, or more.
+Oct 05 19:20:35 Luverse flock[994168]: INFO         | Boot completed in 38115 ms
+Oct 05 19:20:35 Luverse flock[994168]: INFO         | Increasing screen off timeout, logcat buffer size to 2M.
+Oct 05 19:20:59 Luverse flock[994166]: Stopping Fetchy emulator: available=5145420KB memory_pressure=23%
+Oct 05 19:21:01 Luverse flock[994168]: INFO         | Wait for emulator (pid 994168) 20 seconds to shutdown gracefully before kill;you can set environment variable ANDROID_EMULATOR_WAIT_TIME_BEFORE_KILL(in seconds) to change the default value (20 seconds)
+Oct 05 19:21:02 Luverse flock[994168]: USER_INFO    | Snapshots have been disabled by the user, save request is ignored.
+Oct 05 19:21:02 Luverse flock[994168]: INFO         | Saving snapshot 'default_boot' using 0 ms
+Oct 05 19:21:04 Luverse flock[994168]: ERROR        | stop: Not implemented
+Oct 05 19:21:05 Luverse flock[994168]: INFO         | removeAll
+Oct 05 19:21:05 Luverse flock[994168]: WARNING      | Netsim Wifi dns:///localhost:35245 is gone due to Stream removed (CANCELLED)
+Oct 05 19:21:05 Luverse systemd[1574]: fetchy-emulator-safe.service: Main process exited, code=exited, status=75/TEMPFAIL
+Oct 05 19:21:06 Luverse systemd[1574]: fetchy-emulator-safe.service: Failed with result 'exit-code'.
+Oct 05 19:21:06 Luverse systemd[1574]: fetchy-emulator-safe.service: Consumed 1min 15.261s CPU time, 2.8G memory peak, 576.0K memory swap peak.
+Oct 05 19:21:45 Luverse systemd[1574]: Started fetchy-emulator-safe.service - /usr/bin/flock --nonblock --conflict-exit-code 75 /run/user/1000/build-safe.lock /home/louis/Documents/.dev/Fetchy/scripts/emulator_safe.sh run.
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         | Android emulator version 37.1.11.0 (build_id 15917651) (CL:N/A)
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         | Graphics backend: gfxstream
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         | Found systemPath /home/louis/Android/Sdk/system-images/android-36/google_apis/x86_64/
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         | Guest usage of host flag 'VulkanVirtualQueue' will be ignored.
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         | Feature 'Vulkan' (21) is overridden to 'disabled'
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         | Increasing RAM size to 2560MB
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         | Guest GLES Driver: Auto (ext controls)
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         | emuglConfig_init: vulkan_mode_selected:swiftshader gles_mode_selected:swiftshader
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         | Checking system compatibility:
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         |   Checking: hasSufficientDiskSpace
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         |      Ok: Disk space requirements to run avd: `Fetchy_API_36` are met
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         |   Checking: hasSufficientHwGpu
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         |      Ok: Hardware GPU compatibility checks are not required
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         |   Checking: hasSufficientSystem
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         |      Ok: System requirements to run avd: `Fetchy_API_36` are met
+Oct 05 19:21:45 Luverse flock[1000645]: WARNING      | Feature QuickbootFileBacked is disabled due to stability issues, if you really want that, the environment variable ANDROID_EMU_FORCE_QUICKBOOT_FILE_BACKED need to set to 1
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         | Storing crashdata in: /tmp/android-louis/emu-crash-37.1.11.db, detection is enabled for process: 1000645
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         | Initializing gfxstream backend
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         | startOpenglesRendererImpl: gpu info
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         |
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         | SharedLibrary::open for [libX11]
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         | SharedLibrary::open for [libX11-xcb]
+Oct 05 19:21:45 Luverse flock[1000645]: WARNING      | Could not open libX11-xcb.so, try libX11-xcb.so.1
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         | SharedLibrary::open for [libX11-xcb.so.1]
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         | Graphics Adapter Vendor Google (Google Inc.)
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         | Graphics Adapter Android Emulator OpenGL ES Translator (Google SwiftShader)
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         | Graphics API Version OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1)
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         | Graphics API Extensions GL_OES_EGL_sync GL_OES_EGL_image GL_OES_EGL_image_external GL_OES_depth24 GL_OES_depth32 GL_OES_element_index_uint GL_OES_texture_float GL_OES_texture_float_linear GL_OES_compressed_paletted_texture GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth_texture GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_OES_packed_depth_stencil GL_OES_vertex_half_float GL_OES_standard_derivatives GL_OES_texture_npot GL_OES_rgb8_rgba8 GL_EXT_color_buffer_float GL_EXT_color_buffer_half_float GL_EXT_texture_format_BGRA8888 GL_APPLE_texture_format_BGRA8888
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         | Graphics Device Extensions N/A
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         | Sending adb public key [QAAAAPVFQ4WjgQJk0NxLm1Ilj1mMQ435Obw7LWoJh6JPgJwGIUGm4oRxZ7zIBCpLLc4ku5ULsOPWx/tYIbD9xQ4nI3BycfRnj6iRvXkUliN80NE9lOmrmN7ObrPGzuMtvfII6PPcgJAmuHrmyutwBga0f+zwy98RbGGZTZBU8QdELTlGCLr+kX1xh5jWwIllE94iOdudDrVmC9wH5jLt+0BojwLVPLVyAwS/v9EDS9u9+2R0i4aySwW/E1FYDoAPZbJ7goikhwshHIjJMbiUQ6VVP+lfuAULv9sBh7JxtsLYhT+e6OY3fx8/29pvRGByp68QAjLIRmx2MyZ6S7aWnObmhZiSKny15PbKzKhZY52FkClwLhQdfFr/Wk6u2NcqSxibUwpGpCcc4urPkIPhZnFUIWgoeqT7iJXLHZMHCPp7N/ynlkCE+U9aGFYIok5CWBH9GsThSnVI+fjxABr7NZW/J6OxuSwtf2duzr83tC7z8LDcy+AFsPmIAvsBMt3GyTJ3dTrUQIqP3HV4YfUbXDEbLChAUSrt0wDZib8xyPlL0wx4uZUFJ0k1qFLotJE/bPeceFBwo/x92AWE7hbSwrldMcKvMrPP2tC0WJ5C3z63C88oOZc+t2vP6sCjh3ABtCgkqWTFu+ym8iutS1JkS/MSj8CUsBfJycFpecaYr00K6sZafSWUmgEAAQA= louis@unknown]
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         | Userspace boot properties:
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         |   androidboot.boot_devices=pci0000:00/0000:00:03.0 pci0000:00/0000:00:06.0
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         |   androidboot.dalvik.vm.heapsize=576m
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         |   androidboot.debug.hwui.renderer=skiagl
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         |   androidboot.debug.sf.nobootanimation=1
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         |   androidboot.hardware=ranchu
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         |   androidboot.hardware.gltransport=pipe
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         |   androidboot.logcat=*:V
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         |   androidboot.opengles.version=196608
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         |   androidboot.qemu=1
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         |   androidboot.qemu.adb.pubkey=QAAAAPVFQ4WjgQJk0NxLm1Ilj1mMQ435Obw7LWoJh6JPgJwGIUGm4oRxZ7zIBCpLLc4ku5ULsOPWx/tYIbD9xQ4nI3BycfRnj6iRvXkUliN80NE9lOmrmN7ObrPGzuMtvfII6PPcgJAmuHrmyutwBga0f+zwy98RbGGZTZBU8QdELTlGCLr+kX1xh5jWwIllE94iOdudDrVmC9wH5jLt+0BojwLVPLVyAwS/v9EDS9u9+2R0i4aySwW/E1FYDoAPZbJ7goikhwshHIjJMbiUQ6VVP+lfuAULv9sBh7JxtsLYhT+e6OY3fx8/29pvRGByp68QAjLIRmx2MyZ6S7aWnObmhZiSKny15PbKzKhZY52FkClwLhQdfFr/Wk6u2NcqSxibUwpGpCcc4urPkIPhZnFUIWgoeqT7iJXLHZMHCPp7N/ynlkCE+U9aGFYIok5CWBH9GsThSnVI+fjxABr7NZW/J6OxuSwtf2duzr83tC7z8LDcy+AFsPmIAvsBMt3GyTJ3dTrUQIqP3HV4YfUbXDEbLChAUSrt0wDZib8xyPlL0wx4uZUFJ0k1qFLotJE/bPeceFBwo/x92AWE7hbSwrldMcKvMrPP2tC0WJ5C3z63C88oOZc+t2vP6sCjh3ABtCgkqWTFu+ym8iutS1JkS/MSj8CUsBfJycFpecaYr00K6sZafSWUmgEAAQA= louis@unknown
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         |   androidboot.qemu.avd_name=Fetchy_API_36
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         |   androidboot.qemu.camera_hq_edge_processing=0
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         |   androidboot.qemu.camera_protocol_ver=1
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         |   androidboot.qemu.cpuvulkan.version=4206592
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         |   androidboot.qemu.gltransport.drawFlushInterval=800
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         |   androidboot.qemu.gltransport.name=pipe
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         |   androidboot.qemu.hwcodec.avcdec=2
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         |   androidboot.qemu.hwcodec.hevcdec=2
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         |   androidboot.qemu.hwcodec.vpxdec=2
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         |   androidboot.qemu.settings.system.screen_off_timeout=2147483647
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         |   androidboot.qemu.skin=540x960
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         |   androidboot.qemu.virtiowifi=1
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         |   androidboot.qemu.vsync=60
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         |   androidboot.serialno=EMULATOR37X1X11X0
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         |   androidboot.vbmeta.digest=7466b5c28e6a3e1427b22ed2c317c6c7066294bde838d4d5243cce5d37992bd5
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         |   androidboot.vbmeta.hash_alg=sha256
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         |   androidboot.vbmeta.size=6848
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         |   androidboot.veritymode=enforcing
+Oct 05 19:21:45 Luverse flock[1000645]: WARNING: cannnot unmap ptr 0x7be807601000 as it is in the protected range from 0x7be767600000 to 0x7be807800000
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         | Monitoring duration of emulator setup.
+Oct 05 19:21:45 Luverse flock[1000645]: WARNING      | The emulator now requires a signed jwt token for gRPC access! Use the -grpc flag if you really want an open unprotected grpc port
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         | Using security allow list from: /home/louis/Android/Sdk/emulator/lib/emulator_access.json
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         | The active JSON Web Key Sets can be found here: /run/user/1000/avd/running/1000645/jwks/b5a3522f-e563-480d-a892-d06e8e5ded32/active.jwk
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         | Scanning /run/user/1000/avd/running/1000645/jwks/b5a3522f-e563-480d-a892-d06e8e5ded32 for jwk keys.
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         | Started GRPC server at 127.0.0.1:8554, security: Local, auth: +token
+Oct 05 19:21:45 Luverse flock[1000645]: INFO         | Advertising in: /run/user/1000/avd/running/pid_1000645.ini
+Oct 05 19:21:48 Luverse flock[1000645]: INFO         | Activated packet streamer for bluetooth emulation
+Oct 05 19:21:48 Luverse flock[1000645]: INFO         | Successfully initialized netsim WiFi
+Oct 05 19:21:48 Luverse flock[1000645]: INFO         | Activated packet streamer for uwb emulation
+Oct 05 19:21:48 Luverse flock[1000645]: INFO         | Setting display: 0 configuration to: 540x960, dpi: 240x240
+Oct 05 19:21:48 Luverse flock[1000645]: INFO         | setDisplayActiveConfig: id:0, 540x960
+Oct 05 19:21:48 Luverse flock[1000645]: INFO         | emulatorSetupEnvironment: Environment scene is not required
+Oct 05 19:21:48 Luverse flock[1000645]: USER_INFO    | Emulator is performing a full startup. This may take upto two minutes, or more.
+Oct 05 19:22:23 Luverse flock[1000645]: INFO         | Boot completed in 37740 ms
+Oct 05 19:22:23 Luverse flock[1000645]: INFO         | Increasing screen off timeout, logcat buffer size to 2M.
+Oct 05 19:23:01 Luverse flock[1000645]: ERROR        | Failed to find ColorBuffer: 149
+Oct 05 19:26:28 Luverse flock[1000645]: ERROR        | bad color buffer handle 431
+Oct 05 19:27:15 Luverse systemd[1574]: Stopping fetchy-emulator-safe.service - /usr/bin/flock --nonblock --conflict-exit-code 75 /run/user/1000/build-safe.lock /home/louis/Documents/.dev/Fetchy/scripts/emulator_safe.sh run...
+Oct 05 19:27:15 Luverse flock[1000645]: INFO         | Wait for emulator (pid 1000645) 20 seconds to shutdown gracefully before kill;you can set environment variable ANDROID_EMULATOR_WAIT_TIME_BEFORE_KILL(in seconds) to change the default value (20 seconds)
+Oct 05 19:27:15 Luverse flock[1000645]: USER_INFO    | Snapshots have been disabled by the user, save request is ignored.
+Oct 05 19:27:15 Luverse flock[1000645]: INFO         | Saving snapshot 'default_boot' using 0 ms
+Oct 05 19:27:15 Luverse flock[1022007]: [1022007:1022007:20261005,192715.320955:WARNING crashpad_client_linux.cc:431] prctl: Invalid argument (22)
+Oct 05 19:27:15 Luverse flock[1000645]: ERROR        | stop: Not implemented
+Oct 05 19:27:15 Luverse flock[1000645]: INFO         | removeAll
+Oct 05 19:27:15 Luverse flock[1000645]: WARNING      | Netsim Wifi dns:///localhost:38573 is gone due to Stream removed (CANCELLED)
+Oct 05 19:27:17 Luverse systemd[1574]: Stopped fetchy-emulator-safe.service - /usr/bin/flock --nonblock --conflict-exit-code 75 /run/user/1000/build-safe.lock /home/louis/Documents/.dev/Fetchy/scripts/emulator_safe.sh run.
+Oct 05 19:27:17 Luverse systemd[1574]: fetchy-emulator-safe.service: Consumed 4min 40.376s CPU time, 4.0G memory peak, 0B memory swap peak.
+Oct 05 19:27:55 Luverse systemd[1574]: Started fetchy-emulator-safe.service - /usr/bin/flock --nonblock --conflict-exit-code 75 /run/user/1000/build-safe.lock /home/louis/Documents/.dev/Fetchy/scripts/emulator_safe.sh run.
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         | Android emulator version 37.1.11.0 (build_id 15917651) (CL:N/A)
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         | Graphics backend: gfxstream
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         | Found systemPath /home/louis/Android/Sdk/system-images/android-36/google_apis/x86_64/
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         | Guest usage of host flag 'VulkanVirtualQueue' will be ignored.
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         | Feature 'Vulkan' (21) is overridden to 'disabled'
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         | Increasing RAM size to 2560MB
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         | Guest GLES Driver: Auto (ext controls)
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         | emuglConfig_init: vulkan_mode_selected:swiftshader gles_mode_selected:swiftshader
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         | Checking system compatibility:
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         |   Checking: hasSufficientDiskSpace
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         |      Ok: Disk space requirements to run avd: `Fetchy_API_36` are met
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         |   Checking: hasSufficientHwGpu
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         |      Ok: Hardware GPU compatibility checks are not required
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         |   Checking: hasSufficientSystem
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         |      Ok: System requirements to run avd: `Fetchy_API_36` are met
+Oct 05 19:27:55 Luverse flock[1024925]: WARNING      | Feature QuickbootFileBacked is disabled due to stability issues, if you really want that, the environment variable ANDROID_EMU_FORCE_QUICKBOOT_FILE_BACKED need to set to 1
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         | Storing crashdata in: /tmp/android-louis/emu-crash-37.1.11.db, detection is enabled for process: 1024925
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         | Initializing gfxstream backend
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         | startOpenglesRendererImpl: gpu info
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         |
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         | SharedLibrary::open for [libX11]
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         | SharedLibrary::open for [libX11-xcb]
+Oct 05 19:27:55 Luverse flock[1024925]: WARNING      | Could not open libX11-xcb.so, try libX11-xcb.so.1
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         | SharedLibrary::open for [libX11-xcb.so.1]
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         | Graphics Adapter Vendor Google (Google Inc.)
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         | Graphics Adapter Android Emulator OpenGL ES Translator (Google SwiftShader)
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         | Graphics API Version OpenGL ES 3.0 (OpenGL ES 3.0 SwiftShader 4.0.0.1)
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         | Graphics API Extensions GL_OES_EGL_sync GL_OES_EGL_image GL_OES_EGL_image_external GL_OES_depth24 GL_OES_depth32 GL_OES_element_index_uint GL_OES_texture_float GL_OES_texture_float_linear GL_OES_compressed_paletted_texture GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth_texture GL_OES_texture_half_float GL_OES_texture_half_float_linear GL_OES_packed_depth_stencil GL_OES_vertex_half_float GL_OES_standard_derivatives GL_OES_texture_npot GL_OES_rgb8_rgba8 GL_EXT_color_buffer_float GL_EXT_color_buffer_half_float GL_EXT_texture_format_BGRA8888 GL_APPLE_texture_format_BGRA8888
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         | Graphics Device Extensions N/A
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         | Sending adb public key [QAAAAPVFQ4WjgQJk0NxLm1Ilj1mMQ435Obw7LWoJh6JPgJwGIUGm4oRxZ7zIBCpLLc4ku5ULsOPWx/tYIbD9xQ4nI3BycfRnj6iRvXkUliN80NE9lOmrmN7ObrPGzuMtvfII6PPcgJAmuHrmyutwBga0f+zwy98RbGGZTZBU8QdELTlGCLr+kX1xh5jWwIllE94iOdudDrVmC9wH5jLt+0BojwLVPLVyAwS/v9EDS9u9+2R0i4aySwW/E1FYDoAPZbJ7goikhwshHIjJMbiUQ6VVP+lfuAULv9sBh7JxtsLYhT+e6OY3fx8/29pvRGByp68QAjLIRmx2MyZ6S7aWnObmhZiSKny15PbKzKhZY52FkClwLhQdfFr/Wk6u2NcqSxibUwpGpCcc4urPkIPhZnFUIWgoeqT7iJXLHZMHCPp7N/ynlkCE+U9aGFYIok5CWBH9GsThSnVI+fjxABr7NZW/J6OxuSwtf2duzr83tC7z8LDcy+AFsPmIAvsBMt3GyTJ3dTrUQIqP3HV4YfUbXDEbLChAUSrt0wDZib8xyPlL0wx4uZUFJ0k1qFLotJE/bPeceFBwo/x92AWE7hbSwrldMcKvMrPP2tC0WJ5C3z63C88oOZc+t2vP6sCjh3ABtCgkqWTFu+ym8iutS1JkS/MSj8CUsBfJycFpecaYr00K6sZafSWUmgEAAQA= louis@unknown]
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         | Userspace boot properties:
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         |   androidboot.boot_devices=pci0000:00/0000:00:03.0 pci0000:00/0000:00:06.0
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         |   androidboot.dalvik.vm.heapsize=576m
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         |   androidboot.debug.hwui.renderer=skiagl
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         |   androidboot.debug.sf.nobootanimation=1
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         |   androidboot.hardware=ranchu
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         |   androidboot.hardware.gltransport=pipe
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         |   androidboot.logcat=*:V
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         |   androidboot.opengles.version=196608
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         |   androidboot.qemu=1
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         |   androidboot.qemu.adb.pubkey=QAAAAPVFQ4WjgQJk0NxLm1Ilj1mMQ435Obw7LWoJh6JPgJwGIUGm4oRxZ7zIBCpLLc4ku5ULsOPWx/tYIbD9xQ4nI3BycfRnj6iRvXkUliN80NE9lOmrmN7ObrPGzuMtvfII6PPcgJAmuHrmyutwBga0f+zwy98RbGGZTZBU8QdELTlGCLr+kX1xh5jWwIllE94iOdudDrVmC9wH5jLt+0BojwLVPLVyAwS/v9EDS9u9+2R0i4aySwW/E1FYDoAPZbJ7goikhwshHIjJMbiUQ6VVP+lfuAULv9sBh7JxtsLYhT+e6OY3fx8/29pvRGByp68QAjLIRmx2MyZ6S7aWnObmhZiSKny15PbKzKhZY52FkClwLhQdfFr/Wk6u2NcqSxibUwpGpCcc4urPkIPhZnFUIWgoeqT7iJXLHZMHCPp7N/ynlkCE+U9aGFYIok5CWBH9GsThSnVI+fjxABr7NZW/J6OxuSwtf2duzr83tC7z8LDcy+AFsPmIAvsBMt3GyTJ3dTrUQIqP3HV4YfUbXDEbLChAUSrt0wDZib8xyPlL0wx4uZUFJ0k1qFLotJE/bPeceFBwo/x92AWE7hbSwrldMcKvMrPP2tC0WJ5C3z63C88oOZc+t2vP6sCjh3ABtCgkqWTFu+ym8iutS1JkS/MSj8CUsBfJycFpecaYr00K6sZafSWUmgEAAQA= louis@unknown
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         |   androidboot.qemu.avd_name=Fetchy_API_36
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         |   androidboot.qemu.camera_hq_edge_processing=0
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         |   androidboot.qemu.camera_protocol_ver=1
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         |   androidboot.qemu.cpuvulkan.version=4206592
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         |   androidboot.qemu.gltransport.drawFlushInterval=800
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         |   androidboot.qemu.gltransport.name=pipe
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         |   androidboot.qemu.hwcodec.avcdec=2
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         |   androidboot.qemu.hwcodec.hevcdec=2
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         |   androidboot.qemu.hwcodec.vpxdec=2
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         |   androidboot.qemu.settings.system.screen_off_timeout=2147483647
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         |   androidboot.qemu.skin=540x960
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         |   androidboot.qemu.virtiowifi=1
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         |   androidboot.qemu.vsync=60
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         |   androidboot.serialno=EMULATOR37X1X11X0
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         |   androidboot.vbmeta.digest=7466b5c28e6a3e1427b22ed2c317c6c7066294bde838d4d5243cce5d37992bd5
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         |   androidboot.vbmeta.hash_alg=sha256
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         |   androidboot.vbmeta.size=6848
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         |   androidboot.veritymode=enforcing
+Oct 05 19:27:55 Luverse flock[1024925]: WARNING: cannnot unmap ptr 0x774bdf201000 as it is in the protected range from 0x774b3f200000 to 0x774bdf400000
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         | Monitoring duration of emulator setup.
+Oct 05 19:27:55 Luverse flock[1024925]: WARNING      | The emulator now requires a signed jwt token for gRPC access! Use the -grpc flag if you really want an open unprotected grpc port
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         | Using security allow list from: /home/louis/Android/Sdk/emulator/lib/emulator_access.json
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         | The active JSON Web Key Sets can be found here: /run/user/1000/avd/running/1024925/jwks/a6aa7588-f8b9-45c4-8c53-aec6aa643ae9/active.jwk
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         | Scanning /run/user/1000/avd/running/1024925/jwks/a6aa7588-f8b9-45c4-8c53-aec6aa643ae9 for jwk keys.
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         | Started GRPC server at 127.0.0.1:8554, security: Local, auth: +token
+Oct 05 19:27:55 Luverse flock[1024925]: INFO         | Advertising in: /run/user/1000/avd/running/pid_1024925.ini
+Oct 05 19:27:58 Luverse flock[1024925]: INFO         | Activated packet streamer for uwb emulation
+Oct 05 19:27:58 Luverse flock[1024925]: INFO         | Successfully initialized netsim WiFi
+Oct 05 19:27:58 Luverse flock[1024925]: INFO         | Activated packet streamer for bluetooth emulation
+Oct 05 19:27:58 Luverse flock[1024925]: INFO         | Setting display: 0 configuration to: 540x960, dpi: 240x240
+Oct 05 19:27:58 Luverse flock[1024925]: INFO         | setDisplayActiveConfig: id:0, 540x960
+Oct 05 19:27:58 Luverse flock[1024925]: INFO         | emulatorSetupEnvironment: Environment scene is not required
+Oct 05 19:27:58 Luverse flock[1024925]: USER_INFO    | Emulator is performing a full startup. This may take upto two minutes, or more.
+Oct 05 19:28:34 Luverse flock[1024925]: INFO         | Boot completed in 38797 ms
+Oct 05 19:28:34 Luverse flock[1024925]: INFO         | Increasing screen off timeout, logcat buffer size to 2M.
+Oct 05 19:29:10 Luverse flock[1024923]: /home/louis/Documents/.dev/Fetchy/scripts/emulator_safe.sh: line 8: 1024925 Segmentation fault      (core dumped) "$sdk/emulator/emulator" -avd Fetchy_API_36 -no-window -no-audio -no-boot-anim -no-snapshot -gpu swiftshader -feature -Vulkan -memory 1536 -cores 2
+Oct 05 19:29:10 Luverse systemd[1574]: fetchy-emulator-safe.service: Main process exited, code=exited, status=139/n/a
+Oct 05 19:29:10 Luverse systemd[1574]: fetchy-emulator-safe.service: Failed with result 'exit-code'.
+Oct 05 19:29:10 Luverse systemd[1574]: fetchy-emulator-safe.service: Consumed 1min 35.814s CPU time, 3.5G memory peak, 0B memory swap peak.

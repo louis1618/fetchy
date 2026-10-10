@@ -1,0 +1,1 @@
+An emulator is already running. Stop it before starting Fetchy_API_36.

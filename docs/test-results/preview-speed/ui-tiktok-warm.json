@@ -1,0 +1,15 @@
+{
+  "status": "ready",
+  "coldProcess": true,
+  "note": "UI polling time includes accessibility dump overhead",
+  "elapsedSeconds": 3.434,
+  "previewFrameMs": 339,
+  "previewImageMs": 825,
+  "selectionFrameMs": 340,
+  "performance": [
+    "I/FetchyAnalysis(21765): cache_hit elapsedMs=8",
+    "I/flutter (21765): FetchyPreview frame elapsedMs=339",
+    "I/flutter (21765): FetchySelection frame elapsedMs=340",
+    "I/flutter (21765): FetchyPreview image elapsedMs=825"
+  ]
+}

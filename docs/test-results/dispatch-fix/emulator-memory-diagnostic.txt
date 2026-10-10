@@ -1,0 +1,92 @@
+ControlGroup=/user.slice/user-1000.slice/user@1000.service/app.slice/fetchy-emulator-safe.service
+MemoryCurrent=4294905856
+MemoryPeak=4295884800
+CPUQuotaPerSecUSec=1.500000s
+MemoryHigh=infinity
+MemoryMax=4294967296
+MemorySwapMax=0
+
+memory.stat
+anon 3869069312
+file 398553088
+kernel 26894336
+kernel_stack 4538368
+pagetables 9859072
+sec_pagetables 4026368
+percpu 1344
+sock 40960
+vmalloc 163840
+shmem 16384
+zswap 0
+zswapped 0
+file_mapped 26251264
+file_dirty 4538368
+file_writeback 0
+swapcached 0
+anon_thp 643825664
+file_thp 0
+shmem_thp 0
+inactive_anon 0
+active_anon 3868962816
+inactive_file 354705408
+active_file 43794432
+unevictable 0
+slab_reclaimable 3581584
+slab_unreclaimable 4455024
+slab 8036608
+workingset_refault_anon 0
+workingset_refault_file 354427
+workingset_activate_anon 0
+workingset_activate_file 8699
+workingset_restore_anon 0
+workingset_restore_file 1944
+workingset_nodereclaim 0
+pgdemote_kswapd 0
+pgdemote_direct 0
+pgdemote_khugepaged 0
+pgdemote_proactive 0
+pgpromote_success 0
+pgscan 388751
+pgsteal 387559
+pswpin 0
+pswpout 0
+pgscan_kswapd 250992
+pgscan_direct 137759
+pgscan_khugepaged 0
+pgscan_proactive 0
+pgsteal_kswapd 249824
+pgsteal_direct 137735
+pgsteal_khugepaged 0
+pgsteal_proactive 0
+pgfault 982929
+pgmajfault 521
+pgrefill 30127
+pgactivate 7
+pgdeactivate 0
+pglazyfree 0
+pglazyfreed 0
+swpin_zero 0
+swpout_zero 0
+zswpin 0
+zswpout 0
+zswpwb 0
+thp_fault_alloc 307
+thp_collapse_alloc 0
+thp_swpout 0
+thp_swpout_fallback 0
+numa_pages_migrated 0
+numa_pte_updates 0
+numa_hint_faults 0
+
+memory.events
+low 0
+high 0
+max 1024
+oom 0
+oom_kill 0
+oom_group_kill 0
+sock_throttled 0
+
+memory.pressure
+some avg10=0.00 avg60=0.10 avg300=0.04 total=371102
+full avg10=0.00 avg60=0.10 avg300=0.04 total=370940

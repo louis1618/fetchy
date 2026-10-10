@@ -1,0 +1,2 @@
+6cadcfcf3554c99485294117e039803665c1f1eec16acc6b6595e8c2aada9288  Fetchy-arm64.apk
+1f3faeab4060b2d17d69b1dc472ebaabad72f8fb2982f8da978c330add8d5b78  Fetchy-x86_64.apk

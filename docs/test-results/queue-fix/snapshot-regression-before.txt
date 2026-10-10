@@ -1,0 +1,41 @@
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.QueueStartDeviceTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.luverse.fetchy.QueueStartDeviceTest:
+INSTRUMENTATION_STATUS: test=finalSnapshotIsDeliveredAfterTheQueueBecomesIdle
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.QueueStartDeviceTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: Final state was dropped while the runtime was idle
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.luverse.fetchy.QueueStartDeviceTest.finalSnapshotIsDeliveredAfterTheQueueBecomesIdle(QueueStartDeviceTest.kt:38)
+
+INSTRUMENTATION_STATUS: stream=
+Error in finalSnapshotIsDeliveredAfterTheQueueBecomesIdle(com.luverse.fetchy.QueueStartDeviceTest):
+java.lang.AssertionError: Final state was dropped while the runtime was idle
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.luverse.fetchy.QueueStartDeviceTest.finalSnapshotIsDeliveredAfterTheQueueBecomesIdle(QueueStartDeviceTest.kt:38)
+
+INSTRUMENTATION_STATUS: test=finalSnapshotIsDeliveredAfterTheQueueBecomesIdle
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_RESULT: stream=
+
+Time: 3.476
+There was 1 failure:
+1) finalSnapshotIsDeliveredAfterTheQueueBecomesIdle(com.luverse.fetchy.QueueStartDeviceTest)
+java.lang.AssertionError: Final state was dropped while the runtime was idle
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.luverse.fetchy.QueueStartDeviceTest.finalSnapshotIsDeliveredAfterTheQueueBecomesIdle(QueueStartDeviceTest.kt:38)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+
+INSTRUMENTATION_CODE: -1

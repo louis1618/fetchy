@@ -1,0 +1,38 @@
+# Flutter and Dart build output
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+
+# Android build output and machine-specific SDK path
+/android/.gradle/
+/android/local.properties
+/android/app/debug/
+/android/app/profile/
+/android/app/release/
+/android/key.properties
+*.jks
+*.keystore
+
+# IDE and local tooling
+.idea/
+*.iml
+*.ipr
+*.iws
+/.impeccable/
+/.cache/
+
+# Release binaries are distributed as GitHub release assets
+/artifacts/*.apk
+/artifacts/share-popup.png
+
+# Generated files
+*.class
+*.log
+*.pyc
+__pycache__/
+.DS_Store
+*.swp

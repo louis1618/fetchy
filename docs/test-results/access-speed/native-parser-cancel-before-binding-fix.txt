@@ -1,0 +1,49 @@
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.AnalysisDeviceTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=2
+INSTRUMENTATION_STATUS: stream=
+com.luverse.fetchy.AnalysisDeviceTest:
+INSTRUMENTATION_STATUS: test=xParserPreservesOriginalsSelectionsAndSensitiveMedia
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.AnalysisDeviceTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=2
+INSTRUMENTATION_STATUS: stack=java.lang.NoSuchMethodError: No virtual method parseXMedia$app_debug(Ljava/net/URI;Lorg/json/JSONObject;)Lorg/json/JSONObject; in class Lcom/luverse/fetchy/Engine; or its super classes (declaration of 'com.luverse.fetchy.Engine' appears in /data/app/~~C788HYu59SHV_wJqGDBsMA==/com.luverse.fetchy-75w2qjjGrgSo8JTt0040Hg==/base.apk)
+	at com.luverse.fetchy.AnalysisDeviceTest.xParserPreservesOriginalsSelectionsAndSensitiveMedia(AnalysisDeviceTest.kt:36)
+
+INSTRUMENTATION_STATUS: stream=
+Error in xParserPreservesOriginalsSelectionsAndSensitiveMedia(com.luverse.fetchy.AnalysisDeviceTest):
+java.lang.NoSuchMethodError: No virtual method parseXMedia$app_debug(Ljava/net/URI;Lorg/json/JSONObject;)Lorg/json/JSONObject; in class Lcom/luverse/fetchy/Engine; or its super classes (declaration of 'com.luverse.fetchy.Engine' appears in /data/app/~~C788HYu59SHV_wJqGDBsMA==/com.luverse.fetchy-75w2qjjGrgSo8JTt0040Hg==/base.apk)
+	at com.luverse.fetchy.AnalysisDeviceTest.xParserPreservesOriginalsSelectionsAndSensitiveMedia(AnalysisDeviceTest.kt:36)
+
+INSTRUMENTATION_STATUS: test=xParserPreservesOriginalsSelectionsAndSensitiveMedia
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.AnalysisDeviceTest
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=2
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=canceledQueuedAnalysisDoesNotStartNetworking
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.AnalysisDeviceTest
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=2
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=canceledQueuedAnalysisDoesNotStartNetworking
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 0.082
+There was 1 failure:
+1) xParserPreservesOriginalsSelectionsAndSensitiveMedia(com.luverse.fetchy.AnalysisDeviceTest)
+java.lang.NoSuchMethodError: No virtual method parseXMedia$app_debug(Ljava/net/URI;Lorg/json/JSONObject;)Lorg/json/JSONObject; in class Lcom/luverse/fetchy/Engine; or its super classes (declaration of 'com.luverse.fetchy.Engine' appears in /data/app/~~C788HYu59SHV_wJqGDBsMA==/com.luverse.fetchy-75w2qjjGrgSo8JTt0040Hg==/base.apk)
+	at com.luverse.fetchy.AnalysisDeviceTest.xParserPreservesOriginalsSelectionsAndSensitiveMedia(AnalysisDeviceTest.kt:36)
+
+FAILURES!!!
+Tests run: 2,  Failures: 1
+
+
+INSTRUMENTATION_CODE: -1

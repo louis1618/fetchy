@@ -1,0 +1,115 @@
+[
+  {
+    "name": "fixture-cleanup",
+    "passed": true,
+    "seconds": 4.63,
+    "metrics": []
+  },
+  {
+    "name": "native-fixtures",
+    "passed": true,
+    "seconds": 12.99,
+    "metrics": []
+  },
+  {
+    "name": "story-fixtures",
+    "passed": true,
+    "seconds": 15.35,
+    "metrics": []
+  },
+  {
+    "name": "queue-regression",
+    "passed": true,
+    "seconds": 9.88,
+    "metrics": []
+  },
+  {
+    "name": "bluesky-photo",
+    "passed": true,
+    "seconds": 10.65,
+    "metrics": [
+      "INSTRUMENTATION_STATUS: platformResult={\"platform\":\"Bluesky\",\"kind\":\"image\",\"assets\":1,\"analysisMs\":4864,\"totalMs\":8339,\"bytes\":106580,\"ext\":\"jpg\",\"safSaved\":true}"
+    ]
+  },
+  {
+    "name": "streamable",
+    "passed": true,
+    "seconds": 17.08,
+    "metrics": [
+      "INSTRUMENTATION_STATUS: platformResult={\"platform\":\"Streamable\",\"kind\":\"video\",\"assets\":1,\"analysisMs\":7150,\"totalMs\":14950,\"bytes\":12171177,\"ext\":\"mp4\",\"safSaved\":true}"
+    ]
+  },
+  {
+    "name": "naver-tv",
+    "passed": true,
+    "seconds": 19.0,
+    "metrics": [
+      "INSTRUMENTATION_STATUS: platformResult={\"platform\":\"Naver TV\",\"kind\":\"video\",\"assets\":1,\"analysisMs\":5215,\"totalMs\":16955,\"bytes\":1307724,\"ext\":\"mp4\",\"safSaved\":true}"
+    ]
+  },
+  {
+    "name": "kakao-tv",
+    "passed": false,
+    "seconds": 6.65,
+    "metrics": []
+  },
+  {
+    "name": "bandcamp",
+    "passed": true,
+    "seconds": 9.61,
+    "metrics": [
+      "INSTRUMENTATION_STATUS: platformResult={\"platform\":\"Bandcamp\",\"kind\":\"audio\",\"assets\":1,\"analysisMs\":4910,\"totalMs\":7525,\"bytes\":2564272,\"ext\":\"mp3\",\"safSaved\":true}"
+    ]
+  },
+  {
+    "name": "rumble",
+    "passed": false,
+    "seconds": 7.88,
+    "metrics": []
+  },
+  {
+    "name": "tiktok-photo",
+    "passed": true,
+    "seconds": 8.87,
+    "metrics": [
+      "INSTRUMENTATION_STATUS: platformResult={\"platform\":\"TikTok\",\"kind\":\"image\",\"assets\":2,\"analysisMs\":4507,\"totalMs\":6791,\"bytes\":15884,\"ext\":\"jpg\",\"safSaved\":true}"
+    ]
+  },
+  {
+    "name": "reddit-photo",
+    "passed": false,
+    "seconds": 11.16,
+    "metrics": []
+  },
+  {
+    "name": "youtube-regression",
+    "passed": true,
+    "seconds": 17.17,
+    "metrics": [
+      "INSTRUMENTATION_STATUS: platformResult={\"platform\":\"YouTube\",\"kind\":\"video\",\"assets\":1,\"analysisMs\":6593,\"totalMs\":15020,\"bytes\":509329,\"ext\":\"mp4\",\"safSaved\":true}"
+    ]
+  },
+  {
+    "name": "instagram-regression",
+    "passed": true,
+    "seconds": 6.65,
+    "metrics": [
+      "INSTRUMENTATION_STATUS: platformResult={\"platform\":\"Instagram\",\"kind\":\"video\",\"assets\":1,\"analysisMs\":1014,\"totalMs\":4529,\"bytes\":6379840,\"ext\":\"mp4\",\"safSaved\":true}"
+    ]
+  },
+  {
+    "name": "x-regression",
+    "passed": true,
+    "seconds": 5.46,
+    "metrics": [
+      "INSTRUMENTATION_STATUS: platformResult={\"platform\":\"X (Twitter)\",\"kind\":\"video\",\"assets\":1,\"analysisMs\":505,\"totalMs\":3298,\"bytes\":629101,\"ext\":\"mp4\",\"safSaved\":true}"
+    ]
+  },
+  {
+    "name": "naver-audio",
+    "passed": true,
+    "metrics": [
+      "INSTRUMENTATION_STATUS: platformResult={\"platform\":\"Naver TV\",\"kind\":\"audio\",\"assets\":1,\"analysisMs\":5228,\"totalMs\":17458,\"bytes\":573844,\"ext\":\"m4a\",\"safSaved\":true}"
+    ]
+  }
+]

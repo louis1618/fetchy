@@ -1,0 +1,10 @@
+{
+  "scope": [
+    "lib",
+    "android/app/src/main/kotlin",
+    "android/app/build.gradle.kts"
+  ],
+  "patterns": "com\\.luverse\\.morit|supabase|firebase|cobalt|backendUrl|backend_url",
+  "matches": [],
+  "noMatches": true
+}

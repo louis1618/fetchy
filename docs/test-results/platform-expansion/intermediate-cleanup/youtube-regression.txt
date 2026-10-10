@@ -1,0 +1,41 @@
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.PlatformDeviceTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.luverse.fetchy.PlatformDeviceTest:
+INSTRUMENTATION_STATUS: test=individualLinkDownloadsAndSaves
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.PlatformDeviceTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stack=java.lang.IllegalStateException: Folder is used by an active job
+	at com.luverse.fetchy.Storage.idle(Storage.kt:83)
+	at com.luverse.fetchy.Storage.deleteFile(Storage.kt:423)
+	at com.luverse.fetchy.PlatformDeviceTest.individualLinkDownloadsAndSaves(PlatformDeviceTest.kt:137)
+
+INSTRUMENTATION_STATUS: stream=
+Error in individualLinkDownloadsAndSaves(com.luverse.fetchy.PlatformDeviceTest):
+java.lang.IllegalStateException: Folder is used by an active job
+	at com.luverse.fetchy.Storage.idle(Storage.kt:83)
+	at com.luverse.fetchy.Storage.deleteFile(Storage.kt:423)
+	at com.luverse.fetchy.PlatformDeviceTest.individualLinkDownloadsAndSaves(PlatformDeviceTest.kt:137)
+
+INSTRUMENTATION_STATUS: test=individualLinkDownloadsAndSaves
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_RESULT: stream=
+
+Time: 15.341
+There was 1 failure:
+1) individualLinkDownloadsAndSaves(com.luverse.fetchy.PlatformDeviceTest)
+java.lang.IllegalStateException: Folder is used by an active job
+	at com.luverse.fetchy.Storage.idle(Storage.kt:83)
+	at com.luverse.fetchy.Storage.deleteFile(Storage.kt:423)
+	at com.luverse.fetchy.PlatformDeviceTest.individualLinkDownloadsAndSaves(PlatformDeviceTest.kt:137)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+
+INSTRUMENTATION_CODE: -1

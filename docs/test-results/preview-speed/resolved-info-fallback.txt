@@ -1,0 +1,25 @@
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.PreviewDeviceTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.luverse.fetchy.PreviewDeviceTest:
+INSTRUMENTATION_STATUS: test=livePreviewAndExactDownload
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: speedResult={"platform":"YouTube","previewMs":555,"analysisMs":8274,"warmPreviewMs":8,"downloadFirstByteMs":5567,"downloadMs":15390,"resolvedInfo":true,"nativeHttp":false,"provider":"yt-dlp","formats":52,"bytes":3937911,"ext":"mp4"}
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.PreviewDeviceTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=livePreviewAndExactDownload
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 24.396
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1

@@ -1,0 +1,27 @@
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.SocialProbeDeviceTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.luverse.fetchy.SocialProbeDeviceTest:
+INSTRUMENTATION_STATUS: test=probePublicMedia
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: platform=tiktok
+INSTRUMENTATION_STATUS: probe_reason=미디어에 접근할 수 없습니다. 로그인 상태와 선택한 형식을 확인해주세요.
+INSTRUMENTATION_STATUS: probe_result=unavailable
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.SocialProbeDeviceTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=probePublicMedia
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 4.396
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1

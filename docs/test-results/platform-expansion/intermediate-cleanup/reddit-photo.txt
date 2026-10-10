@@ -1,0 +1,41 @@
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.PlatformDeviceTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.luverse.fetchy.PlatformDeviceTest:
+INSTRUMENTATION_STATUS: test=individualLinkDownloadsAndSaves
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.PlatformDeviceTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stack=java.io.IOException: Server returned a page instead of media
+	at com.luverse.fetchy.Engine.safeError(Engine.kt:1075)
+	at com.luverse.fetchy.Engine.download(Engine.kt:710)
+	at com.luverse.fetchy.PlatformDeviceTest.individualLinkDownloadsAndSaves(PlatformDeviceTest.kt:124)
+
+INSTRUMENTATION_STATUS: stream=
+Error in individualLinkDownloadsAndSaves(com.luverse.fetchy.PlatformDeviceTest):
+java.io.IOException: Server returned a page instead of media
+	at com.luverse.fetchy.Engine.safeError(Engine.kt:1075)
+	at com.luverse.fetchy.Engine.download(Engine.kt:710)
+	at com.luverse.fetchy.PlatformDeviceTest.individualLinkDownloadsAndSaves(PlatformDeviceTest.kt:124)
+
+INSTRUMENTATION_STATUS: test=individualLinkDownloadsAndSaves
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_RESULT: stream=
+
+Time: 8.089
+There was 1 failure:
+1) individualLinkDownloadsAndSaves(com.luverse.fetchy.PlatformDeviceTest)
+java.io.IOException: Server returned a page instead of media
+	at com.luverse.fetchy.Engine.safeError(Engine.kt:1075)
+	at com.luverse.fetchy.Engine.download(Engine.kt:710)
+	at com.luverse.fetchy.PlatformDeviceTest.individualLinkDownloadsAndSaves(PlatformDeviceTest.kt:124)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+
+INSTRUMENTATION_CODE: -1

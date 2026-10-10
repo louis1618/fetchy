@@ -1,0 +1,14 @@
+Resolving dependencies...
+Downloading packages...
+  material_color_utilities 0.13.0 (0.13.1 available)
+  meta 1.18.3 (1.19.0 available)
+  test_api 0.7.12 (0.7.14 available)
+  vector_math 2.4.0 (2.4.3 available)
+Got dependencies!
+4 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+Analyzing Fetchy...                                             
+
+   info • Statements in an if should be enclosed in a block. Try wrapping the statement in a block • test/widget_test.dart:87:17 • curly_braces_in_flow_control_structures
+
+1 issue found. (ran in 2.9s)

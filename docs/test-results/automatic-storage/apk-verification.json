@@ -1,0 +1,48 @@
+[
+  {
+    "apk": "Fetchy-arm64.apk",
+    "abi": "arm64-v8a",
+    "bytes": 70031354,
+    "sha256": "3c21f21c8207135866a18031f386107b450655993d51011af8c047b3d54edc1d",
+    "package": "package: name='com.luverse.fetchy' versionCode='2008' versionName='1.0.7' platformBuildVersionName='16' platformBuildVersionCode='36' compileSdkVersion='36' compileSdkVersionCodename='16'",
+    "permissions": [
+      "uses-permission: name='android.permission.INTERNET'",
+      "uses-permission: name='android.permission.ACCESS_NETWORK_STATE'",
+      "uses-permission: name='android.permission.WAKE_LOCK'",
+      "uses-permission: name='android.permission.POST_NOTIFICATIONS'",
+      "uses-permission: name='android.permission.FOREGROUND_SERVICE'",
+      "uses-permission: name='android.permission.FOREGROUND_SERVICE_DATA_SYNC'",
+      "uses-permission: name='android.permission.RUN_USER_INITIATED_JOBS'",
+      "uses-permission: name='android.permission.RECEIVE_BOOT_COMPLETED'",
+      "uses-permission: name='com.luverse.fetchy.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION'"
+    ],
+    "originalAssetsMatch": {
+      "yt-dlp": true,
+      "fetchy_photos.py": true,
+      "fetchy_instagram_story.py": true
+    }
+  },
+  {
+    "apk": "Fetchy-x86_64.apk",
+    "abi": "x86_64",
+    "bytes": 73381051,
+    "sha256": "0c91fcee7337620193de27c5100676b0cc99cb807e3b6f86d04330afa6138120",
+    "package": "package: name='com.luverse.fetchy' versionCode='4008' versionName='1.0.7' platformBuildVersionName='16' platformBuildVersionCode='36' compileSdkVersion='36' compileSdkVersionCodename='16'",
+    "permissions": [
+      "uses-permission: name='android.permission.INTERNET'",
+      "uses-permission: name='android.permission.ACCESS_NETWORK_STATE'",
+      "uses-permission: name='android.permission.WAKE_LOCK'",
+      "uses-permission: name='android.permission.POST_NOTIFICATIONS'",
+      "uses-permission: name='android.permission.FOREGROUND_SERVICE'",
+      "uses-permission: name='android.permission.FOREGROUND_SERVICE_DATA_SYNC'",
+      "uses-permission: name='android.permission.RUN_USER_INITIATED_JOBS'",
+      "uses-permission: name='android.permission.RECEIVE_BOOT_COMPLETED'",
+      "uses-permission: name='com.luverse.fetchy.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION'"
+    ],
+    "originalAssetsMatch": {
+      "yt-dlp": true,
+      "fetchy_photos.py": true,
+      "fetchy_instagram_story.py": true
+    }
+  }
+]

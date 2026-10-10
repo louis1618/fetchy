@@ -1,0 +1,25 @@
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.PlatformDeviceTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.luverse.fetchy.PlatformDeviceTest:
+INSTRUMENTATION_STATUS: test=individualLinkDownloadsAndSaves
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: platformResult={"platform":"Naver TV","kind":"video","assets":1,"analysisMs":5215,"totalMs":16955,"bytes":1307724,"ext":"mp4","safSaved":true}
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.PlatformDeviceTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=individualLinkDownloadsAndSaves
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 17.048
+
+OK (1 test)
+
+
+INSTRUMENTATION_CODE: -1

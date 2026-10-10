@@ -1,0 +1,29 @@
+--------- beginning of main
+10-05 20:39:56.254  5090  5109 I FetchyAnalysis: analyzed platform=X (Twitter) elapsedMs=807 assets=1
+10-05 20:39:56.265  5090  5109 I FetchyAnalysis: cache_hit elapsedMs=10
+10-05 20:40:00.432  5193  5211 I FetchyAnalysis: analyzed platform=X (Twitter) elapsedMs=408 assets=1
+10-05 20:40:00.440  5193  5211 I FetchyAnalysis: cache_hit elapsedMs=7
+10-05 20:40:06.112  5289  5307 I FetchyAnalysis: analyzed platform=X (Twitter) elapsedMs=566 assets=1
+10-05 20:40:06.119  5289  5307 I FetchyAnalysis: cache_hit elapsedMs=7
+10-05 20:40:10.357  5378  5395 I FetchyAnalysis: analyzed platform=X (Twitter) elapsedMs=464 assets=4
+10-05 20:40:10.367  5378  5395 I FetchyAnalysis: cache_hit elapsedMs=9
+10-05 20:40:15.125  5477  5495 I FetchyAnalysis: analyzed platform=X (Twitter) elapsedMs=925 assets=1
+10-05 20:40:15.133  5477  5495 I FetchyAnalysis: cache_hit elapsedMs=7
+10-05 20:40:19.434  5564  5582 I FetchyAnalysis: analyzed platform=X (Twitter) elapsedMs=581 assets=1
+10-05 20:40:19.442  5564  5582 I FetchyAnalysis: cache_hit elapsedMs=7
+10-05 20:40:23.841  5660  5678 I FetchyAnalysis: analyzed platform=X (Twitter) elapsedMs=463 assets=1
+10-05 20:40:23.850  5660  5678 I FetchyAnalysis: cache_hit elapsedMs=7
+10-05 20:40:27.931  5758  5776 I FetchyQueue: runner_start owner=Object
+10-05 20:40:27.937  5758  5776 I FetchyQueue: runner_start owner=Object
+10-05 20:40:28.285  5758  5776 I FetchyAnalysis: analyzed platform=Web page elapsedMs=330 assets=1
+10-05 20:40:33.592  5758  5758 I FetchyQueue: scheduled immediate_service uidt=false
+10-05 20:40:33.610  5758  5758 I FetchyQueue: runner_start owner=TransferService
+10-05 20:40:40.047  5961  5981 I FetchyAnalysis: analyzed platform=X (Twitter) elapsedMs=524 assets=4
+10-05 20:40:41.533  5961  5961 I FetchyQueue: scheduled immediate_service uidt=false
+10-05 20:40:41.547  5961  5961 I FetchyQueue: runner_start owner=TransferService
+10-05 20:42:27.964  6547  6566 I FetchyAnalysis: analyzed platform=YouTube elapsedMs=16811 assets=1
+10-05 20:42:29.238  6547  6547 I FetchyQueue: scheduled immediate_service uidt=false
+10-05 20:42:29.256  6547  6547 I FetchyQueue: runner_start owner=TransferService
+10-05 20:43:17.180  6901  6920 I FetchyAnalysis: analyzed platform=Instagram elapsedMs=19825 assets=1
+10-05 20:43:18.288  6901  6901 I FetchyQueue: scheduled immediate_service uidt=false
+10-05 20:43:18.331  6901  6901 I FetchyQueue: runner_start owner=TransferService

@@ -1,0 +1,16 @@
+{
+  "status": "ready",
+  "coldProcess": true,
+  "note": "UI polling time includes accessibility dump overhead",
+  "elapsedSeconds": 12.304,
+  "previewFrameMs": 712,
+  "previewImageMs": 1383,
+  "selectionFrameMs": 9313,
+  "performance": [
+    "I/FetchyPreview(21548): ready platform=TikTok elapsedMs=582",
+    "I/flutter (21548): FetchyPreview frame elapsedMs=712",
+    "I/flutter (21548): FetchyPreview image elapsedMs=1383",
+    "I/FetchyAnalysis(21548): analyzed platform=TikTok elapsedMs=9136 assets=1",
+    "I/flutter (21548): FetchySelection frame elapsedMs=9313"
+  ]
+}

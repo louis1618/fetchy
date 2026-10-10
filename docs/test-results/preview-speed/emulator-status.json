@@ -1,0 +1,6 @@
+{
+  "adbDevices": "List of devices attached\nMTK0000903071707360    device usb:1-1 product:Silver_Max_Pro_2 model:Silver_Max_Pro_2 device:Silver_Max_Pro_2 transport_id:5",
+  "emulatorProcesses": [],
+  "freeMemory": "               total        used        free      shared  buff/cache   available\nMem:           15363       10365         243         204        5340        4997\nSwap:           4095        4095           0\n",
+  "reason": "Available memory below safe 6 GiB emulator threshold; physical Android 12 testing only"
+}

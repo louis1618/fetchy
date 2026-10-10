@@ -1,0 +1,221 @@
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.AutomaticStorageDeviceTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=9
+INSTRUMENTATION_STATUS: stream=
+com.luverse.fetchy.AutomaticStorageDeviceTest:
+INSTRUMENTATION_STATUS: test=deletedSafFileCanBeRemovedFromLibrary
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.AutomaticStorageDeviceTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=9
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=deletedSafFileCanBeRemovedFromLibrary
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.AutomaticStorageDeviceTest
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=9
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=automaticBackgroundQueueSavesAfterActivityCloses
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.AutomaticStorageDeviceTest
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=9
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=automaticBackgroundQueueSavesAfterActivityCloses
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.AutomaticStorageDeviceTest
+INSTRUMENTATION_STATUS: current=3
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=9
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=automaticRootPreservesChosenRootAndRealHierarchy
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.AutomaticStorageDeviceTest
+INSTRUMENTATION_STATUS: current=3
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=9
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=automaticRootPreservesChosenRootAndRealHierarchy
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.AutomaticStorageDeviceTest
+INSTRUMENTATION_STATUS: current=4
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=9
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=inaccessibleProviderKeepsRecordAndDeletionJournal
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.AutomaticStorageDeviceTest
+INSTRUMENTATION_STATUS: current=4
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=9
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=inaccessibleProviderKeepsRecordAndDeletionJournal
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.AutomaticStorageDeviceTest
+INSTRUMENTATION_STATUS: current=5
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=9
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=deletedAutomaticFileCanBeRemovedFromLibrary
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.AutomaticStorageDeviceTest
+INSTRUMENTATION_STATUS: current=5
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=9
+INSTRUMENTATION_STATUS: stack=java.lang.IllegalStateException: Cannot read document; provider unavailable
+	at com.luverse.fetchy.Storage.read(Storage.kt:45)
+	at com.luverse.fetchy.Storage.exists(Storage.kt:57)
+	at com.luverse.fetchy.Storage.existsForDeletion(Storage.kt:447)
+	at com.luverse.fetchy.Storage.finishDeleteFile(Storage.kt:440)
+	at com.luverse.fetchy.Storage.deleteFile(Storage.kt:436)
+	at com.luverse.fetchy.AutomaticStorageDeviceTest.externallyDeletedFixture(AutomaticStorageDeviceTest.kt:98)
+	at com.luverse.fetchy.AutomaticStorageDeviceTest.deletedAutomaticFileCanBeRemovedFromLibrary$lambda$0(AutomaticStorageDeviceTest.kt:107)
+	at com.luverse.fetchy.AutomaticStorageDeviceTest.$r8$lambda$ub9pHryOvFsH8PhPEBAck4b7j9s(Unknown Source:0)
+	at com.luverse.fetchy.AutomaticStorageDeviceTest$$ExternalSyntheticLambda0.invoke(D8$$SyntheticClass:0)
+	at com.luverse.fetchy.AutomaticStorageDeviceTest.automatic(AutomaticStorageDeviceTest.kt:33)
+	at com.luverse.fetchy.AutomaticStorageDeviceTest.deletedAutomaticFileCanBeRemovedFromLibrary(AutomaticStorageDeviceTest.kt:107)
+
+INSTRUMENTATION_STATUS: stream=
+Error in deletedAutomaticFileCanBeRemovedFromLibrary(com.luverse.fetchy.AutomaticStorageDeviceTest):
+java.lang.IllegalStateException: Cannot read document; provider unavailable
+	at com.luverse.fetchy.Storage.read(Storage.kt:45)
+	at com.luverse.fetchy.Storage.exists(Storage.kt:57)
+	at com.luverse.fetchy.Storage.existsForDeletion(Storage.kt:447)
+	at com.luverse.fetchy.Storage.finishDeleteFile(Storage.kt:440)
+	at com.luverse.fetchy.Storage.deleteFile(Storage.kt:436)
+	at com.luverse.fetchy.AutomaticStorageDeviceTest.externallyDeletedFixture(AutomaticStorageDeviceTest.kt:98)
+	at com.luverse.fetchy.AutomaticStorageDeviceTest.deletedAutomaticFileCanBeRemovedFromLibrary$lambda$0(AutomaticStorageDeviceTest.kt:107)
+	at com.luverse.fetchy.AutomaticStorageDeviceTest.$r8$lambda$ub9pHryOvFsH8PhPEBAck4b7j9s(Unknown Source:0)
+	at com.luverse.fetchy.AutomaticStorageDeviceTest$$ExternalSyntheticLambda0.invoke(D8$$SyntheticClass:0)
+	at com.luverse.fetchy.AutomaticStorageDeviceTest.automatic(AutomaticStorageDeviceTest.kt:33)
+	at com.luverse.fetchy.AutomaticStorageDeviceTest.deletedAutomaticFileCanBeRemovedFromLibrary(AutomaticStorageDeviceTest.kt:107)
+
+INSTRUMENTATION_STATUS: test=deletedAutomaticFileCanBeRemovedFromLibrary
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.AutomaticStorageDeviceTest
+INSTRUMENTATION_STATUS: current=6
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=9
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=deletedSafParentStillAllowsRemovingFileRecord
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.AutomaticStorageDeviceTest
+INSTRUMENTATION_STATUS: current=6
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=9
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=deletedSafParentStillAllowsRemovingFileRecord
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.AutomaticStorageDeviceTest
+INSTRUMENTATION_STATUS: current=7
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=9
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=pendingDeletionJournalRecoversAfterFileWasDeleted
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.AutomaticStorageDeviceTest
+INSTRUMENTATION_STATUS: current=7
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=9
+INSTRUMENTATION_STATUS: stack=java.lang.IllegalStateException: Cannot read document; provider unavailable
+	at com.luverse.fetchy.Storage.read(Storage.kt:45)
+	at com.luverse.fetchy.Storage.exists(Storage.kt:57)
+	at com.luverse.fetchy.Storage.existsForDeletion(Storage.kt:447)
+	at com.luverse.fetchy.Storage.finishDeleteFile(Storage.kt:440)
+	at com.luverse.fetchy.Storage.recover$lambda$0$5$0(Storage.kt:519)
+	at com.luverse.fetchy.Storage.$r8$lambda$2m9m8NngNVZqI5RCA8Nl-JUqYV4(Unknown Source:0)
+	at com.luverse.fetchy.Storage$$ExternalSyntheticLambda3.invoke(D8$$SyntheticClass:0)
+	at com.luverse.fetchy.Storage.recover$lambda$0$attempt(Storage.kt:514)
+	at com.luverse.fetchy.Storage.recover(Storage.kt:516)
+	at com.luverse.fetchy.AutomaticStorageDeviceTest.externallyDeletedFixture(AutomaticStorageDeviceTest.kt:93)
+	at com.luverse.fetchy.AutomaticStorageDeviceTest.pendingDeletionJournalRecoversAfterFileWasDeleted(AutomaticStorageDeviceTest.kt:106)
+
+INSTRUMENTATION_STATUS: stream=
+Error in pendingDeletionJournalRecoversAfterFileWasDeleted(com.luverse.fetchy.AutomaticStorageDeviceTest):
+java.lang.IllegalStateException: Cannot read document; provider unavailable
+	at com.luverse.fetchy.Storage.read(Storage.kt:45)
+	at com.luverse.fetchy.Storage.exists(Storage.kt:57)
+	at com.luverse.fetchy.Storage.existsForDeletion(Storage.kt:447)
+	at com.luverse.fetchy.Storage.finishDeleteFile(Storage.kt:440)
+	at com.luverse.fetchy.Storage.recover$lambda$0$5$0(Storage.kt:519)
+	at com.luverse.fetchy.Storage.$r8$lambda$2m9m8NngNVZqI5RCA8Nl-JUqYV4(Unknown Source:0)
+	at com.luverse.fetchy.Storage$$ExternalSyntheticLambda3.invoke(D8$$SyntheticClass:0)
+	at com.luverse.fetchy.Storage.recover$lambda$0$attempt(Storage.kt:514)
+	at com.luverse.fetchy.Storage.recover(Storage.kt:516)
+	at com.luverse.fetchy.AutomaticStorageDeviceTest.externallyDeletedFixture(AutomaticStorageDeviceTest.kt:93)
+	at com.luverse.fetchy.AutomaticStorageDeviceTest.pendingDeletionJournalRecoversAfterFileWasDeleted(AutomaticStorageDeviceTest.kt:106)
+
+INSTRUMENTATION_STATUS: test=pendingDeletionJournalRecoversAfterFileWasDeleted
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.AutomaticStorageDeviceTest
+INSTRUMENTATION_STATUS: current=8
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=9
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=automaticImageIsScannedAndOpensInSystemApps
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: automaticStorage={"uri":"content:\/\/com.luverse.fetchy.documents\/tree\/fetchy\/document\/fetchy%2Fauto-image-6f483e8f-a293-4411-85b4-e99c6374a7e3.jpg","galleryIndexed":true,"openShareFolder":true}
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.AutomaticStorageDeviceTest
+INSTRUMENTATION_STATUS: current=8
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=9
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=automaticImageIsScannedAndOpensInSystemApps
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.AutomaticStorageDeviceTest
+INSTRUMENTATION_STATUS: current=9
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=9
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=actualMediaDownloadPublishesWithoutStorageApproval
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: platformResult={"platform":"X (Twitter)","kind":"video","assets":1,"analysisMs":752,"totalMs":3901,"bytes":629101,"ext":"mp4","safSaved":true}
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.AutomaticStorageDeviceTest
+INSTRUMENTATION_STATUS: current=9
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=9
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=actualMediaDownloadPublishesWithoutStorageApproval
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 85.02
+There were 2 failures:
+1) deletedAutomaticFileCanBeRemovedFromLibrary(com.luverse.fetchy.AutomaticStorageDeviceTest)
+java.lang.IllegalStateException: Cannot read document; provider unavailable
+	at com.luverse.fetchy.Storage.read(Storage.kt:45)
+	at com.luverse.fetchy.Storage.exists(Storage.kt:57)
+	at com.luverse.fetchy.Storage.existsForDeletion(Storage.kt:447)
+	at com.luverse.fetchy.Storage.finishDeleteFile(Storage.kt:440)
+	at com.luverse.fetchy.Storage.deleteFile(Storage.kt:436)
+	at com.luverse.fetchy.AutomaticStorageDeviceTest.externallyDeletedFixture(AutomaticStorageDeviceTest.kt:98)
+	at com.luverse.fetchy.AutomaticStorageDeviceTest.deletedAutomaticFileCanBeRemovedFromLibrary$lambda$0(AutomaticStorageDeviceTest.kt:107)
+	at com.luverse.fetchy.AutomaticStorageDeviceTest.$r8$lambda$ub9pHryOvFsH8PhPEBAck4b7j9s(Unknown Source:0)
+	at com.luverse.fetchy.AutomaticStorageDeviceTest$$ExternalSyntheticLambda0.invoke(D8$$SyntheticClass:0)
+	at com.luverse.fetchy.AutomaticStorageDeviceTest.automatic(AutomaticStorageDeviceTest.kt:33)
+	at com.luverse.fetchy.AutomaticStorageDeviceTest.deletedAutomaticFileCanBeRemovedFromLibrary(AutomaticStorageDeviceTest.kt:107)
+2) pendingDeletionJournalRecoversAfterFileWasDeleted(com.luverse.fetchy.AutomaticStorageDeviceTest)
+java.lang.IllegalStateException: Cannot read document; provider unavailable
+	at com.luverse.fetchy.Storage.read(Storage.kt:45)
+	at com.luverse.fetchy.Storage.exists(Storage.kt:57)
+	at com.luverse.fetchy.Storage.existsForDeletion(Storage.kt:447)
+	at com.luverse.fetchy.Storage.finishDeleteFile(Storage.kt:440)
+	at com.luverse.fetchy.Storage.recover$lambda$0$5$0(Storage.kt:519)
+	at com.luverse.fetchy.Storage.$r8$lambda$2m9m8NngNVZqI5RCA8Nl-JUqYV4(Unknown Source:0)
+	at com.luverse.fetchy.Storage$$ExternalSyntheticLambda3.invoke(D8$$SyntheticClass:0)
+	at com.luverse.fetchy.Storage.recover$lambda$0$attempt(Storage.kt:514)
+	at com.luverse.fetchy.Storage.recover(Storage.kt:516)
+	at com.luverse.fetchy.AutomaticStorageDeviceTest.externallyDeletedFixture(AutomaticStorageDeviceTest.kt:93)
+	at com.luverse.fetchy.AutomaticStorageDeviceTest.pendingDeletionJournalRecoversAfterFileWasDeleted(AutomaticStorageDeviceTest.kt:106)
+
+FAILURES!!!
+Tests run: 9,  Failures: 2
+
+
+INSTRUMENTATION_CODE: -1

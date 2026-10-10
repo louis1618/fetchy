@@ -1,0 +1,13 @@
+{
+  "status": "ready",
+  "coldProcess": true,
+  "note": "UI polling time includes accessibility dump overhead",
+  "elapsedSeconds": 3.086,
+  "previewImageMs": 1560,
+  "selectionFrameMs": 1119,
+  "performance": [
+    "I/FetchyAnalysis(21191): analyzed platform=Instagram elapsedMs=895 assets=1",
+    "I/flutter (21191): FetchySelection frame elapsedMs=1119",
+    "I/flutter (21191): FetchyPreview image elapsedMs=1560"
+  ]
+}

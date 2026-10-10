@@ -1,0 +1,80 @@
+Resolving dependencies...
+Downloading packages...
+  material_color_utilities 0.13.0 (0.13.1 available)
+  meta 1.18.3 (1.19.0 available)
+  test_api 0.7.12 (0.7.15 available)
+  vector_math 2.4.0 (2.4.3 available)
+Got dependencies!
+4 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+00:00 +0: loading /home/louis/Documents/.dev/Fetchy/test/widget_test.dart
+00:00 +0: native map conversion and byte labels
+00:00 +1: shared metadata appears before formats and cannot enqueue
+FetchyPreview frame elapsedMs=198
+FetchySelection frame elapsedMs=388
+00:01 +2: ten second delay stops spinner and keeps retry visible
+FetchyPreview frame elapsedMs=87
+FetchySelection frame elapsedMs=179
+00:01 +3: late preview cannot replace a completed format selection
+FetchySelection frame elapsedMs=53
+00:01 +4: leaving analysis ignores delayed responses
+00:02 +5: same quality defaults to resolved HTTP and manual quality still wins
+FetchySelection frame elapsedMs=52
+FetchySelection frame elapsedMs=33
+00:03 +6: quality is selected without an additional format search
+FetchySelection frame elapsedMs=31
+00:03 +7: Korean tabs and settings render
+00:03 +8: URL validation and native error are clear
+00:04 +9: audio tab sends only audio in the enqueue contract
+FetchySelection frame elapsedMs=43
+00:04 +10: switching back to video keeps its quality and excludes audio
+FetchySelection frame elapsedMs=25
+00:05 +11: first save creates automatic storage without a picker
+FetchySelection frame elapsedMs=43
+00:05 +12: automatic storage failure preserves media selection
+FetchySelection frame elapsedMs=33
+00:06 +13: plus creates automatic storage and settings can change location
+00:06 +14: missing file can still be deleted from the long press menu
+00:07 +15: event snapshot updates job list
+00:07 +16: share entry is transparent and closes through native
+FetchySelection frame elapsedMs=30
+00:07 +17: native percent progress and string quality normalize
+00:08 +18: folder creation and default file move match native contract
+00:08 +19: folder picker keeps reference order, trailing radios and a visible create action
+00:09 +20: share analyzes before snapshot but keeps saved quality
+FetchySelection frame elapsedMs=34
+00:09 +21: X extractor label uses the existing X platform folder
+FetchySelection frame elapsedMs=27
+00:09 +22: shared audio selection never enqueues the hidden video format
+FetchySelection frame elapsedMs=20
+00:09 +23: multiple images remain selectable within the current media tab
+FetchySelection frame elapsedMs=18
+00:09 +24: queued jobs show their network reason and provide restart
+00:10 +25: cookie login import and deletion call native methods
+00:10 +26: new platform shortcuts and native cookie registry are reachable
+00:10 +27: photo post music downloads only from the selected audio tab
+FetchySelection frame elapsedMs=18
+00:11 +28: welcome is persisted only after starting
+00:11 +29: plus inside a folder creates a real child with selected color
+00:11 +30: favorite filtering and folder menu use stable IDs
+00:11 +31: recent link reanalysis keeps original source URL
+FetchySelection frame elapsedMs=23
+00:11 +32: small screen and enlarged Korean type do not overflow
+00:12 +33: list titles have explicit light and dark contrast colors
+00:12 +34: dark folder captions follow the active surface color
+00:12 +35: dark home shortcut background uses the current shell theme on first render
+00:12 +36: a removed current folder returns browsing and plus to the real root
+00:12 +37: highest quality selects the largest format immediately
+FetchySelection frame elapsedMs=19
+00:12 +38: automatic original does not need another preview request
+FetchySelection frame elapsedMs=17
+00:13 +39: subtitle language and format are sent only when selected
+FetchySelection frame elapsedMs=20
+00:13 +40: audio tags remain editable and video selection stays excluded
+FetchySelection frame elapsedMs=28
+00:13 +41: login status check and diagnostics are available in settings
+00:14 +42: storage migration selection and retry use native commands
+00:14 +43: file menu opens local player and preserves external open
+00:14 +44: portrait video detail uses the shorter resolution axis
+00:14 +45: completed migration retains missing item summary
+00:15 +46: All tests passed!

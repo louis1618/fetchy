@@ -1,0 +1,36 @@
+Resolving dependencies...
+Downloading packages...
+  material_color_utilities 0.13.0 (0.13.1 available)
+  meta 1.18.3 (1.19.0 available)
+  test_api 0.7.12 (0.7.14 available)
+  vector_math 2.4.0 (2.4.3 available)
+Got dependencies!
+4 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+00:00 +0: loading /home/louis/Documents/.dev/Fetchy/test/widget_test.dart
+00:00 +0: native map conversion and byte labels
+00:00 +1: Korean tabs and settings render
+00:01 +2: URL validation and native error are clear
+00:02 +3: audio tab sends only audio in the enqueue contract
+00:03 +4: switching back to video keeps its quality and excludes audio
+00:04 +5: first save requests a folder grant before enqueue
+00:04 +6: canceling first folder grant preserves media selection
+00:05 +7: event snapshot updates job list
+00:05 +8: share entry is transparent and closes through native
+00:05 +9: native percent progress and string quality normalize
+00:06 +10: folder creation and default file move match native contract
+00:07 +11: folder picker keeps reference order, trailing radios and a visible create action
+00:07 +12: shared audio selection never enqueues the hidden video format
+00:08 +13: multiple images remain selectable within the current media tab
+00:08 +14: queued jobs show their network reason and provide restart
+00:08 +15: cookie login import and deletion call native methods
+00:09 +16: welcome is persisted only after starting
+00:09 +17: plus inside a folder creates a real child with selected color
+00:09 +18: favorite filtering and folder menu use stable IDs
+00:09 +19: recent link reanalysis keeps original source URL
+00:09 +20: small screen and enlarged Korean type do not overflow
+00:10 +21: list titles have explicit light and dark contrast colors
+00:10 +22: dark folder captions follow the active surface color
+00:10 +23: dark home shortcut background uses the current shell theme on first render
+00:10 +24: a removed current folder returns browsing and plus to the real root
+00:10 +25: All tests passed!

@@ -1,0 +1,5 @@
+Performing Streamed Install
+adb: failed to run abb_exec. Error: closed
+adb: retrieving the default device installation mode failed: closed
+adb: failed to run abb_exec. Error: device offline
+adb: connect error for write: device offline

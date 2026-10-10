@@ -1,0 +1,48 @@
+{
+  "version": "1.0.8+9",
+  "device": "Silver Max Pro 2",
+  "serial": "MTK0000903071707360",
+  "android": 12,
+  "api": 31,
+  "emulatorUsed": false,
+  "flutterTests": 46,
+  "jvmTests": 27,
+  "physicalReleaseTests": {
+    "physical-features-release.txt": {
+      "tests": 10,
+      "seconds": 116.151,
+      "failed": 0,
+      "skipped": 0
+    },
+    "physical-regression-release.txt": {
+      "tests": 21,
+      "seconds": 113.777,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "automaticQuality": [
+    {
+      "quality": 1080,
+      "previewMs": 676,
+      "analysisMs": 581,
+      "downloadMs": 12189,
+      "height": 1920,
+      "warnings": []
+    },
+    {
+      "quality": 0,
+      "previewMs": 676,
+      "analysisMs": 581,
+      "downloadMs": 11508,
+      "height": 1920,
+      "warnings": []
+    }
+  ],
+  "limitations": [
+    "No Android 16 or x86_64 runtime test in this iteration",
+    "Authentication response fixtures and isolated expiry checks; no authenticated account download verified",
+    "Caption test uses public MDN VTT and extraction fixtures; protected caption headers may require further support",
+    "Preview timing is native API timing, not a universal cold UI guarantee"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "debug": [
+    "public final org.json.JSONObject migration$fetchy();"
+  ],
+  "release": [
+    "public final org.json.JSONObject migration$fetchy();"
+  ]
+}

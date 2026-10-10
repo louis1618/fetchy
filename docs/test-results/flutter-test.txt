@@ -1,0 +1,13 @@
+00:00 +0: loading /home/louis/Documents/.dev/Fetchy/test/widget_test.dart
+00:00 +0: native map conversion and byte labels
+00:00 +1: Korean tabs and settings render
+00:02 +2: URL validation and native error are clear
+00:02 +3: video and audio multiselection sends complete enqueue contract
+00:03 +4: first save requests a folder grant before enqueue
+00:04 +5: canceling first folder grant preserves media selection
+00:04 +6: event snapshot updates job list
+00:05 +7: share entry is transparent and closes through native
+00:05 +8: native percent progress and string quality normalize
+00:06 +9: folder creation and default file move match native contract
+00:06 +10: cookie login import and deletion call native methods
+00:07 +11: All tests passed!

@@ -1,0 +1,8 @@
+Restore initially ungranted notification permission on test emulator
+
+Stop test emulator
+OK: killing emulator, bye bye
+OK
+
+Leave verified Fetchy installed and open on physical device
+Starting: Intent { cmp=com.luverse.fetchy/.MainActivity }

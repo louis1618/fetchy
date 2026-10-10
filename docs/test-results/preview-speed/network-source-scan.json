@@ -1,0 +1,22 @@
+{
+  "prohibitedReferences": {
+    "Morit_channel": [],
+    "Supabase": [],
+    "Firebase": [],
+    "Cobalt": [],
+    "Morit_backend": []
+  },
+  "publicPreviewOrigins": [
+    "api.fxtwitter.com",
+    "vimeo.com",
+    "www.instagram.com",
+    "www.tiktok.com",
+    "www.youtube.com"
+  ],
+  "metadataProvider": {
+    "origin": "https://api.fxtwitter.com",
+    "platform": "X only",
+    "cookiesForwarded": false
+  },
+  "scope": "Static source scan; not a packet capture"
+}

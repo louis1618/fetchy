@@ -1,0 +1,12 @@
+{
+  "tool": "Android SDK 36 aapt2 / libziparchive",
+  "before": {
+    "exitCode": 1,
+    "stderr": "10-06 07:46:13.619 3336222 3336222 W ziparchive: Zip: missed a central dir sig (at 0)\nandroid/app/src/main/assets/yt-dlp: error: failed opening zip: Invalid file.\n"
+  },
+  "after": {
+    "exitCode": 1,
+    "stderr": "/tmp/tmpz0_zxcgl.zip: error: could not identify format of APK.\n"
+  },
+  "note": "Initial AAPT2 probe was unsuitable for listing a module ZIP. Both runs exit before APK manifest processing; it is not a successful regression test. The final aapt list test independently validates before rejection and after acceptance."
+}

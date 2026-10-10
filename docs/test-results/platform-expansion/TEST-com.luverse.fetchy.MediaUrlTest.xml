@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.luverse.fetchy.MediaUrlTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-08T09:58:54.869Z" hostname="Luverse" time="0.02">
+  <properties/>
+  <testcase name="originalPhotoMarkersDoNotAllowOtherPlatformsOrUnsafeHosts" classname="com.luverse.fetchy.MediaUrlTest" time="0.002"/>
+  <testcase name="oneInstagramStoryDoesNotSelectTheWholeAccount" classname="com.luverse.fetchy.MediaUrlTest" time="0.003"/>
+  <testcase name="explicitPlaylistsAndInstagramKeepMultipleAssets" classname="com.luverse.fetchy.MediaUrlTest" time="0.003"/>
+  <testcase name="youtubeWatchWithRadioRemainsOneVideo" classname="com.luverse.fetchy.MediaUrlTest" time="0.0"/>
+  <testcase name="cookiesAreSelectedBySourcePlatformWithoutCrossSiteLeakage" classname="com.luverse.fetchy.MediaUrlTest" time="0.004"/>
+  <testcase name="individualMediaRoutesAndNewPlatformsAreRecognized" classname="com.luverse.fetchy.MediaUrlTest" time="0.008"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,117 @@
+{
+  "version": "1.0.3+4",
+  "device": "Silver Max Pro 2 / Android 12 API 31",
+  "nativeTests": {
+    "python-startup-after": 1,
+    "parser-cancel": 4,
+    "native-youtube": 1,
+    "native-reel": 1,
+    "native-reel-audio": 1,
+    "native-reel-full-formats": 1,
+    "native-tiktok": 1,
+    "native-x": 1,
+    "resolved-info-fallback": 1,
+    "resolved-info-expiry": 1,
+    "resume-streams": 1,
+    "preview-vimeo": 1,
+    "preview-tiktok": 1,
+    "preview-image": 1,
+    "x-expiry": 1,
+    "queue-regression": 2,
+    "queue-youtube": 1,
+    "queue-reel": 1,
+    "queue-x-multi": 1
+  },
+  "nativeTotal": 23,
+  "jvmTests": {
+    "TEST-com.luverse.fetchy.StorageNamesTest.xml": 3,
+    "TEST-com.luverse.fetchy.NetworkPolicyTest.xml": 5,
+    "TEST-com.luverse.fetchy.PreviewUrlTest.xml": 3,
+    "TEST-com.luverse.fetchy.MediaUrlTest.xml": 2
+  },
+  "jvmTotal": 13,
+  "flutterTests": 32,
+  "shareUI": {
+    "ui-reel-cold.json": {
+      "status": "ready",
+      "coldProcess": true,
+      "note": "UI polling time includes accessibility dump overhead",
+      "elapsedSeconds": 3.086,
+      "previewImageMs": 1560,
+      "selectionFrameMs": 1119
+    },
+    "ui-reel-warm.json": {
+      "status": "ready",
+      "coldProcess": true,
+      "note": "UI polling time includes accessibility dump overhead",
+      "elapsedSeconds": 3.726,
+      "previewFrameMs": 226,
+      "previewImageMs": 648,
+      "selectionFrameMs": 228
+    },
+    "ui-tiktok-cold.json": {
+      "status": "ready",
+      "coldProcess": true,
+      "note": "UI polling time includes accessibility dump overhead",
+      "elapsedSeconds": 12.304,
+      "previewFrameMs": 712,
+      "previewImageMs": 1383,
+      "selectionFrameMs": 9313
+    },
+    "ui-tiktok-warm.json": {
+      "status": "ready",
+      "coldProcess": true,
+      "note": "UI polling time includes accessibility dump overhead",
+      "elapsedSeconds": 3.434,
+      "previewFrameMs": 339,
+      "previewImageMs": 825,
+      "selectionFrameMs": 340
+    },
+    "ui-x-cold.json": {
+      "status": "ready",
+      "coldProcess": true,
+      "note": "UI polling time includes accessibility dump overhead",
+      "elapsedSeconds": 3.684,
+      "previewImageMs": 1191,
+      "selectionFrameMs": 728
+    },
+    "ui-x-warm.json": {
+      "status": "ready",
+      "coldProcess": true,
+      "note": "UI polling time includes accessibility dump overhead",
+      "elapsedSeconds": 3.269,
+      "previewFrameMs": 245,
+      "previewImageMs": 700,
+      "selectionFrameMs": 246
+    },
+    "ui-youtube-cold.json": {
+      "status": "ready",
+      "coldProcess": true,
+      "note": "UI polling time includes accessibility dump overhead",
+      "elapsedSeconds": 12.513,
+      "previewFrameMs": 562,
+      "previewImageMs": 1081,
+      "selectionFrameMs": 9556
+    },
+    "ui-youtube-warm.json": {
+      "status": "ready",
+      "coldProcess": true,
+      "note": "UI polling time includes accessibility dump overhead",
+      "elapsedSeconds": 3.755,
+      "previewFrameMs": 294,
+      "previewImageMs": 682,
+      "selectionFrameMs": 295
+    }
+  },
+  "apks": {
+    "Fetchy-arm64.apk": {
+      "sha256": "6cadcfcf3554c99485294117e039803665c1f1eec16acc6b6595e8c2aada9288",
+      "bytes": 70017587
+    },
+    "Fetchy-x86_64.apk": {
+      "sha256": "1f3faeab4060b2d17d69b1dc472ebaabad72f8fb2982f8da978c330add8d5b78",
+      "bytes": 73368136
+    }
+  },
+  "emulatorVerifiedThisVersion": false
+}

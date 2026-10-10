@@ -1,0 +1,14 @@
+[
+  {
+    "abi": "arm64-v8a",
+    "bytes": 70028274,
+    "sha256": "12086b17659f509e269ef2dc1c20759755836355d3adaa23fa3a80dacb0a33af",
+    "assets": "exact source match"
+  },
+  {
+    "abi": "x86_64",
+    "bytes": 73378403,
+    "sha256": "fa18b7b3ba9391542120244838ca9c256b742cb5bea3c81b235b9e79642b9ede",
+    "assets": "exact source match"
+  }
+]

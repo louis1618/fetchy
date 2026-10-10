@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.luverse.fetchy.MediaUrlTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-07T21:45:48.202Z" hostname="Luverse" time="0.012">
+  <properties/>
+  <testcase name="oneInstagramStoryDoesNotSelectTheWholeAccount" classname="com.luverse.fetchy.MediaUrlTest" time="0.008"/>
+  <testcase name="explicitPlaylistsAndInstagramKeepMultipleAssets" classname="com.luverse.fetchy.MediaUrlTest" time="0.004"/>
+  <testcase name="youtubeWatchWithRadioRemainsOneVideo" classname="com.luverse.fetchy.MediaUrlTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

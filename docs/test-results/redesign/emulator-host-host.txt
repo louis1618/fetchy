@@ -1,0 +1,4 @@
+INFO         | Graphics backend: gfxstream
+INFO         | Feature 'Vulkan' (21) is overridden to 'disabled'
+ERROR        | Your GPU cannot be used for hardware rendering. Consider using software rendering.
+INFO         | Boot completed in 15841 ms

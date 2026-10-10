@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.luverse.fetchy.StorageNamesTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-05T08:18:09.606Z" hostname="Luverse" time="0.021">
+  <properties/>
+  <testcase name="generatedUnicodeTitlesFitFilesystemByteLimits" classname="com.luverse.fetchy.StorageNamesTest" time="0.009"/>
+  <testcase name="rejectsTraversalSeparatorsControlsAndAmbiguousNames" classname="com.luverse.fetchy.StorageNamesTest" time="0.011"/>
+  <testcase name="preservesValidUnicodeAndExtensions" classname="com.luverse.fetchy.StorageNamesTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

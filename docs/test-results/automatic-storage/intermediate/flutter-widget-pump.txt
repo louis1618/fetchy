@@ -1,0 +1,96 @@
+Resolving dependencies...
+Downloading packages...
+  material_color_utilities 0.13.0 (0.13.1 available)
+  meta 1.18.3 (1.19.0 available)
+  test_api 0.7.12 (0.7.14 available)
+  vector_math 2.4.0 (2.4.3 available)
+Got dependencies!
+4 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+00:00 +0: loading /home/louis/Documents/.dev/Fetchy/test/widget_test.dart
+00:00 +0: native map conversion and byte labels
+00:00 +1: shared metadata appears before formats and cannot enqueue
+FetchyPreview frame elapsedMs=156
+FetchySelection frame elapsedMs=277
+00:00 +2: ten second delay stops spinner and keeps retry visible
+FetchyPreview frame elapsedMs=57
+FetchySelection frame elapsedMs=128
+00:01 +3: late preview cannot replace a completed format selection
+FetchySelection frame elapsedMs=47
+00:01 +4: leaving analysis ignores delayed responses
+00:02 +5: same quality defaults to resolved HTTP and manual quality still wins
+FetchySelection frame elapsedMs=49
+FetchySelection frame elapsedMs=40
+00:02 +6: Instagram original keeps the full format lookup available
+FetchySelection frame elapsedMs=39
+FetchySelection frame elapsedMs=36
+00:03 +7: Korean tabs and settings render
+00:03 +8: URL validation and native error are clear
+00:04 +9: audio tab sends only audio in the enqueue contract
+FetchySelection frame elapsedMs=41
+00:04 +10: switching back to video keeps its quality and excludes audio
+FetchySelection frame elapsedMs=27
+00:05 +11: first save creates automatic storage without a picker
+FetchySelection frame elapsedMs=37
+00:05 +12: automatic storage failure preserves media selection
+FetchySelection frame elapsedMs=29
+00:05 +13: plus creates automatic storage and settings can change location
+══╡ EXCEPTION CAUGHT BY FLUTTER TEST FRAMEWORK ╞════════════════════════════════════════════════════
+The following TestFailure was thrown running a test:
+Expected: an object with length of <1>
+  Actual: WhereIterable<MethodCall>:[]
+   Which: has length of <0>
+
+When the exception was thrown, this was the stack:
+#4      main.<anonymous closure> (file:///home/louis/Documents/.dev/Fetchy/test/widget_test.dart:454:7)
+<asynchronous suspension>
+#5      testWidgets.<anonymous closure>.<anonymous closure> (package:flutter_test/src/widget_tester.dart:192:15)
+<asynchronous suspension>
+#6      TestWidgetsFlutterBinding._runTestBody (package:flutter_test/src/binding.dart:1953:5)
+<asynchronous suspension>
+<asynchronous suspension>
+(elided one frame from package:stack_trace)
+
+This was caught by the test expectation on the following line:
+  file:///home/louis/Documents/.dev/Fetchy/test/widget_test.dart line 454
+The test description was:
+  plus creates automatic storage and settings can change location
+════════════════════════════════════════════════════════════════════════════════════════════════════
+00:06 +13 -1: plus creates automatic storage and settings can change location [E]
+  Test failed. See exception logs above.
+  The test description was: plus creates automatic storage and settings can change location
+  
+00:06 +13 -1: missing file can still be deleted from the long press menu
+00:06 +14 -1: event snapshot updates job list
+00:07 +15 -1: share entry is transparent and closes through native
+FetchySelection frame elapsedMs=37
+00:07 +16 -1: native percent progress and string quality normalize
+00:07 +17 -1: folder creation and default file move match native contract
+00:08 +18 -1: folder picker keeps reference order, trailing radios and a visible create action
+00:09 +19 -1: share analyzes before snapshot but keeps saved quality
+FetchySelection frame elapsedMs=35
+00:09 +20 -1: X extractor label uses the existing X platform folder
+FetchySelection frame elapsedMs=25
+00:09 +21 -1: shared audio selection never enqueues the hidden video format
+FetchySelection frame elapsedMs=22
+00:09 +22 -1: multiple images remain selectable within the current media tab
+FetchySelection frame elapsedMs=17
+00:09 +23 -1: queued jobs show their network reason and provide restart
+00:09 +24 -1: cookie login import and deletion call native methods
+00:10 +25 -1: new platform shortcuts and native cookie registry are reachable
+00:10 +26 -1: photo post music downloads only from the selected audio tab
+FetchySelection frame elapsedMs=18
+00:11 +27 -1: welcome is persisted only after starting
+00:11 +28 -1: plus inside a folder creates a real child with selected color
+00:11 +29 -1: favorite filtering and folder menu use stable IDs
+00:11 +30 -1: recent link reanalysis keeps original source URL
+FetchySelection frame elapsedMs=20
+00:11 +31 -1: small screen and enlarged Korean type do not overflow
+00:12 +32 -1: list titles have explicit light and dark contrast colors
+00:12 +33 -1: dark folder captions follow the active surface color
+00:12 +34 -1: dark home shortcut background uses the current shell theme on first render
+00:12 +35 -1: a removed current folder returns browsing and plus to the real root
+00:12 +36 -1: Some tests failed.
+
+Failing tests:
+  /home/louis/Documents/.dev/Fetchy/test/widget_test.dart: plus creates automatic storage and settings can change location

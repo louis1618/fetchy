@@ -1,0 +1,6 @@
+{
+  "status": "ready",
+  "coldProcess": false,
+  "note": "UI polling time includes accessibility dump overhead",
+  "elapsedSeconds": 4.019
+}

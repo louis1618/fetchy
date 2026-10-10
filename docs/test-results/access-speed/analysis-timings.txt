@@ -1,0 +1,17 @@
+--------- beginning of main
+10-05 20:25:33.389  1144  1393 I FetchyAnalysis: analyzed platform=X (Twitter) elapsedMs=523 assets=1
+10-05 20:25:38.426  1525  1643 I FetchyAnalysis: cache_hit elapsedMs=7
+10-05 20:26:00.351  1709  1783 I FetchyAnalysis: analyzed platform=YouTube elapsedMs=18150 assets=1
+10-05 20:26:04.364  2261  2336 I FetchyAnalysis: cache_hit elapsedMs=9
+10-05 20:26:23.798  2387  2467 I FetchyAnalysis: analyzed platform=Instagram elapsedMs=15057 assets=1
+10-05 20:26:27.610  2659  2728 I FetchyAnalysis: cache_hit elapsedMs=8
+10-05 20:28:22.967  2899  2917 I FetchyAnalysis: analyzed platform=X (Twitter) elapsedMs=471 assets=1
+10-05 20:28:22.977  2899  2917 I FetchyAnalysis: cache_hit elapsedMs=8
+10-05 20:28:28.262  3002  3019 I FetchyAnalysis: analyzed platform=X (Twitter) elapsedMs=907 assets=1
+10-05 20:28:28.273  3002  3019 I FetchyAnalysis: cache_hit elapsedMs=9
+10-05 20:28:35.314  3102  3121 I FetchyAnalysis: analyzed platform=X (Twitter) elapsedMs=547 assets=1
+10-05 20:28:35.320  3102  3121 I FetchyAnalysis: cache_hit elapsedMs=5
+10-05 20:28:39.749  3190  3207 I FetchyAnalysis: analyzed platform=X (Twitter) elapsedMs=844 assets=4
+10-05 20:28:39.760  3190  3207 I FetchyAnalysis: cache_hit elapsedMs=8
+10-05 20:28:44.021  3287  3306 I FetchyAnalysis: analyzed platform=X (Twitter) elapsedMs=409 assets=1
+10-05 20:28:44.028  3287  3306 I FetchyAnalysis: cache_hit elapsedMs=6

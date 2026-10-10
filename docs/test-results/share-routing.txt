@@ -1,0 +1,2 @@
+    mResumedActivity: ActivityRecord{726979a u0 com.luverse.fetchy/.ShareActivity t363}
+    mResumedActivity: ActivityRecord{780bf65 u0 com.android.settings/.homepage.SettingsHomepageActivity t362}

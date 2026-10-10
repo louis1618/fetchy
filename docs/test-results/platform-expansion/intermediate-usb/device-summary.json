@@ -1,0 +1,86 @@
+[
+  {
+    "name": "native-fixtures",
+    "passed": true,
+    "seconds": 14.09,
+    "metrics": []
+  },
+  {
+    "name": "story-fixtures",
+    "passed": true,
+    "seconds": 16.34,
+    "metrics": []
+  },
+  {
+    "name": "queue-regression",
+    "passed": true,
+    "seconds": 11.46,
+    "metrics": []
+  },
+  {
+    "name": "bluesky-photo",
+    "passed": false,
+    "seconds": 4.22,
+    "metrics": []
+  },
+  {
+    "name": "streamable",
+    "passed": false,
+    "seconds": 0.0,
+    "metrics": []
+  },
+  {
+    "name": "naver-tv",
+    "passed": false,
+    "seconds": 0.0,
+    "metrics": []
+  },
+  {
+    "name": "kakao-tv",
+    "passed": false,
+    "seconds": 0.0,
+    "metrics": []
+  },
+  {
+    "name": "bandcamp",
+    "passed": false,
+    "seconds": 0.0,
+    "metrics": []
+  },
+  {
+    "name": "rumble",
+    "passed": false,
+    "seconds": 0.0,
+    "metrics": []
+  },
+  {
+    "name": "tiktok-photo",
+    "passed": false,
+    "seconds": 0.0,
+    "metrics": []
+  },
+  {
+    "name": "reddit-photo",
+    "passed": false,
+    "seconds": 0.0,
+    "metrics": []
+  },
+  {
+    "name": "youtube-regression",
+    "passed": false,
+    "seconds": 0.0,
+    "metrics": []
+  },
+  {
+    "name": "instagram-regression",
+    "passed": false,
+    "seconds": 0.0,
+    "metrics": []
+  },
+  {
+    "name": "x-regression",
+    "passed": false,
+    "seconds": 0.0,
+    "metrics": []
+  }
+]

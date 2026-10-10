@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.luverse.fetchy.NetworkPolicyTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-05T22:46:44.792Z" hostname="Luverse" time="0.002">
+  <properties/>
+  <testcase name="wifiOnlyBlocksCellular" classname="com.luverse.fetchy.NetworkPolicyTest" time="0.001"/>
+  <testcase name="offlineNeverTransfers" classname="com.luverse.fetchy.NetworkPolicyTest" time="0.0"/>
+  <testcase name="mobileDataEnabledAllowsCellular" classname="com.luverse.fetchy.NetworkPolicyTest" time="0.0"/>
+  <testcase name="blockedNetworksExplainWhyWithoutChangingPolicy" classname="com.luverse.fetchy.NetworkPolicyTest" time="0.0"/>
+  <testcase name="mobileDataDisabledPreservesWifiAndEthernet" classname="com.luverse.fetchy.NetworkPolicyTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

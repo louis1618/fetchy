@@ -1,0 +1,47 @@
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.PreviewDeviceTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.luverse.fetchy.PreviewDeviceTest:
+INSTRUMENTATION_STATUS: test=livePreviewAndExactDownload
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.PreviewDeviceTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stack=java.io.IOException: 미디어 분석에 실패했습니다. 플랫폼 응답이나 분석 엔진 문제일 수 있습니다. 잠시 후 다시 시도해주세요.
+	at com.luverse.fetchy.Engine.safeError(Engine.kt:1030)
+	at com.luverse.fetchy.Engine.analyzeInternal(Engine.kt:291)
+	at com.luverse.fetchy.Engine.analyze(Engine.kt:223)
+	at com.luverse.fetchy.Engine.analyze$default(Engine.kt:209)
+	at com.luverse.fetchy.PreviewDeviceTest.livePreviewAndExactDownload(PreviewDeviceTest.kt:128)
+
+INSTRUMENTATION_STATUS: stream=
+Error in livePreviewAndExactDownload(com.luverse.fetchy.PreviewDeviceTest):
+java.io.IOException: 미디어 분석에 실패했습니다. 플랫폼 응답이나 분석 엔진 문제일 수 있습니다. 잠시 후 다시 시도해주세요.
+	at com.luverse.fetchy.Engine.safeError(Engine.kt:1030)
+	at com.luverse.fetchy.Engine.analyzeInternal(Engine.kt:291)
+	at com.luverse.fetchy.Engine.analyze(Engine.kt:223)
+	at com.luverse.fetchy.Engine.analyze$default(Engine.kt:209)
+	at com.luverse.fetchy.PreviewDeviceTest.livePreviewAndExactDownload(PreviewDeviceTest.kt:128)
+
+INSTRUMENTATION_STATUS: test=livePreviewAndExactDownload
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_RESULT: stream=
+
+Time: 1.037
+There was 1 failure:
+1) livePreviewAndExactDownload(com.luverse.fetchy.PreviewDeviceTest)
+java.io.IOException: 미디어 분석에 실패했습니다. 플랫폼 응답이나 분석 엔진 문제일 수 있습니다. 잠시 후 다시 시도해주세요.
+	at com.luverse.fetchy.Engine.safeError(Engine.kt:1030)
+	at com.luverse.fetchy.Engine.analyzeInternal(Engine.kt:291)
+	at com.luverse.fetchy.Engine.analyze(Engine.kt:223)
+	at com.luverse.fetchy.Engine.analyze$default(Engine.kt:209)
+	at com.luverse.fetchy.PreviewDeviceTest.livePreviewAndExactDownload(PreviewDeviceTest.kt:128)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+
+INSTRUMENTATION_CODE: -1

@@ -1,0 +1,8 @@
+PASS emulator prepare 
+Traceback (most recent call last):
+  File "/tmp/fetchy_queue_ui.py", line 49, in <module>
+    wait('최근 링크');click('다운로드 내역',scroll=True)
+    ^^^^^^^^^^^^^^^^^
+  File "/tmp/fetchy_queue_ui.py", line 24, in wait
+    raise RuntimeError('Missing screen state: '+label)
+RuntimeError: Missing screen state: 최근 링크

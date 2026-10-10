@@ -1,0 +1,9 @@
+{
+  "sameAsContinuationBaseline": true,
+  "status": [
+    " M docs/morit-feature-inventory.md",
+    " M services/backend/deployment/search/searxng-settings.yml",
+    "?? .local/",
+    "?? docs/feature/"
+  ]
+}

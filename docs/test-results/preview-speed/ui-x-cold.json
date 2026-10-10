@@ -1,0 +1,14 @@
+{
+  "status": "ready",
+  "coldProcess": true,
+  "note": "UI polling time includes accessibility dump overhead",
+  "elapsedSeconds": 3.684,
+  "previewImageMs": 1191,
+  "selectionFrameMs": 728,
+  "performance": [
+    "I/FetchyAnalysis(21934): analyzed platform=X (Twitter) elapsedMs=530 assets=1",
+    "I/FetchyPreview(21934): ready platform=X (Twitter) elapsedMs=541",
+    "I/flutter (21934): FetchySelection frame elapsedMs=728",
+    "I/flutter (21934): FetchyPreview image elapsedMs=1191"
+  ]
+}

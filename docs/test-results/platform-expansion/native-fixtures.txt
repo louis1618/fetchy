@@ -1,0 +1,67 @@
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.PlatformDeviceTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=3
+INSTRUMENTATION_STATUS: stream=
+com.luverse.fetchy.PlatformDeviceTest:
+INSTRUMENTATION_STATUS: test=originalPhotosAndMuxedAudioUseTheRealParser
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.PlatformDeviceTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=3
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=originalPhotosAndMuxedAudioUseTheRealParser
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.PlatformDeviceTest
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=3
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=extendedCookiesStayEncryptedAndIsolated
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.PlatformDeviceTest
+INSTRUMENTATION_STATUS: current=2
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=3
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=extendedCookiesStayEncryptedAndIsolated
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.PlatformDeviceTest
+INSTRUMENTATION_STATUS: current=3
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=3
+INSTRUMENTATION_STATUS: stream=
+INSTRUMENTATION_STATUS: test=shippedPhotoExtensionsRunOnAndroidPython
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: photoCheck=WARNING: Only images are available for download. use --list-formats to see them
+WARNING: Requested format is not available
+WARNING: Only images are available for download. use --list-formats to see them
+WARNING: Requested format is not available
+WARNING: Only images are available for download. use --list-formats to see them
+WARNING: Requested format is not available
+WARNING: [Reddit+fetchy-post-photos] abc123: No media found
+WARNING: Only images are available for download. use --list-formats to see them
+WARNING: Requested format is not available
+WARNING: Only images are available for download. use --list-formats to see them
+WARNING: Requested format is not available
+WARNING: Only images are available for download. use --list-formats to see them
+WARNING: Requested format is not available
+{"TikTok": {"originalPhotos": 2, "assets": 3}, "Pinterest": {"originalPhotos": 1, "assets": 1}, "Reddit": {"originalPhotos": 2, "assets": 2}, "Bluesky": {"originalPhotos": 1, "assets": 1}, "Instagram": "photo original retained; video poster excluded"}
+
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.PlatformDeviceTest
+INSTRUMENTATION_STATUS: current=3
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=3
+INSTRUMENTATION_STATUS: stream=.
+INSTRUMENTATION_STATUS: test=shippedPhotoExtensionsRunOnAndroidPython
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_RESULT: stream=
+
+Time: 11.001
+
+OK (3 tests)
+
+
+INSTRUMENTATION_CODE: -1
