@@ -1,0 +1,6 @@
+build/app/outputs/flutter-apk/app-arm64-v8a-release.apk: 1 file pushed, 0 skipped. 30.6 MB/s (70090646 bytes in 2.186s)
+Performing Push Install
+Success
+build/app/outputs/apk/androidTest/debug/app-debug-androidTest.apk: 1 file pushed, 0 skipped. 448.0 MB/s (609482 bytes in 0.001s)
+Performing Push Install
+Success

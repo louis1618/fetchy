@@ -347,16 +347,26 @@ class FetchyRuntime private constructor(val context: Context) {
                 if (job.optString("state") in setOf("paused", "canceled", "queued")) return
                 original.optJSONObject("selection")?.optJSONObject("mediaMetadata")?.let { job.put("mediaMetadata", it) }
                 original.optJSONArray("warnings")?.let { job.put("warnings", it) }
-                job.put("state", "saving"); store.put("jobs", job)
                 val settings = job.getJSONObject("settings")
+                val sourceDate = original.getJSONObject("asset").optLong("sourceTimestamp").takeIf { it > 0 }
+                if (job.optLong("mediaDate") <= 0) job.put("mediaDate", selectedMediaDate(settings.optString("fileDate", "download"), sourceDate, System.currentTimeMillis()))
+                if (settings.optString("fileDate") == "source" && sourceDate == null) {
+                    val warnings = job.optJSONArray("warnings") ?: JSONArray().also { job.put("warnings", it) }
+                    warnings.put("게시 시각을 확인할 수 없어 현재 시각으로 저장했습니다.")
+                }
+                job.put("state", "saving"); store.put("jobs", job)
                 val title = StorageNames.title(job.optString("title", "media").replace(Regex("[\\/:*?\"<>|\\p{Cntrl}]"), "_"))
                 val stableId = job.getString("assetId").replace(Regex("[^A-Za-z0-9_-]"), "_").take(40)
                 val base = when (settings.optString("nameRule", "title_id")) {
                     "title" -> title
-                    "date_title" -> "${java.text.SimpleDateFormat("yyyyMMdd_HHmmss", java.util.Locale.ROOT).format(java.util.Date(job.optLong("createdAt")))}_$title"
+                    "date_title" -> "${java.text.SimpleDateFormat("yyyyMMdd_HHmmss", java.util.Locale.ROOT).format(java.util.Date(job.getLong("mediaDate")))}_$title"
                     else -> "${title}_$stableId"
                 }
                 val file = storage.publish(id, output, "$base.${output.extension}", engine.mime(output, job.getString("kind")), job.optString("folderId").takeIf { it.isNotBlank() })
+                if (file.optBoolean("dateApplied", true).not() && settings.optString("fileDate") == "source") {
+                    val warnings = job.optJSONArray("warnings") ?: JSONArray().also { job.put("warnings", it) }
+                    warnings.put("저장소에서 파일 날짜를 변경하지 못했습니다. 앱에는 선택한 날짜를 보관합니다.")
+                }
                 val subtitles = original.optJSONArray("sidecars") ?: JSONArray()
                 for (i in 0 until subtitles.length()) {
                     val extra = subtitles.getJSONObject(i); val source = File(extra.getString("path")).canonicalFile
@@ -365,7 +375,7 @@ class FetchyRuntime private constructor(val context: Context) {
                     try {
                     storage.publish("$id-sub-$language", source, "${StorageNames.title(file.getString("name").substringBeforeLast('.'))}.$language.$ext",
                         if (ext == "srt") "application/x-subrip" else "text/vtt", file.optString("folderId").takeIf { !file.isNull("folderId") && it.isNotBlank() }, file.getString("rootUri"),
-                        JSONObject().put("subtitleFor", id).put("language", language).put("automatic", extra.getBoolean("automatic")))
+                        JSONObject().put("subtitleFor", id).put("language", language).put("automatic", extra.getBoolean("automatic")).put("mediaDate", file.optLong("mediaDate")))
                     } catch (error: Exception) {
                         val warnings = job.optJSONArray("warnings") ?: JSONArray().also { job.put("warnings", it) }
                         warnings.put("자막 파일 저장 실패 · ${FailureKind.from(error).message}")

@@ -1,0 +1,12 @@
+[
+  {
+    "apk": "Fetchy-arm64.apk",
+    "elfFiles": 259,
+    "below16KB": []
+  },
+  {
+    "apk": "Fetchy-x86_64.apk",
+    "elfFiles": 261,
+    "below16KB": []
+  }
+]

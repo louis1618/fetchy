@@ -1,0 +1,105 @@
+{
+  "version": "1.0.9+10",
+  "flutterTests": 47,
+  "jvmTests": 31,
+  "deviceTests": {
+    "cookie-scope.txt": {
+      "tests": 1,
+      "seconds": 0.092,
+      "failures": 0,
+      "skipped": 0
+    },
+    "provided-x-video.txt": {
+      "tests": 1,
+      "seconds": 10.765,
+      "failures": 0,
+      "skipped": 0
+    },
+    "provided-x-audio.txt": {
+      "tests": 1,
+      "seconds": 8.507,
+      "failures": 0,
+      "skipped": 0
+    },
+    "legacy-merge.txt": {
+      "tests": 1,
+      "seconds": 2.716,
+      "failures": 0,
+      "skipped": 0
+    },
+    "dates-device.txt": {
+      "tests": 2,
+      "seconds": 13.459,
+      "failures": 0,
+      "skipped": 0
+    },
+    "public-x.txt": {
+      "tests": 1,
+      "seconds": 3.33,
+      "failures": 0,
+      "skipped": 0
+    },
+    "regression.txt": {
+      "tests": 23,
+      "seconds": 112.521,
+      "failures": 0,
+      "skipped": 0
+    }
+  },
+  "totalDeviceTests": 30,
+  "device": "Silver Max Pro 2 / Android 12 / API 31",
+  "emulatorUsed": false,
+  "providedXResults": {
+    "video": {
+      "platform": "X (Twitter)",
+      "kind": "video",
+      "assets": 1,
+      "analysisMs": 7846,
+      "totalMs": 10680,
+      "bytes": 605883,
+      "ext": "mp4",
+      "safSaved": true
+    },
+    "audio": {
+      "platform": "X (Twitter)",
+      "kind": "audio",
+      "assets": 1,
+      "analysisMs": 58,
+      "totalMs": 8416,
+      "bytes": 59754,
+      "ext": "m4a",
+      "safSaved": true
+    }
+  },
+  "dateResults": [
+    {
+      "ownRoot": false,
+      "mode": "source",
+      "fileDateApplied": true,
+      "galleryDateApplied": false
+    },
+    {
+      "ownRoot": false,
+      "mode": "download",
+      "fileDateApplied": true,
+      "galleryDateApplied": false
+    },
+    {
+      "ownRoot": true,
+      "mode": "source",
+      "fileDateApplied": true,
+      "galleryDateApplied": false
+    },
+    {
+      "ownRoot": true,
+      "mode": "download",
+      "fileDateApplied": true,
+      "galleryDateApplied": false
+    }
+  ],
+  "limits": [
+    "MediaStore date updates were denied on this device; physical file dates applied in all four cases.",
+    "Embedded capture metadata is preserved; gallery sorting may use a different date.",
+    "Other platforms with private accounts, Android 16, and x86_64 runtime were not verified in this iteration."
+  ]
+}

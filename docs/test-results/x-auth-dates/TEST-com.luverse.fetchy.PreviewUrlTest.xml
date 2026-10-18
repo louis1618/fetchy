@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.luverse.fetchy.PreviewUrlTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-10-17T23:52:09.366Z" hostname="Luverse" time="0.009">
+  <properties/>
+  <testcase name="newIndividualAliasesKeepAccessTokensAndAssetIds" classname="com.luverse.fetchy.PreviewUrlTest" time="0.006"/>
+  <testcase name="unsafeAliasesCannotReachAPublicPostCacheEntry" classname="com.luverse.fetchy.PreviewUrlTest" time="0.0"/>
+  <testcase name="arbitrarySignedMediaQueryIsNeverDiscarded" classname="com.luverse.fetchy.PreviewUrlTest" time="0.001"/>
+  <testcase name="storyAliasesPreserveTheRequestedItemAndRejectMalformedPaths" classname="com.luverse.fetchy.PreviewUrlTest" time="0.001"/>
+  <testcase name="knownAliasesShareCacheWithoutTurningPlaylistsIntoVideos" classname="com.luverse.fetchy.PreviewUrlTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -125,7 +125,9 @@ class PlatformDeviceTest {
                 val fs = item.getJSONArray("formats"); (0 until fs.length()).any { fs.getJSONObject(it).optString("kind") == kind }
             }
             val fs = asset.getJSONArray("formats")
-            val selected = (0 until fs.length()).map { fs.getJSONObject(it) }.filter { it.optString("kind") == kind }
+            val available = (0 until fs.length()).map { fs.getJSONObject(it) }.filter { it.optString("kind") == kind }
+            val preferred = if (kind == "audio") available.filter { it.optString("ext") == store.settings().optString("audioFormat", "m4a") } else available
+            val selected = preferred.ifEmpty { available }
                 .minByOrNull { it.optInt("height").takeIf { h -> h > 0 } ?: 99999 }!!
             val job = JSONObject().put("id", id).put("sourceUrl", analysis.getString("sourceUrl")).put("asset", asset).put("selection", selected)
                 .put("assetId", asset.getString("id")).put("formatId", selected.getString("id")).put("kind", kind)

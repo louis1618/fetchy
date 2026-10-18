@@ -1,4 +1,4 @@
-# 개별 미디어 링크 지원 · Fetchy 1.0.8
+# 개별 미디어 링크 지원 · Fetchy 1.0.9
 
 전체 계정·프로필 수집, 여러 URL 일괄 입력, 구독 자동 다운로드는 이번 확장에 포함하지 않습니다. 한 게시물 안의 사진·영상·오디오 자산 선택과 기존 다운로드 대기열은 유지합니다.
 
@@ -65,6 +65,7 @@ YouTube, Instagram, Facebook, Threads, TikTok, X, Bluesky, Reddit, Pinterest, Sn
 - Snapchat 스토리 주소, Telegram 비공개 메시지, Discord DM은 추가하지 않음.
 - 라이브 전용 녹화 제어, 본문·댓글 저장, DRM 처리는 미구현.
 - 1.0.8은 추출기가 제공하는 수동/자동 자막 언어를 SRT/VTT로 저장합니다. 자막이 제공되지 않는 자산에는 선택 UI를 표시하지 않습니다. 모든 플랫폼의 자막을 보장하지 않습니다.
+- 1.0.9는 저장된 X WebView 로그인 쿠키의 API 범위와 MP4 병합 판정을 수정합니다. 접근 권한이 있는 계정의 제공된 X 영상으로 실제 영상·M4A 저장을 확인합니다. 모든 비공개 계정·플랫폼의 성공을 의미하지 않습니다.
 - 등록 밖의 웹사이트는 기존 `Web page → yt-dlp` 경로 유지.
 
 근거: [공통 플랫폼 등록](../android/app/src/main/kotlin/com/luverse/fetchy/MediaPlatforms.kt), [엔진](../android/app/src/main/kotlin/com/luverse/fetchy/Engine.kt), [사진 추출](../android/app/src/main/assets/fetchy_photos.py), [쿠키 등록](../android/app/src/main/kotlin/com/luverse/fetchy/Cookies.kt).

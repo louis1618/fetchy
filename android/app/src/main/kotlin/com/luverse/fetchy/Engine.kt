@@ -223,7 +223,7 @@ class Engine(private val context: Context, private val cookies: CookieVault) {
             checkCanceled(a)
             val url = rawUrl.trim()
             val revision = cookies.revision()
-            val key = hash("4:${canonicalMediaUrl(url)}:$revision:$fullFormats")
+            val key = hash("6:${canonicalMediaUrl(url)}:$revision:$fullFormats")
             val cached = store.get("analysisCache", key)
             if (cached != null && System.currentTimeMillis() - cached.optLong("createdAt") in 0 until 120000) {
                 Log.i("FetchyAnalysis", "cache_hit elapsedMs=${SystemClock.elapsedRealtime() - start}")
@@ -282,7 +282,9 @@ class Engine(private val context: Context, private val cookies: CookieVault) {
         }
         // Morit tries FxTwitter first. Only the public post ID goes to this API;
         // cookies remain local and every download still uses the original CDN.
-        if (platform == "X (Twitter)" && Regex("/status(?:es)?/\\d+").containsMatchIn(uri.path)) {
+        val xPost = platform == "X (Twitter)" && Regex("/status(?:es)?/\\d+").containsMatchIn(uri.path)
+        val authenticatedX = xPost && cookies.hasXSession()
+        if (xPost) {
             val a = running ?: Active()
             try { return analyzeX(uri, a) }
             catch (_: Exception) { checkCanceled(a); Log.i("FetchyAnalysis", "x_metadata_fallback") }
@@ -292,23 +294,23 @@ class Engine(private val context: Context, private val cookies: CookieVault) {
             catch (_: Exception) { running?.let(::checkCanceled); Log.i("FetchyAnalysis", "instagram_embed_fallback") }
         }
         initialize()
-        var extractorApi = ""
         fun extract(api: String = ""): JSONObject {
             val req = request(uri.toString(), analysis = true).addOption("--dump-single-json").addOption("--skip-download")
-                .addOption("--ignore-no-formats-error")
+            if (!xPost) req.addOption("--ignore-no-formats-error")
             if (analyzeAsPlaylist(uri)) req.addOption("--yes-playlist").addOption("--playlist-end", 100)
             else req.addOption("--no-playlist")
             if (api.isNotEmpty()) req.addOption("--extractor-args", "twitter:api=$api")
             return JSONObject(execute(req, running ?: Active(), "analysis-${UUID.randomUUID()}", uri.toString(),
                 useCookies = api != "syndication", timeoutMs = 30000).out)
         }
+        if (xPost && !authenticatedX) {
+            try { return parseExtractedMedia(uri, platform, extract("syndication"), "syndication") }
+            catch (_: Exception) { running?.let(::checkCanceled) }
+        }
         val root = try {
-            if (platform == "X (Twitter)" && Regex("/status(?:es)?/\\d+").containsMatchIn(uri.path)) {
-                try { extract("syndication").also { extractorApi = "syndication" } }
-                catch (_: Exception) { running?.let(::checkCanceled); extract() }
-            } else extract()
+            extract()
         } catch (e: Exception) { throw safeError(e, running) }
-        return parseExtractedMedia(uri, platform, root, extractorApi)
+        return parseExtractedMedia(uri, platform, root)
     }
 
     @JvmName("parseExtractedMedia")
@@ -361,7 +363,7 @@ class Engine(private val context: Context, private val cookies: CookieVault) {
                     if (!isVideo && !isAudio) continue
                     val id = f.getString("format_id")
                     if (!id.matches(Regex("[A-Za-z0-9_.-]+"))) continue
-                    val merge = isVideo && !isAudio && audio != null && audio.optString("format_id").matches(Regex("[A-Za-z0-9_.-]+"))
+                    val merge = isVideo && f.optString("acodec") == "none" && audio != null && audio.optString("format_id").matches(Regex("[A-Za-z0-9_.-]+"))
                     val selector = if (merge) "$id+${audio!!.getString("format_id")}" else id
                     val ext = if (merge) "mkv" else f.optString("ext", "mp4")
                     val h = if (f.optInt("width") > 0 && f.optInt("height") > 0) minOf(f.getInt("width"), f.getInt("height")) else f.optInt("height", 0)
@@ -401,6 +403,7 @@ class Engine(private val context: Context, private val cookies: CookieVault) {
                 .put("duration", entry.optDouble("duration", 0.0)).put("width", entry.optInt("width", 0)).put("height", entry.optInt("height", 0)).put("fps", entry.optDouble("fps", 0.0))
                 .put("playlistIndex", if (root.has("entries")) entry.optInt("playlist_index", i + 1) else 0).put("formats", fs)
                 .put("resolvedInfo", resolved)
+            sourceMediaDate(entry.optDouble("timestamp", root.optDouble("timestamp", Double.NaN)), entry.optString("upload_date", root.optString("upload_date")))?.let { asset.put("sourceTimestamp", it) }
             attachExtras(uri.toString(), entry, asset)
             assets.put(asset)
         }
@@ -524,7 +527,9 @@ class Engine(private val context: Context, private val cookies: CookieVault) {
                 .put("title", title).put("kind", if (video) "video" else "image").put("formats", fs)
                 .put("thumbnail", PreviewMetadata.safeImage(node.optString("display_url"))).put("duration", node.optDouble("video_duration", 0.0))
                 .put("playlistIndex", if (children == null) 0 else index + 1)
-                .put("width", if (video) 0 else width).put("height", if (video) 0 else height))
+                .put("width", if (video) 0 else width).put("height", if (video) 0 else height).also { asset ->
+                    sourceMediaDate(node.optDouble("taken_at_timestamp", media.optDouble("taken_at_timestamp", Double.NaN)))?.let { asset.put("sourceTimestamp", it) }
+                })
         }
         return result(uri.toString(), "Instagram", title, assets).put("analysisProvider", "instagram_embed")
     }
@@ -656,7 +661,9 @@ class Engine(private val context: Context, private val cookies: CookieVault) {
             assets.put(JSONObject().put("id", "x-$status-${shortHash(identity)}").put("title", title)
                 .put("kind", if (type == "photo") "image" else "video").put("formats", fs)
                 .put("thumbnail", xCdnUrl(item.optString("thumbnail_url"), null) ?: if (type == "photo") fs.getJSONObject(0).getString("directUrl") else "")
-                .put("width", item.optInt("width")).put("height", item.optInt("height")).put("duration", item.optDouble("duration", 0.0)))
+                .put("width", item.optInt("width")).put("height", item.optInt("height")).put("duration", item.optDouble("duration", 0.0)).also { asset ->
+                    sourceMediaDate(tweet.optDouble("created_timestamp", Double.NaN))?.let { asset.put("sourceTimestamp", it) }
+                })
         }
         if (assets.length() == 0) throw IOException("No supported X media")
         return result(uri.toString(), "X (Twitter)", title, assets).put("analysisProvider", "fxtwitter")
@@ -749,7 +756,7 @@ class Engine(private val context: Context, private val cookies: CookieVault) {
             require(!automatic || (selected.optString("kind") == "video" && job.optString("platform") == "Instagram")) { "Invalid automatic format" }
             val selector = if (automatic) automaticVideoSelector(settings.optInt("quality", 1080)) else selected.getString("selector")
             require(automatic || selector.matches(Regex("[A-Za-z0-9_.-]+(?:\\+[A-Za-z0-9_.-]+)*"))) { "Invalid exact format selector" }
-            val anonymousX = selected.optString("extractorApi") == "syndication"
+            val anonymousX = selected.optString("extractorApi") == "syndication" && !cookies.hasXSession()
             val ext = selected.getString("ext")
             fun downloadRequest(info: File?): YoutubeDLRequest {
                 val req = request(if (info == null) job.getString("sourceUrl") else null).addOption("-f", selector)
@@ -804,7 +811,9 @@ class Engine(private val context: Context, private val cookies: CookieVault) {
                 ?: throw IOException("Media engine did not produce a final file")
             val file = File(path).canonicalFile
             require(file.parentFile == workDir.canonicalFile && file.isFile && file.length() > 0) { "Invalid output file" }
-            require(automatic || file.extension.lowercase() == ext) { "Media engine produced a different output format" }
+            // yt-dlp ignores merge-output-format when the selected source already contains both streams.
+            require(automatic || file.extension.lowercase() == ext ||
+                (selected.optBoolean("needsMerge") && file.extension.lowercase() in setOf("mp4", "mkv", "webm", "mov"))) { "Media engine produced a different output format" }
             onProgress("saving", 99, file.length(), file.length())
             verify(file.inputStream().use { it.readBytesLimited() }, mime(file, selected.getString("kind")), selected.getString("kind"))
             return completed(file)

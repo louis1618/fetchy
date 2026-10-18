@@ -59,5 +59,6 @@ class Store(context: Context) {
         put("resume", true); put("notifications", true); put("theme", "system")
         put("rootUri", ""); put("rootName", "")
         put("audioMetadata", true); put("audioCover", true)
+        put("fileDate", "download")
     }
 }

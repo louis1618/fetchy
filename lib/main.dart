@@ -870,6 +870,16 @@ class _FetchyAppState extends State<FetchyApp> {
       'skip': '건너뛰기',
       'replace': '덮어쓰기',
     }),
+    choice('fileDate', '파일 날짜', {
+      'download': '현재 저장 시각',
+      'source': '플랫폼 게시 시각',
+    }),
+    const Padding(
+      padding: EdgeInsets.symmetric(horizontal: 16),
+      child: Text(
+        '게시 시각이 없으면 현재 시각으로 저장합니다. 파일 수정 시각에 적용하며 갤러리 날짜는 촬영 정보·저장소에 따라 다를 수 있어요.',
+      ),
+    ),
     toggle('mobileData', '모바일 데이터 허용', 'Wi-Fi 전용 설정이 켜져 있으면 대기'),
     choice('retries', '재시도 횟수', {
       0: '사용 안 함',

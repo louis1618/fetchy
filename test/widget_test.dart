@@ -1334,4 +1334,24 @@ void main() {
     expect(find.text('이전 완료 · 새 위치'), findsOneWidget);
     expect(find.text('찾을 수 없는 2개 항목은 기존 위치의 기록으로 유지했습니다.'), findsOneWidget);
   });
+  testWidgets('file date setting offers platform date or current save time', (
+    tester,
+  ) async {
+    snapshot['settings'] = {
+      ...asMap(snapshot['settings']),
+      'fileDate': 'download',
+    };
+    await start(tester);
+    await tester.tap(find.text('설정').last);
+    await tester.pumpAndSettle();
+    await tester.scrollUntilVisible(find.text('파일 날짜'), 300);
+    await tester.tap(find.text('파일 날짜'));
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('플랫폼 게시 시각'));
+    await tester.pumpAndSettle();
+    expect(calls.singleWhere((c) => c.method == 'settingsSet').arguments, {
+      'key': 'fileDate',
+      'value': 'source',
+    });
+  });
 }

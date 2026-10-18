@@ -173,6 +173,7 @@ open class MainActivity : FlutterActivity() {
             "videoFormat" -> require(value in listOf("mp4", "mkv", "webm"))
             "nameRule" -> require(value in listOf("title_id", "title", "date_title"))
             "duplicates" -> require(value in listOf("rename", "skip", "replace"))
+            "fileDate" -> require(value in listOf("download", "source"))
             "onboarded", "platformFolders", "wifiOnly", "mobileData", "resume", "notifications", "audioMetadata", "audioCover" -> require(value is Boolean)
             else -> error("설정 항목이 올바르지 않습니다.")
         }

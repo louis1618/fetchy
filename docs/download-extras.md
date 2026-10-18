@@ -62,6 +62,8 @@
 
 ## 검증 파일
 
+- 1.0.9의 파일 날짜 선택은 [저장소·쿠키 문서](storage-cookies.md#109-x-인증과-파일-날짜)에 있습니다. 원본 게시 시각 또는 현재 저장 시각을 파일 수정 시각·날짜 파일명·상세·게시 복구에 사용하며 갤러리 갱신 권한은 별도로 기록합니다.
+
 - [Flutter 회귀](../test/widget_test.dart), [오류·자동 선택 JVM 검사](../android/app/src/test/kotlin/com/luverse/fetchy/DownloadFailureTest.kt).
 - [Android 기능 검사](../android/app/src/androidTest/kotlin/com/luverse/fetchy/FeatureUpgradeDeviceTest.kt): 인증 응답 근거·진단 비밀 제외·실제 FFmpeg 태그/커버·자막·로컬 재생/탐색·이전 복구·자막 게시 복구·자동 화질 원본 저장·복사 후 원본 정리 중단 복구.
 - 실제 계정 인증·모의 응답, 외부 서비스 성공·실패와 건너뛴 항목은 [검증 현황](verification.md)에 구분합니다.

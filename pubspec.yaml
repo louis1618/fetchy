@@ -1,7 +1,7 @@
 name: fetchy
 description: "기기 내 URL 분석과 미디어 다운로드를 제공하는 독립 Android 앱."
 publish_to: none
-version: 1.0.8+9
+version: 1.0.9+10
 environment:
   sdk: ^3.13.2
 dependencies:

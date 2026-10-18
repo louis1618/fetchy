@@ -364,3 +364,28 @@ Instagram 임베드 숫자 PK를 yt-dlp shortcode로 비교해야 하는 ID 불�
 로그인 검사는 인증 응답 모의 자료·분리된 만료 쿠키에 대한 검사이며 실제 로그인 계정의 비공개/멤버십/스토리 다운로드 성공 검증은 아닙니다. 자막은 공개 MDN 원본과 추출 모의 자료를 사용했으며 추가 인증 헤더가 필요한 원본은 실패할 수 있습니다. 앱 내 자막 표시·영상 삽입·백그라운드 음악 재생은 포함하지 않습니다. 이전은 현재 루트의 등록된 최상위 폴더와 그 내부 실제 내용/루트 직속 등록 파일에 적용하며 다른 과거 루트·등록되지 않은 루트 직속 자료는 남습니다. 기본 Android/media 저장 위치의 앱 제거 시 삭제 정책은 유지합니다.
 
 [ARM64 APK](https://github.com/louis1618/fetchy/releases/latest/download/Fetchy-arm64.apk) · [x86_64 APK](https://github.com/louis1618/fetchy/releases/latest/download/Fetchy-x86_64.apk) · [SHA-256](https://github.com/louis1618/fetchy/releases/latest/download/SHA256SUMS.txt) · [검증 요약](test-results/feature-upgrade/summary.json). 재현: `scripts/verify_feature_upgrade.py`와 [빌드 명령](build.md).
+
+
+## 1.0.9 X 인증 다운로드·파일 날짜 (2026-10-18)
+
+기존 WebView 저장의 host-only X 로그인 쿠키가 api.x.com 인증 검사에 전달되지 않아 제공된 링크에서 형식 목록이 비어 있었습니다. 암호화 저장소를 유지하며 임시 파일에 auth_token/ct0의 첫 당사자 API 범위를 보완했습니다. 공개 조회는 기존대로 사용하고, 로그인 세션이 있으면 불필요한 익명 추출 단계를 건너뜁니다.
+
+인증 후에도 실제 H.264/AAC MP4를 영상 전용으로 오판해 병합을 요청했고, yt-dlp가 병합 불필요로 MP4를 반환하면 예상한 MKV와 다르다는 이유로 거부했습니다. acodec=none일 때만 오디오 병합을 선택하고 기존 병합 항목도 실제 영상 컨테이너를 최종 설정 형식으로 처리합니다. 자산·형식 ID, 스트림·무결성·디코딩 검사는 유지합니다.
+
+| 검사 | 실제 결과 |
+| --- | --- |
+| 재현 | [기존 설치에서 형식 없음 재현](test-results/x-auth-dates/before.txt), [원래 쿠키의 API 범위 부재](test-results/x-auth-dates/baseline-cookie-scope.txt). 쿠키 값은 기록하지 않음 |
+| 실제 로그인 | [기존 세션 API 전달 통과](test-results/x-auth-dates/cookie-scope.txt). 사용자 쿠키·파일·권한을 초기화하지 않고 새 release APK 설치 |
+| 제공한 X 영상 | [MP4 605,883 B 저장·재읽기](test-results/x-auth-dates/provided-x-video.txt). 분석 7.846초, 분석부터 저장까지 10.680초 |
+| 제공한 X 오디오 | [설정된 M4A 59,754 B 저장·재읽기](test-results/x-auth-dates/provided-x-audio.txt). 분석부터 저장까지 8.416초 |
+| 기존 항목 재시도 | [최대 HTTP 화질의 이전 병합 선택 다운로드](test-results/x-auth-dates/legacy-merge.txt). 이미 합쳐진 MP4를 받는 경로도 최종 MP4와 스트림 검증 통과 |
+| 파일 날짜 | [2개 검사 통과](test-results/x-auth-dates/dates-device.txt). 선택된 SAF 폴더와 기본 제공자 폴더 각각 원본/현재 날짜의 실제 수정 시각 확인, 중복 건너뛰기 보존, 게시 저널 재시작 복구 |
+| 공개·기존 기능 | [공개 X 저장](test-results/x-auth-dates/public-x.txt), [23개 회귀 통과](test-results/x-auth-dates/regression.txt). 자동 저장소·폴더 CRUD/이동/삭제·백그라운드·제어·원본 판별·빈 오디오 코덱의 병합 판정 포함 |
+| Flutter/JVM | [analyze 오류 없음](test-results/x-auth-dates/flutter-analyze.txt), [위젯 47개 통과](test-results/x-auth-dates/flutter-test.txt), [JVM 31개 통과](test-results/x-auth-dates/jvm-summary.json) |
+| 산출물 | [release 빌드](test-results/x-auth-dates/release-build.txt), [Android/JVM 빌드](test-results/x-auth-dates/native-build.txt), [버전·서명·ABI·asset 일치](test-results/x-auth-dates/apk-audit.json), [ELF 520개 16KiB 이상 정렬](test-results/x-auth-dates/native-alignment.json) |
+
+최종 설치 APK는 1.0.9+10(ARM64 code 2010, x86_64 code 4010)입니다. Silver Max Pro 2 / Android 12에서 **30개 통과·실패/건너뜀 없음**입니다. 테스트가 만든 파일과 작업만 정리했습니다. 초기 실패와 추가 원인 조사는 `test-results/x-auth-dates/intermediate/`, [영상 컨테이너 조사](test-results/x-auth-dates/video-processing.txt), [갤러리 권한 조사](test-results/x-auth-dates/date-details.txt)에 남깁니다.
+
+설정의 **파일 날짜 → 현재 저장 시각 / 플랫폼 게시 시각**은 새로 등록한 작업의 파일 수정 시각·날짜 파일명·상세 날짜에 적용합니다. 게시 시각이 없으면 현재 시각과 안내를 저장합니다. 원본 촬영 메타데이터는 유지합니다. 이 기기는 네 가지 로컬 저장 사례 모두 실제 파일 시각 변경은 허용했지만 MediaStore 날짜 갱신은 거부했습니다(galleryDateApplied=false). 갤러리가 촬영일이나 별도 인덱스로 정렬하면 표시 날짜가 달라질 수 있습니다.
+
+다른 플랫폼의 비공개 계정, Android 16 실기기, x86_64 실행은 이번에 검증하지 않았습니다. 로그인은 원본을 볼 권한을 대신하지 않습니다. [결과 요약](test-results/x-auth-dates/summary.json), [코드·날짜 동작](storage-cookies.md#109-x-인증과-파일-날짜), [ARM64 APK](https://github.com/louis1618/fetchy/releases/download/v1.0.9/Fetchy-arm64.apk), [x86_64 APK](https://github.com/louis1618/fetchy/releases/download/v1.0.9/Fetchy-x86_64.apk).

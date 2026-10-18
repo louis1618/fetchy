@@ -1,0 +1,43 @@
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.XSessionDeviceTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.luverse.fetchy.XSessionDeviceTest:
+INSTRUMENTATION_STATUS: test=inspectSelectedVideoProcessing
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: processing={"phase":"running","format":"http-632","ext":"mkv","needsMerge":true,"files":[{"ext":"mp4","size":605883,"probeExit":0,"codecs":["h264","aac"],"finish":"success"}]}
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.XSessionDeviceTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stack=com.luverse.fetchy.DownloadFailure: 미디어 처리 엔진에서 오류가 발생했습니다.
+	at com.luverse.fetchy.Engine.safeError(Engine.kt:1190)
+	at com.luverse.fetchy.Engine.download(Engine.kt:818)
+	at com.luverse.fetchy.XSessionDeviceTest.inspectSelectedVideoProcessing(XSessionDeviceTest.kt:27)
+
+INSTRUMENTATION_STATUS: stream=
+Error in inspectSelectedVideoProcessing(com.luverse.fetchy.XSessionDeviceTest):
+com.luverse.fetchy.DownloadFailure: 미디어 처리 엔진에서 오류가 발생했습니다.
+	at com.luverse.fetchy.Engine.safeError(Engine.kt:1190)
+	at com.luverse.fetchy.Engine.download(Engine.kt:818)
+	at com.luverse.fetchy.XSessionDeviceTest.inspectSelectedVideoProcessing(XSessionDeviceTest.kt:27)
+
+INSTRUMENTATION_STATUS: test=inspectSelectedVideoProcessing
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_RESULT: stream=
+
+Time: 12.414
+There was 1 failure:
+1) inspectSelectedVideoProcessing(com.luverse.fetchy.XSessionDeviceTest)
+com.luverse.fetchy.DownloadFailure: 미디어 처리 엔진에서 오류가 발생했습니다.
+	at com.luverse.fetchy.Engine.safeError(Engine.kt:1190)
+	at com.luverse.fetchy.Engine.download(Engine.kt:818)
+	at com.luverse.fetchy.XSessionDeviceTest.inspectSelectedVideoProcessing(XSessionDeviceTest.kt:27)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+
+INSTRUMENTATION_CODE: -1

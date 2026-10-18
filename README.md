@@ -13,6 +13,7 @@ YouTube, Instagram, TikTok, X, Reddit, Pinterest, Facebook, Bluesky, Twitch, Vim
 - 미디어와 선택 자막(SRT/VTT)을 저장하고, 오디오 태그·커버를 추가하며 영상·오디오를 앱에서 재생합니다.
 - 폴더와 하위 폴더, 즐겨찾기를 관리하고 Android 저장소 앱에서 파일을 열거나 공유합니다.
 - 플랫폼 쿠키 가져오기·로그인 확인, 저장소·네트워크 설정, 개인정보를 거른 오류 진단 공유, 중단 후 이어지는 저장 위치 이전을 제공합니다.
+- 파일 날짜를 플랫폼 게시 시각 또는 현재 저장 시각으로 선택할 수 있습니다. 게시 시각이 없으면 현재 시각을 사용합니다.
 
 ## Architecture
 
@@ -32,7 +33,7 @@ Android 7.0(API 24) 이상이 필요하며 ARM64와 x86_64 APK를 제공합니�
 
 ## Build and verify
 
-빌드 방법은 [빌드 문서](docs/build.md)를 참고하세요. 1.0.8은 Flutter 분석과 위젯 46개, JVM 27개, Android 12 실기기 31개 검사를 통과했습니다. 상세 결과와 제한은 [검증 기록](docs/verification.md)에 있습니다.
+빌드 방법은 [빌드 문서](docs/build.md)를 참고하세요. 1.0.9는 Flutter 분석과 위젯 47개, JVM 31개, Android 12 실기기 30개 검사를 통과했습니다. 상세 결과와 제한은 [검증 기록](docs/verification.md)에 있습니다.
 
 ## License
 

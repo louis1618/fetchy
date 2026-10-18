@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.luverse.fetchy.DownloadFailureTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-17T23:52:09.322Z" hostname="Luverse" time="0.017">
+  <properties/>
+  <testcase name="explainsAccessStorageAndNetworkWithoutLeakingDetails" classname="com.luverse.fetchy.DownloadFailureTest" time="0.01"/>
+  <testcase name="instagramPkMatchesTheBundledShortcodeIdentifiers" classname="com.luverse.fetchy.DownloadFailureTest" time="0.001"/>
+  <testcase name="automaticQualityUsesTheBundledPortraitAwareSorter" classname="com.luverse.fetchy.DownloadFailureTest" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

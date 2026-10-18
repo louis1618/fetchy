@@ -1,0 +1,44 @@
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.XSessionDeviceTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.luverse.fetchy.XSessionDeviceTest:
+INSTRUMENTATION_STATUS: test=savedSessionReachesXApiWithoutExportingSecrets
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: apiSession=false
+INSTRUMENTATION_STATUS: rootSession=true
+INSTRUMENTATION_STATUS_CODE: 0
+INSTRUMENTATION_STATUS: class=com.luverse.fetchy.XSessionDeviceTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stack=java.lang.AssertionError: The saved X session must be available to the first-party API
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.luverse.fetchy.XSessionDeviceTest.savedSessionReachesXApiWithoutExportingSecrets(XSessionDeviceTest.kt:22)
+
+INSTRUMENTATION_STATUS: stream=
+Error in savedSessionReachesXApiWithoutExportingSecrets(com.luverse.fetchy.XSessionDeviceTest):
+java.lang.AssertionError: The saved X session must be available to the first-party API
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.luverse.fetchy.XSessionDeviceTest.savedSessionReachesXApiWithoutExportingSecrets(XSessionDeviceTest.kt:22)
+
+INSTRUMENTATION_STATUS: test=savedSessionReachesXApiWithoutExportingSecrets
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_RESULT: stream=
+
+Time: 0.118
+There was 1 failure:
+1) savedSessionReachesXApiWithoutExportingSecrets(com.luverse.fetchy.XSessionDeviceTest)
+java.lang.AssertionError: The saved X session must be available to the first-party API
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.luverse.fetchy.XSessionDeviceTest.savedSessionReachesXApiWithoutExportingSecrets(XSessionDeviceTest.kt:22)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+
+INSTRUMENTATION_CODE: -1

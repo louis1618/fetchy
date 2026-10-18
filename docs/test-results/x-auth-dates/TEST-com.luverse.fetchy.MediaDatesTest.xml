@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.luverse.fetchy.MediaDatesTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-10-17T23:52:09.340Z" hostname="Luverse" time="0.006">
+  <properties/>
+  <testcase name="acceptsOnlyRealSourceDatesAndConvertsSeconds" classname="com.luverse.fetchy.MediaDatesTest" time="0.006"/>
+  <testcase name="sourceDateIsOptionalAndDownloadDateIsAlwaysCurrent" classname="com.luverse.fetchy.MediaDatesTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

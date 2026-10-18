@@ -210,15 +210,21 @@ class Storage(private val context: Context, private val store: Store) {
         if (existing != null && policy == "skip") {
             check(existing.mime != directory) { "Destination is a folder" }
             return@synchronized publicationMetadata(recordFile(jobId, existing.uri, existing.name, existing.mime, folderId,
-                publishRoot), metadata)
+                publishRoot), metadata, applyDate = false)
         }
         check(existing == null || policy != "replace" || existing.mime != directory) { "Cannot replace a directory" }
+        val job = store.get("jobs", jobId)
+        val sourceDate = job?.optJSONObject("asset")?.optLong("sourceTimestamp")?.takeIf { it > 0 }
+        val publication = JSONObject(metadata?.toString() ?: "{}")
+        if (publication.optLong("mediaDate") <= 0) publication.put("mediaDate", job?.optLong("mediaDate")?.takeIf { it > 0 }
+            ?: selectedMediaDate((job?.optJSONObject("settings") ?: store.settings()).optString("fileDate", "download"), sourceDate, System.currentTimeMillis()))
+        sourceDate?.let { publication.put("sourceTimestamp", it) }
         val op = JSONObject().put("id", "publish:$jobId").put("type", "publish").put("fileId", jobId)
             .put("source", source.absolutePath).put("parent", parent.toString()).put("name", name).put("mime", mime)
             .put("folderId", folderId ?: JSONObject.NULL).put("rootUri", publishRoot)
             .put("replace", if (policy == "replace") existing?.uri?.toString() ?: "" else "")
             .put("tempName", ".fetchy-${id()}")
-        metadata?.let { op.put("metadata", it) }
+        op.put("metadata", publication)
         store.put("folderOps", op); finishPublish(op); file(jobId)
     }
     private fun finishPublish(op: JSONObject) {
@@ -236,16 +242,28 @@ class Storage(private val context: Context, private val store: Store) {
         publicationMetadata(record, op.optJSONObject("metadata"))
         store.delete("folderOps", op.getString("id"))
     }
-    private fun publicationMetadata(record: JSONObject, metadata: JSONObject?): JSONObject {
+    private fun publicationMetadata(record: JSONObject, metadata: JSONObject?, applyDate: Boolean = true): JSONObject {
         metadata?.let {
             for (key in listOf("subtitleFor", "language", "automatic")) if (it.has(key)) record.put(key, it.get(key))
-            store.put("files", record)
+            if (applyDate && it.optLong("mediaDate") > 0) {
+                val date = it.getLong("mediaDate")
+                record.put("mediaDate", date)
+                if (it.optLong("sourceTimestamp") > 0) record.put("sourceTimestamp", it.getLong("sourceTimestamp"))
+                val applied = runCatching {
+                    resolver.openFileDescriptor(uri(record), "rw")?.use { fd -> File("/proc/self/fd/${fd.fd}").setLastModified(date) } ?: false
+                }.getOrDefault(false)
+                record.put("dateApplied", applied)
+            }
         }
+        store.put("files", record)
+        runCatching { scan(uri(record), record.getString("mime"), record.getString("id")) }
         return record
     }
     private fun recordFile(id: String, document: Uri, name: String, mime: String, folderId: String?, rootUri: String): JSONObject {
-        val size = resolver.query(document, arrayOf(DC.Document.COLUMN_SIZE), null, null, null)?.use {
-            if (it.moveToFirst() && !it.isNull(0)) it.getLong(0) else -1L
+        var modified = 0L
+        val size = resolver.query(document, arrayOf(DC.Document.COLUMN_SIZE, DC.Document.COLUMN_LAST_MODIFIED), null, null, null)?.use {
+            val index = it.getColumnIndex(DC.Document.COLUMN_LAST_MODIFIED)
+            if (it.moveToFirst()) { if (index >= 0 && !it.isNull(index)) modified = it.getLong(index); if (!it.isNull(0)) it.getLong(0) else -1L } else -1L
         } ?: -1L
         return (store.get("files", id) ?: JSONObject()).put("id", id).put("uri", document.toString()).put("name", name).put("mime", mime)
             .put("folderId", folderId ?: JSONObject.NULL).put("rootUri", rootUri).put("size", size).put("missing", false).also {
@@ -256,7 +274,8 @@ class Storage(private val context: Context, private val store: Store) {
                     job.optJSONObject("mediaMetadata")?.let { metadata -> metadata.keys().forEach { key -> it.put(key, metadata.opt(key)) } }
                     job.optJSONObject("asset")?.let { asset -> for (key in listOf("thumbnail", "duration", "width", "height", "fps")) if (asset.has(key) && !it.has(key)) it.put(key, asset.opt(key)) }
                 }
-                store.put("files", it); runCatching { scan(document, mime, id) }
+                if (!it.has("mediaDate") && modified > 0) it.put("mediaDate", modified)
+                store.put("files", it)
             }
     }
     private fun scan(document: Uri, mime: String, fileId: String) {
@@ -272,6 +291,12 @@ class Storage(private val context: Context, private val store: Store) {
         MediaScannerConnection.scanFile(context, arrayOf(path.path), arrayOf(mime)) { _, mediaUri ->
             if (mediaUri != null) synchronized(lock) {
                 store.get("files", fileId)?.takeIf { it.optString("uri") == document.toString() }?.let {
+                    if ((mime.startsWith("image/") || mime.startsWith("video/")) && it.optLong("mediaDate") > 0) {
+                        val applied = runCatching { resolver.update(mediaUri, android.content.ContentValues().apply {
+                            put(MediaStore.Images.Media.DATE_TAKEN, it.getLong("mediaDate"))
+                        }, null, null) > 0 }.getOrDefault(false)
+                        it.put("galleryDateApplied", applied)
+                    }
                     it.put("mediaUri", mediaUri.toString()); store.put("files", it)
                 }
             }
@@ -383,7 +408,7 @@ class Storage(private val context: Context, private val store: Store) {
                 record.put("parentId", op.opt("folderId")).put("rootUri", op.getString("rootUri"))
                 rebindFolder(record, target)
             } else recordFile(record.getString("id"), target, read(target)!!.name, record.getString("mime"),
-                op.optString("folderId").takeIf { !op.isNull("folderId") }, op.getString("rootUri"))
+                op.optString("folderId").takeIf { !op.isNull("folderId") }, op.getString("rootUri")).also { publicationMetadata(it, it) }
         }
         store.delete("folderOps", op.getString("id"))
     }
@@ -424,7 +449,7 @@ class Storage(private val context: Context, private val store: Store) {
             if (target == null && child.optBoolean("missing")) { child.put("folderId", JSONObject.NULL); store.put("files", child); return@forEach }
             check(target != null) { "Folder file unavailable" }
             child.put("uri", target.uri.toString()).put("rootUri", record.getString("rootUri")); child.remove("mediaUri")
-            store.put("files", child); runCatching { scan(target.uri, child.getString("mime"), child.getString("id")) }
+            publicationMetadata(child, child)
         }
         store.list("jobs").filter { it.optString("folderId") == record.getString("id") }.forEach {
             it.put("rootUri", record.getString("rootUri")); store.put("jobs", it)

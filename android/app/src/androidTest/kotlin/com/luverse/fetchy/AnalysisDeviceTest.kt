@@ -19,6 +19,24 @@ class AnalysisDeviceTest {
     private val context get() = instrumentation.targetContext
     private fun engine() = Engine(context, CookieVault(context))
 
+    @Test fun missingAudioCodecDoesNotForceAMerge() {
+        val uri = URI("https://x.com/i/status/123")
+        val formats = JSONArray()
+            .put(JSONObject().put("format_id", "http-632").put("ext", "mp4").put("width", 640).put("height", 360).put("vcodec", "h264").put("protocol", "https").put("url", "https://video.twimg.com/fixture.mp4"))
+            .put(JSONObject().put("format_id", "hls-audio").put("ext", "m4a").put("vcodec", "none").put("acodec", "aac").put("abr", 128).put("url", "https://video.twimg.com/audio.m3u8"))
+            .put(JSONObject().put("format_id", "hls-video").put("ext", "mp4").put("width", 1280).put("height", 720).put("vcodec", "h264").put("acodec", "none").put("url", "https://video.twimg.com/video.m3u8"))
+        val asset = engine().parseExtractedMedia(uri, "X (Twitter)", JSONObject().put("id", "codec-fixture").put("timestamp", 1700000000).put("formats", formats)).getJSONArray("assets").getJSONObject(0)
+        try {
+            val parsed = asset.getJSONArray("formats")
+            val rows = (0 until parsed.length()).map { parsed.getJSONObject(it) }
+            val http = rows.first { it.getString("id") == "http-632" }
+            val hls = rows.first { it.getString("id") == "hls-video" }
+            assertFalse(http.getBoolean("needsMerge")); assertEquals("mp4", http.getString("ext")); assertEquals("http-632", http.getString("selector"))
+            assertTrue(hls.getBoolean("needsMerge")); assertEquals("hls-video+hls-audio", hls.getString("selector"))
+            assertEquals(1700000000000L, asset.getLong("sourceTimestamp"))
+        } finally { File(context.noBackupFilesDir, "resolved-media/${asset.getString("resolvedInfo")}.json").delete() }
+    }
+
     @Test fun xParserPreservesOriginalsSelectionsAndSensitiveMedia() {
         val engine = engine()
         val uri = URI("https://x.com/i/web/status/123")
@@ -31,10 +49,11 @@ class AnalysisDeviceTest {
                 .put(JSONObject().put("url", "https://evil.example/a.mp4").put("content_type", "video/mp4")))
         val photo = JSONObject().put("id", "p1").put("type", "photo").put("url", "https://pbs.twimg.com/media/original.jpg?name=orig")
             .put("thumbnail_url", "https://pbs.twimg.com/media/preview.jpg?name=small")
-        val root = JSONObject().put("code", 200).put("tweet", JSONObject().put("id", "123").put("possibly_sensitive", true)
+        val root = JSONObject().put("code", 200).put("tweet", JSONObject().put("id", "123").put("possibly_sensitive", true).put("created_timestamp", 1700000000)
             .put("media", JSONObject().put("all", JSONArray().put(video).put(photo))))
         val assets = engine.parseXMedia(uri, root).getJSONArray("assets")
         assertEquals(2, assets.length())
+        assertEquals(1700000000000L, assets.getJSONObject(0).getLong("sourceTimestamp"))
         val formats = assets.getJSONObject(0).getJSONArray("formats")
         assertEquals(5, formats.length()) // Two original MP4s plus three local audio outputs.
         assertEquals(480, formats.getJSONObject(0).getInt("height"))

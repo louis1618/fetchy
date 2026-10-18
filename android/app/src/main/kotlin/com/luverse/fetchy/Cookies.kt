@@ -23,6 +23,14 @@ import javax.crypto.KeyGenerator
 import javax.crypto.SecretKey
 import javax.crypto.spec.GCMParameterSpec
 
+internal fun xApiCookieRows(rows: List<String>): List<String> {
+    val parsed = rows.map { it.removePrefix("#HttpOnly_").split('\t') }
+    val covered = parsed.filter { it[0] == "api.x.com" || (it[0] == ".x.com" && it[1] == "TRUE") }.map { it[5] }.toSet()
+    // Older WebView exports lost domain scope; only these X login cookies need the first-party API alias.
+    return rows + parsed.filter { it[0].removePrefix(".") == "x.com" && it[2] == "/" && it[5] in setOf("auth_token", "ct0") && it[5] !in covered }
+        .map { "#HttpOnly_api.x.com\tFALSE\t" + it.drop(2).joinToString("\t") }
+}
+
 /** Encrypted Netscape cookie vault. Disk APIs should run off the UI thread.
  * updatedAt is Unix milliseconds. Caller deletes temporary() files in finally;
  * startup may delete stale files under noBackupFilesDir/fetchy-cookie-temp.
@@ -77,6 +85,14 @@ class CookieVault(context: Context) {
         }
     }
 
+    fun hasXSession(): Boolean = synchronized(LOCK) {
+        exists("x") && parse("x", decrypt("x")).any {
+            val fields = it.removePrefix("#HttpOnly_").split('\t')
+            fields[5] == "auth_token" && fields[6].isNotBlank() &&
+                (fields[4] == "0" || fields[4].toLong() > System.currentTimeMillis() / 1000)
+        }
+    }
+
     fun temporary(platform: String, jobId: String): File? = synchronized(LOCK) {
         val id = platformId(platform)
         require(jobId.matches(Regex("[A-Za-z0-9_-]{1,128}"))) { "Invalid job ID" }
@@ -91,7 +107,7 @@ class CookieVault(context: Context) {
         try {
             check(file.setReadable(false, false) && file.setWritable(false, false) &&
                 file.setReadable(true, true) && file.setWritable(true, true)) { "Cannot restrict cookie file" }
-            file.outputStream().use { it.write(serialize(rows)) }
+            file.outputStream().use { it.write(serialize(if (id == "x") xApiCookieRows(rows) else rows)) }
             file
         } catch (error: Exception) { file.delete(); throw error }
     }
@@ -196,7 +212,7 @@ class CookieVault(context: Context) {
             "youtube" to Platform(listOf("youtube.com", "google.com"), listOf("https://www.youtube.com/", "https://youtube.com/", "https://accounts.google.com/", "https://www.google.com/")),
             "instagram" to Platform(listOf("instagram.com"), listOf("https://www.instagram.com/", "https://instagram.com/")),
             "tiktok" to Platform(listOf("tiktok.com"), listOf("https://www.tiktok.com/", "https://tiktok.com/")),
-            "x" to Platform(listOf("x.com", "twitter.com"), listOf("https://x.com/", "https://twitter.com/")),
+            "x" to Platform(listOf("x.com", "twitter.com"), listOf("https://x.com/", "https://api.x.com/", "https://twitter.com/")),
             "facebook" to Platform(listOf("facebook.com"), listOf("https://www.facebook.com/", "https://m.facebook.com/", "https://facebook.com/")),
             "threads" to Platform(listOf("threads.com", "threads.net", "instagram.com"), listOf("https://www.threads.com/", "https://www.threads.net/", "https://www.instagram.com/")),
             "reddit" to Platform(listOf("reddit.com"), listOf("https://www.reddit.com/", "https://old.reddit.com/", "https://reddit.com/")),

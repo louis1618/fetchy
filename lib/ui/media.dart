@@ -501,7 +501,8 @@ class _FileDetailPageState extends State<_FileDetailPage> {
     final width = (file['width'] as num?)?.toInt() ?? 0;
     final height = (file['height'] as num?)?.toInt() ?? 0;
     final resolution = width > 0 && width < height ? width : height;
-    final created = (file['createdAt'] as num?)?.toInt();
+    final created = (file['mediaDate'] as num? ?? file['createdAt'] as num?)
+        ?.toInt();
     final date = created == null
         ? null
         : DateTime.fromMillisecondsSinceEpoch(created);
@@ -590,7 +591,7 @@ class _FileDetailPageState extends State<_FileDetailPage> {
             ),
             if (date != null)
               property(
-                '생성일',
+                '저장 날짜',
                 '${date.year}년 ${date.month}월 ${date.day}일 ${date.hour.toString().padLeft(2, '0')}:${date.minute.toString().padLeft(2, '0')}',
               ),
             if ('${file['sourceUrl'] ?? ''}'.isNotEmpty)
